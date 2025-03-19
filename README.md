@@ -11,5 +11,5 @@
 
 # CS 테스트 대비 문제집 바로가기
 
-| [🧮 알고리즘](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/알고리즘.md) | [🏗️ 자료구조](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/자료구조.md) | [🖥️ 운영체제](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/운영체제.md) | [🗃️ 데이터베이스](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/데이터베이스.md) | [🌐 네트워크](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/네트워크.md) |
+| [🧮 알고리즘](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/알고리즘.md) | [🏗️ 자료구조](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/자료구조.md) | [🖥️ 운영체제](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/운영체제.md) | [🗃️ 데이터베이스](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/데이터베이스.md) | [🌐 네트워크](https://github.com/boospeak-study/CS-Interview-Study/blob/main/cs-test/network) |
 |--------|--------|--------|------------|--------|
