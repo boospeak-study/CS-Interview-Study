@@ -13,3 +13,15 @@
 
 | [🧮 알고리즘](./cs-test/algorithm/알고리즘.md) | [🏗️ 자료구조](./cs-test/datastructure/자료구조.md) | [🖥️ 운영체제](./cs-test/os/운영체제.md) | [🗃️ 데이터베이스](./cs-test/database/데이터베이스.md) | [🌐 네트워크](./cs-test/network/) |
 | ---------------------------------------------- | -------------------------------------------------- | --------------------------------------- | ----------------------------------------------------- | --------------------------------- |
+
+# 면접 질문 대비 바로가기
+
+- [🧮 알고리즘](./interview-questions/algorithm.md)
+- [🏗️ 자료구조](./interview-questions/data-structure.md)
+- [🖥️ 운영체제](./interview-questions/os.md)
+- [🌐 네트워크](./interview-questions/network.md)
+- [🎨 HTML/CSS](./interview-questions/html-css.md)
+- [🌟 자바스크립트](./interview-questions/javascript.md)
+- [🔷 타입스크립트](./interview-questions/typescript.md)
+- [⚛️ 리액트](./interview-questions/react.md)
+- [👥 컬처핏/인성](./interview-questions/culture-fit.md)
