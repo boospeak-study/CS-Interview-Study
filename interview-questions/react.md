@@ -1,6 +1,6 @@
 ## React 기본 개념 (Fundamental Concepts)
 
-<details><summary>Q. JSX와 내부 동작원리에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. JSX와 내부 동작원리에 대해 설명해주세요.</strong></summary>
 
 - JSX는 JavaScript 코드 내에서 HTML과 유사한 마크업 문법을 사용할 수 있게 해주는 문법 확장입니다. UI 구조를 보다 직관적으로 작성하고 가독성을 높이는 데 도움을 줍니다.
 
@@ -9,7 +9,7 @@
 3. React는 이 객체 정보를 사용하여 가상 DOM을 만들고, 실제 DOM과 비교하여 변경된 부분만 효율적으로 업데이트합니다.
 </details>
 
-<details><summary>Q. Element와 Component의 차이에 대해 설명해주세요</summary>
+<details><summary><strong>Q. Element와 Component의 차이에 대해 설명해주세요</strong></summary>
 
 - 엘리먼트는 React App의 가장 작은 단위로, 화면에 보이는 것을 기술하는 JavaScript 객체입니다. 예를 들어 `<div>`나 `<MyComponent />` 같은 JSX 표현식은 결국 엘리먼트 객체로 변환됩니다.
 
@@ -17,7 +17,7 @@
 
 </details>
 
-<details><summary>Q. props와 state에 대해서 설명해주세요.</summary>
+<details><summary><strong>Q. props와 state에 대해서 설명해주세요.</strong></summary>
 
 - props는 부모 컴포넌트가 자식 컴포넌트에 인자로써 전달하는 데이터입니다. 일반적으로 자식 컴포넌트는 props를 수정할 수 없습니다.
 
@@ -25,7 +25,7 @@
 
 </details>
 
-<details><summary>Q. 제어 컴포넌트와 비제어 컴포넌트의 차이에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. 제어 컴포넌트와 비제어 컴포넌트의 차이에 대해 설명해주세요.</strong></summary>
 
 - 이 둘은 주로 리액트에서 폼(form) 요소의 값을 어떻게 다루냐의 차이입니다.
 
@@ -43,7 +43,7 @@
 
 </details>
 
-<details><summary>Q. Ref의 용도에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Ref의 용도에 대해 설명해주세요.</strong></summary>
 
 - Ref는 주로 **DOM 노드나 React 엘리먼트에 직접 접근해야 할 때** 사용합니다. ref. current 프로퍼티는 변경되어도 컴포넌트를 리렌더링시키지 않습니다. 타이머 ID처럼, 렌더링과 직접적인 관련은 없지만 컴포넌트 인스턴스 내에서 계속 유지되어야 하는 값을 저장하는 용도로도 사용됩니다. State와 달리 값이 변경되어도 화면이 다시 그려지지 않는다는 특징이 있습니다.
 
@@ -51,7 +51,7 @@
 
 </details>
 
-<details><summary>Q. HTML과 React의 이벤트 처리 차이점에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. HTML과 React의 이벤트 처리 차이점에 대해 설명해주세요.</strong></summary>
 
 1. **이벤트 핸들러 전달 방식:**
 
@@ -65,7 +65,7 @@
 3. **기본 동작 방지:** - **HTML:** 이벤트 핸들러에서 return false;를 사용하여 기본 동작(예: <a> 태그의 페이지 이동)을 막을 수 있습니다. - **React:** 반드시 **event.preventDefault()** 메서드를 명시적으로 호출해야 합니다. return false 방식은 동작하지 않습니다.
 </details>
 
-<details><summary>Q. Single Page Application에 대해서 설명해주세요.</summary>
+<details><summary><strong>Q. Single Page Application에 대해서 설명해주세요.</strong></summary>
 
 - SPA는 **하나의 HTML 페이지**로 애플리케이션을 구성하고, 사용자의 상호작용에 따라 필요한 **데이터만 서버로부터 비동기적으로 받아와** 현재 페이지의 **일부분만 동적으로 업데이트**하는 방식의 웹 애플리케이션입니다.
 
@@ -82,7 +82,7 @@
 
 ## 컴포넌트 생명주기 및 패턴
 
-<details><summary>Q. 리액트에서 컴포넌트를 어떻게 생성하나요?</summary>
+<details><summary><strong>Q. 리액트에서 컴포넌트를 어떻게 생성하나요?</strong></summary>
 
 - 리액트 컴포넌트는 주로 두 가지 방식으로 생성합니다.
 
@@ -91,7 +91,7 @@
 2. **클래스 컴포넌트:** ES6 클래스를 사용하고 React.Component를 상속받아 만듭니다. render() 메서드에서 JSX를 반환하며, this.state와 생명주기 메서드를 사용합니다.
 </details>
 
-<details><summary>Q. Class 컴포넌트와 Function 컴포넌트의 차이를 설명해주세요.</summary>
+<details><summary><strong>Q. Class 컴포넌트와 Function 컴포넌트의 차이를 설명해주세요.</strong></summary>
 
 - 과거에는 상태 관리나 라이프사이클을 관리하기 위해서는 클래스 컴포넌트 사용이 강제적이었지만, Hook이 등장하면서 함수형 컴포넌트가 클래스 컴포넌트의 모든 기능을 더 효율적이고 직관적이게 사용이 가능해졌습니다.
 
@@ -113,7 +113,7 @@
 
 </details>
 
-<details><summary>Q. 라이프 사이클에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. 라이프 사이클에 대해 설명해주세요.</strong></summary>
 
 - 라이프사이클은 컴포넌트가 생성되고, 업데이트되고, 소멸되기까지의 과정을 말합니다. 주로 클래스 컴포넌트에서 명시적인 메소드들을 통해 관리되었고, 함수 컴포넌트에서는 useEffect 훅을 통해 유사한 동작을 구현합니다.
 
@@ -127,7 +127,7 @@
 
 </details>
 
-<details><summary>Q. React Portal에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. React Portal에 대해 설명해주세요.</strong></summary>
 
 - React Portal은 부모 컴포넌트의 DOM 계층 구조 바깥에 있는 다른 위치로 자식 컴포넌트를 렌더링할 수 있게 해주는 기능입니다.
 
@@ -137,7 +137,7 @@
 
 </details>
 
-<details><summary>Q. Error Boundary에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Error Boundary에 대해 설명해주세요.</strong></summary>
 
 - 에러 바운더리는 React 컴포넌트로, 하위 컴포넌트 트리에서 발생하는 JavaScript 에러를 잡아내고, 이 에러로 인해 전체 애플리케이션이 중단되는 것을 방지하며, 대체 UI를 보여줄 수 있게 하는 메커니즘입니다.
 
@@ -148,7 +148,7 @@
 - `componentDidCatch`: 에러 정보를 로깅하는 등의 **부수 효과(side effect)**를 처리하는 데 사용됩니다. (커밋 단계에서 호출)
 </details>
 
-<details><summary>Q. Error Boundary는 어떤 에러를 잡을 수 있나요?</summary>
+<details><summary><strong>Q. Error Boundary는 어떤 에러를 잡을 수 있나요?</strong></summary>
 
 - React가 컴포넌트 트리를 만들고, 화면에 그리는 과정 중에 발생하는 에러를 주로 처리합니다.
 
@@ -156,7 +156,7 @@
 
 </details>
 
-<details><summary>Q. HOC (Higher-Order Components)에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. HOC (Higher-Order Components)에 대해 설명해주세요.</strong></summary>
 
 - HOC는 **컴포넌트를 인자로 받아서, 새로운 컴포넌트를 반환하는 함수**입니다.
 
@@ -170,7 +170,7 @@
 
 </details>
 
-<details><summary>Q. React Server Components에 대해서 설명해주세요.</summary>
+<details><summary><strong>Q. React Server Components에 대해서 설명해주세요.</strong></summary>
 
 - React Server Components는 서버에서만 렌더링되고, 렌더링에 필요한 자바스크립트 코드가 클라이언트로 전송되지 않는 컴포넌트입니다.
 
@@ -184,7 +184,7 @@
 
 ## 렌더링 과정
 
-<details><summary>Q. React의 주요 특징에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. React의 주요 특징에 대해 설명해주세요.</strong></summary>
 
 - React는 UI를 만들기 위한 JavaScript 라이브러리입니다.
 
@@ -206,7 +206,7 @@
 
 </details>
 
-<details><summary>Q. Virtual DOM에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Virtual DOM에 대해 설명해주세요.</strong></summary>
 
 - Virtual DOM(가상돔)은 실제 브라우저의 DOM(Document Object Model)에 대응하는 **가벼운 복사본**을 인메모리로 만들어두고 사용하는 개념입니다.
 
@@ -216,7 +216,7 @@
 
 </details>
 
-<details><summary>Q. 재조정(Reconciliation)에 대해 알고있는대로 설명해주세요.</summary>
+<details><summary><strong>Q. 재조정(Reconciliation)에 대해 알고있는대로 설명해주세요.</strong></summary>
 
 - 재조정(Reconciliation)은 React가 가상 DOM을 사용하여 실제 DOM을 효율적으로 업데이트하는 과정입니다.
 
@@ -224,7 +224,7 @@
 
 </details>
 
-<details><summary>Q. Diffing 알고리즘에 대해 알고있는대로 설명해주세요.</summary>
+<details><summary><strong>Q. Diffing 알고리즘에 대해 알고있는대로 설명해주세요.</strong></summary>
 
 - Diffing 알고리즘은 React가 **이전 가상 DOM 트리와 새로운 가상 DOM 트리를 비교**하여 실제 DOM에 어떤 변경사항을 적용해야 할지 결정하는 알고리즘입니다.
 
@@ -235,7 +235,7 @@
 3. **리스트 형태의 자식**을 비교할 때는 **key prop**을 사용하여 각 엘리먼트의 변경, 추가, 제거 여부를 효율적으로 파악합니다.
 </details>
 
-<details><summary>Q. Fiber에 대해 알고있는 대로 설명해주세요.</summary>
+<details><summary><strong>Q. Fiber에 대해 알고있는 대로 설명해주세요.</strong></summary>
 
 - React Fiber는 React의 핵심 알고리즘인 재조정(Reconciliation) 알고리즘을 재구현한 것입니다. 각 컴포넌트를 Fiber라는 작업 단위로 나누어 처리하는 것이 핵심입니다.
 
@@ -249,7 +249,7 @@
 2. 전체 작업을 한 번에 끝내는 것이 아니라, 여러 프레임에 걸쳐 작업을 분할하여 실행할 수 있습니다. 이를 통해 메인 스레드를 차단하지 않고 부드러운 사용자 경험을 제공합니다.
 </details>
 
-<details><summary>Q. Render Phase와 Commit Phase에 대해 설명해주세요</summary>
+<details><summary><strong>Q. Render Phase와 Commit Phase에 대해 설명해주세요</strong></summary>
 
 - **Render Phase**에서는 React가 컴포넌트를 호출해서 어떤 변경사항이 필요한지 계산합니다. 즉, 이전 렌더 결과와 비교해서 DOM에 어떤 변화를 주어야 할지 결정하는 단계입니다. 중요한 것은 이 단계에서는 부수 효과(Side Effect)가 없어야 합니다. 순수해야 하죠. Strict Mode가 함수를 두 번 호출하는 이유도 이 단계의 순수성을 검증하기 위함입니다.
 
@@ -259,7 +259,7 @@
 
 </details>
 
-<details><summary>Q. 리액트의 Strict Mode에 대해 설명해주세요</summary>
+<details><summary><strong>Q. 리액트의 Strict Mode에 대해 설명해주세요</strong></summary>
 
 - Strict Mode는 개발 환경에서 잠재적인 문제를 미리 발견하도록 도와주는 리액트의 도구입니다. 일종의 '검사기' 같은 역할이라고 생각하시면 됩니다.
 
@@ -269,7 +269,7 @@
 
 </details>
 
-<details><summary>Q. ‘React 18’의 주요 변경점에 대해서 알고 계신가요?</summary>
+<details><summary><strong>Q. ‘React 18’의 주요 변경점에 대해서 알고 계신가요?</strong></summary>
 
 - React 18의 가장 핵심적인 변화는 **동시성(Concurrency)** 도입입니다. 이를 통해 React는 여러 상태 업데이트를 동시에 처리하고, 렌더링 중에도 사용자 입력에 반응할 수 있어 **사용자 경험이 크게 향상**되었습니다.
 
@@ -280,13 +280,13 @@
 
 ## React Hooks
 
-<details><summary>Q. React Hooks에 대해 간단하게 설명해주세요.</summary>
+<details><summary><strong>Q. React Hooks에 대해 간단하게 설명해주세요.</strong></summary>
 
 - React Hooks는 클래스 컴포넌트를 작성하지 않고도 함수 컴포넌트 안에서 상태(state)를 관리하고 생명주기(lifecycle) 기능 등을 사용할 수 있게 해주는 함수들입니다.
 
 </details>
 
-<details><summary>Q. Hooks를 조건문 내에서 사용하면 안되는 이유에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Hooks를 조건문 내에서 사용하면 안되는 이유에 대해 설명해주세요.</strong></summary>
 
 - 리액트에서 훅은 호출되는 순서에 의존하는데, 그 이유는 state가 자바스크립트의 클로저를 이용하여 구현되었기 때문입니다. 클로저 내에서는 해당 state의 Index를 기록하고, 이 Index 값을 추적할 수 있도록 배열 내에서 상태값들을 관리합니다.
 
@@ -294,7 +294,7 @@
 
 </details>
 
-<details><summary>Q. 메모이제이션에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. 메모이제이션에 대해 설명해주세요.</strong></summary>
 
 - 메모이제이션(Memoization)은 최적화 기법 중 하나입니다.
 
@@ -302,20 +302,20 @@
 
 </details>
 
-<details><summary>Q. React.memo, useMemo, useCallback의 차이점에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. React.memo, useMemo, useCallback의 차이점에 대해 설명해주세요.</strong></summary>
 
 - 셋 다 메모이제이션을 통해 성능을 최적화합니다. React.memo는 HOC로 컴포넌트를 감싸 props가 바뀌지 않으면 리렌더링을 방지하고, useMemo는 계산 비용이 큰 값을 메모이제이션하며, useCallback은 동일한 함수 인스턴스를 유지해 불필요한 리렌더링을 줄입니다.
 
 </details>
 
-<details><summary>Q. useLayoutEffect에 대해서 설명해주세요.</summary>
+<details><summary><strong>Q. useLayoutEffect에 대해서 설명해주세요.</strong></summary>
 
 - useEffect: 렌더링 결과가 화면에 그려진 후 (paint 이후)에 비동기적으로 실행됩니다. 브라우저 렌더링을 블록하지 않습니다.
   - ex: 네트워크 요청, DOM 접근, 비동기 작업 등
 - useLayoutEffect: 렌더링 결과가 paint되기 전 동기적으로 실행됩니다. 브라우저 페인팅이 지연될 수 있습니다. - ex) DOM 직접 조작, 성능 모니터링, 애니메이션 구현, 레이아웃을 먼저 읽어 flicker 방지
 </details>
 
-<details><summary>Q. 리액트에서 순수함수의 Side Effect는 어떻게 처리되나요?</summary>
+<details><summary><strong>Q. 리액트에서 순수함수의 Side Effect는 어떻게 처리되나요?</strong></summary>
 
 - React 컴포넌트 자체는 순수 함수처럼 동작하는 것을 지향합니다. 즉, 동일한 props와 state에 대해 항상 동일한 UI를 렌더링해야 합니다. Side Effect가 발생하는 API 호출, 구독 설정, DOM 직접 조작 등은 렌더링 과정에서 직접 수행하면 안 됩니다.
 
@@ -323,7 +323,7 @@
 
 </details>
 
-<details><summary>Q. 바닐라 JS로 useState를 어떻게 구현했는지 설명해주세요.</summary>
+<details><summary><strong>Q. 바닐라 JS로 useState를 어떻게 구현했는지 설명해주세요.</strong></summary>
 
 - useState의 핵심 로직을 구현하기 위해서는 클로저를 활용합니다.
 
@@ -337,7 +337,7 @@
 
 ## 상태 관리
 
-<details><summary>Q. 왜 state를 직접 변경하면 안될까요?</summary>
+<details><summary><strong>Q. 왜 state를 직접 변경하면 안될까요?</strong></summary>
 
 - React가 상태 변화를 감지하고 화면을 리렌더링(re-render) 하도록 알려주기 위해서입니다. state 객체를 직접 수정하면 React는 변화를 알 수 없어 UI가 업데이트되지 않습니다.
 
@@ -345,7 +345,7 @@
 
 </details>
 
-<details><summary>Q. React에서 State의 불변성은 어떻게 유지할 수 있나요?</summary>
+<details><summary><strong>Q. React에서 State의 불변성은 어떻게 유지할 수 있나요?</strong></summary>
 
 - 가장 중요한 원칙은 기존 상태 객체나 배열을 직접 수정하지 않는 것입니다.
 
@@ -362,7 +362,7 @@
   - `setState(prevArray => [...prevArray, newItem]);`
   </details>
 
-<details><summary>Q. setState는 동기적으로 동작하나요? 혹은 비동기적으로 동작하나요?</summary>
+<details><summary><strong>Q. setState는 동기적으로 동작하나요? 혹은 비동기적으로 동작하나요?</strong></summary>
 
 - setState는 비동기적으로 동작합니다. 하지만 비동기 함수는 아닙니다.
 
@@ -376,13 +376,13 @@
 
 </details>
 
-<details><summary>Q. 부모 컴포넌트가 리렌더링되면, 자식 컴포넌트도 리렌더링 되나요?</summary>
+<details><summary><strong>Q. 부모 컴포넌트가 리렌더링되면, 자식 컴포넌트도 리렌더링 되나요?</strong></summary>
 
 - 기본적으로 부모 컴포넌트가 리렌더링되면 자식 컴포넌트도 함께 리렌더링됩니다.
 
   React는 부모의 상태나 props가 변경되어 리렌더링이 발생하면, 해당 부모가 반환하는 모든 자식 컴포넌트에게도 변경 사항이 전파될 수 있다고 가정하고 다시 렌더링을 시도합니다.
 
-<details><summary>꼬리질문: 자식 컴포넌트의 리렌더링을 방지하는 방법은 무엇이 있을까요? (최적화)</summary>
+<details><summary><strong>꼬리질문: 자식 컴포넌트의 리렌더링을 방지하는 방법은 무엇이 있을까요? (최적화)</strong></summary>
 
 - `React.memo`를 사용하여 자식 컴포넌트를 감싸주면, props가 변경되지 않았을 때 리렌더링을 방지할 수 있습니다.
 
@@ -390,7 +390,7 @@
 
 </details>
 
-<details><summary>Q. Prop Drilling에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Prop Drilling에 대해 설명해주세요.</strong></summary>
 
 - Prop Drilling은 상위 컴포넌트의 상태나 데이터를 오직 하위 컴포넌트에 전달할 목적으로, 중간의 여러 컴포넌트를 거쳐 props를 전달하는 패턴을 말합니다.
 
@@ -400,7 +400,7 @@
 
 </details>
 
-<details><summary>Q. Context API에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Context API에 대해 설명해주세요.</strong></summary>
 
 - Context API는 React 컴포넌트 트리 안에서 데이터를 전역적으로 간주하고 쉽게 공유할 수 있도록 도와주는 기능입니다.
 
@@ -408,7 +408,7 @@
 
   적절한 사용 예시: 테마, 언어 설정, 사용자 인증 정보
 
-<details><summary>꼬리질문: Context API와 상태 관리 라이브러리(Redux, Zustand)와의 비교를 더 자세히 말해주세요.</summary>
+<details><summary><strong>꼬리질문: Context API와 상태 관리 라이브러리(Redux, Zustand)와의 비교를 더 자세히 말해주세요.</strong></summary>
 
 - Context의 값이 변경되면 해당 Context를 구독하는 모든 컴포넌트가 기본적으로 리렌더링 됩니다. 이 경우 리렌더링이 많이 발생하여 성능에 부정적 영향을 미칠 수 있는데, Redux와 같은 상태관리 라이브러리는 `useSelector` 등을 통해서 상태의 특정 부분만 구독하고, 부분적으로 변경에 대응하도록 최적화할 수 있습니다.
 
@@ -418,7 +418,7 @@
 
 </details>
 
-<details><summary>Q. Context API, 전역 상태 관리 라이브러리를 사용하지 않고 Prop Drilling을 개선하는 방법은 무엇이 있을까요?</summary>
+<details><summary><strong>Q. Context API, 전역 상태 관리 라이브러리를 사용하지 않고 Prop Drilling을 개선하는 방법은 무엇이 있을까요?</strong></summary>
 
 - 컴포넌트 합성 (Component Composition) 패턴을 사용하는 방법이 있습니다.
 
@@ -432,7 +432,7 @@
 
   컴포넌트 합성 패턴은 간단하고 React의 기본 원리에 충실합니다. 특정 UI 구조에 효과적입니다. 단점으로는, 상위 컴포넌트에서 하위 컴포넌트 구조를 미리 다 정의하고 조합해야 하므로, 상위 컴포넌트의 렌더 로직이 매우 길고 복잡해질 수 있습니다.
 
-<details><summary>꼬리질문: '컴포넌트 합성 패턴 도입 vs 상태관리 라이브러리' 선택의 기준을 어떻게 할 것인가요?</summary>
+<details><summary><strong>꼬리질문: '컴포넌트 합성 패턴 도입 vs 상태관리 라이브러리' 선택의 기준을 어떻게 할 것인가요?</strong></summary>
 
 - 간단하고 지역적인 상태 전달 문제는 컴포넌트 합성으로 해결하고, 복잡하고 전역적인 상태 관리, 빈번한 업데이트, 고급 기능이 필요하다면 상태 관리 라이브러리나 Context API를 상황에 맞게 도입하는 것을 고려합니다.
 
@@ -440,13 +440,13 @@
 
 </details>
 
-<details><summary>Q. Flux 패턴에 대해서 설명해주세요.</summary>
+<details><summary><strong>Q. Flux 패턴에 대해서 설명해주세요.</strong></summary>
 
 - Flux 패턴은 아키텍처 패턴 중 하나로써, 'Action → Dispatcher → Store → View' 순서의 단방향 데이터 흐름을 통해 데이터 흐름을 예측 가능하고 관리하기 쉽게 해줍니다.
 
 </details>
 
-<details><summary>Q. Client-Side 상태 관리와 Server-Side 상태 관리에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Client-Side 상태 관리와 Server-Side 상태 관리에 대해 설명해주세요.</strong></summary>
 
 - **클라이언트 사이드 상태 관리**는 사용자의 브라우저 환경 내에서 관리되는 상태를 의미합니다. 주로 UI의 표시 여부, 사용자의 입력 값, 테마 설정 등과 같이 해당 사용자의 인터페이스 경험에 직접적으로 관련된 상태들이 여기에 해당합니다. 이 상태는 일반적으로 일시적이며, 페이지를 새로고침하면 초기화될 수 있습니다. 주된 목적은 즉각적인 UI 반응성과 사용자 경험 향상입니다.
 
@@ -454,7 +454,7 @@
 
 </details>
 
-<details><summary>Q. tanstack-query에서 staleTime과 gcTime의 차이점을 설명해주세요.</summary>
+<details><summary><strong>Q. tanstack-query에서 staleTime과 gcTime의 차이점을 설명해주세요.</strong></summary>
 
 - staleTime은 가져온 데이터가 '신선하다'고 판단하는 시간입니다. 이 시간이 지나면 데이터는 '오래된(stale)' 상태가 되어서, 다음에 필요할 때 백그라운드에서 다시 가져오려고 시도합니다. 기본값은 0초입니다.
 
@@ -464,7 +464,7 @@
 
 </details>
 
-<details><summary>Q. Context API와 Redux의 차이점에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. Context API와 Redux의 차이점에 대해 설명해주세요.</strong></summary>
 
 - 둘 다 상태 관리, 특히 props drilling을 피하기 위해 사용한다는 공통점이 있습니다.
 
@@ -478,7 +478,7 @@
 
 ## 최적화
 
-<details><summary>Q. 렌더링 최적화를 위해 적용할 수 있는 방법들에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. 렌더링 최적화를 위해 적용할 수 있는 방법들에 대해 설명해주세요.</strong></summary>
 
 - 가장 중요한 건 **불필요한 리렌더링을 줄이는 것**이라고 생각합니다. 크게 몇 가지 방법이 있는데요,
 
@@ -488,7 +488,7 @@
 
   리스트 아이템을 렌더링할 때는 각 아이템에 고유하고 안정적인 key prop을 꼭 지정해야 합니다. React가 변경된 아이템을 효율적으로 식별하고 업데이트하는 데 도움이 됩니다.
 
-<details><summary>꼬리질문: 리스트 아이템에만 key prop을 지정하는 것이 좋나요?</summary>
+<details><summary><strong>꼬리질문: 리스트 아이템에만 key prop을 지정하는 것이 좋나요?</strong></summary>
 
 - 리스트가 아닌 경우 컴포넌트 타입과 트리에서의 위치를 보고 컴포넌트의 고유성을 판단합니다.
 
@@ -502,7 +502,7 @@
 
 </details>
 
-<details><summary>Q. 성능(Performance) 최적화를 위해 적용할 수 있는 방법들에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. 성능(Performance) 최적화를 위해 적용할 수 있는 방법들에 대해 설명해주세요.</strong></summary>
 
 - **불필요한 작업을 줄이고**, **초기 로딩 속도를 개선**하며, **리소스 사용을 효율화**하는 것이 React 성능 최적화의 핵심이라고 생각합니다.
 
@@ -511,7 +511,7 @@
 3. 웹 페이지 로딩 속도에 큰 영향을 미치는 이미지 파일의 크기를 줄이고, WebP와 같은 최신 포맷을 사용하며, 지연 로딩(Lazy Loading)을 적용하는 것도 중요합니다.
 </details>
 
-<details><summary>Q. 렌더링 최적화와 퍼포먼스 최적화의 차이점에 대해 설명해 주세요.</summary>
+<details><summary><strong>Q. 렌더링 최적화와 퍼포먼스 최적화의 차이점에 대해 설명해 주세요.</strong></summary>
 
 - **렌더링 최적화**는 React가 화면을 그리는 과정, 즉 **UI를 업데이트하는 과정 자체를 효율화**하는 데 좀 더 초점을 맞춥니다.
 
@@ -521,7 +521,7 @@
 
 </details>
 
-<details><summary>Q. key값 사용 이유에 대해 설명해주세요.</summary>
+<details><summary><strong>Q. key값 사용 이유에 대해 설명해주세요.</strong></summary>
 
 - React가 리스트(배열) 형태의 자식 요소들을 렌더링할 때 key prop을 권장하는 주된 이유는 Reconciliation 과정에서 각 요소를 효율적으로 식별하고 추적하기 위해서입니다.
 
@@ -531,7 +531,7 @@
 
 </details>
 
-<details><summary>Q. 리액트에서 index를 key값으로 사용하면 안되는 이유에 대해서 설명해주세요.</summary>
+<details><summary><strong>Q. 리액트에서 index를 key값으로 사용하면 안되는 이유에 대해서 설명해주세요.</strong></summary>
 
 - index를 key로 사용하면 배열의 항목이 **추가, 삭제, 또는 재정렬**될 때 문제가 발생합니다.
 
