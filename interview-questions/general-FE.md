@@ -1,7 +1,7 @@
 # FE 공통
 
 <details>
-<summary>CSR / SSR / SSG 에 대해 설명해주세요.</summary>
+<summary><strong>Q. CSR / SSR / SSG 에 대해 설명해주세요.</strong></summary>
 
 답변
 
@@ -48,7 +48,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>CSR과 SSR의 단점을 극복하는 방법에 대해 설명해주세요.</summary>
+<summary><strong>Q. CSR과 SSR의 단점을 극복하는 방법에 대해 설명해주세요.</strong></summary>
 
 답변
 
@@ -92,19 +92,12 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
+<<<<<<< HEAD
 
-<summary>PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</summary>
+# <summary>PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</summary>
 
-답변
-
-질문 제작: OOO
-
-출처: (optional)
-
-</details>
-
-<details>
-<summary>프론트엔드에서 피처 구현하면서 가장 고려해야 될 게 뭐라고 생각하나요?!</summary>
+<summary><strong>Q. PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</strong></summary>
+>>>>>>> c2bbf5a (chore : 컨벤션 추가)
 
 답변
 
@@ -115,7 +108,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>CLS 말고 Core Web Vitals 측정항목에는 뭐가 있는지 아시나요?!</summary>
+<summary><strong>Q. 프론트엔드에서 피처 구현하면서 가장 고려해야 될 게 뭐라고 생각하나요?!</strong></summary>
 
 답변
 
@@ -126,7 +119,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>Lighthouse 성능 측정 기준에는 뭐가 있는지 설명해주세요.!</summary>
+<summary><strong>Q. CLS 말고 Core Web Vitals 측정항목에는 뭐가 있는지 아시나요?!</strong></summary>
 
 답변
 
@@ -137,7 +130,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 설명해주세요.!</summary>
+<summary><strong>Q. Lighthouse 성능 측정 기준에는 뭐가 있는지 설명해주세요.!</strong></summary>
 
 답변
 
@@ -148,7 +141,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>웹 접근성의 개념과 개선 방법에 대해 설명해주세요.!</summary>
+<summary><strong>Q. 웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 설명해주세요.!</strong></summary>
 
 답변
 
@@ -159,7 +152,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>낙관적 업데이트에 관해서 설명해 주세요.!</summary>
+<summary><strong>Q. 웹 접근성의 개념과 개선 방법에 대해 설명해주세요.!</strong></summary>
 
 답변
 
@@ -170,7 +163,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>이미지 최적화 방법들에 대해 설명해주세요.!</summary>
+<summary><strong>Q. 낙관적 업데이트에 관해서 설명해 주세요.!</strong></summary>
 
 답변
 
@@ -181,7 +174,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>애자일에 대해 설명해주세요!</summary>
+<summary><strong>Q. 이미지 최적화 방법들에 대해 설명해주세요.!</strong></summary>
 
 답변
 
@@ -192,7 +185,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>웹, 앱 브릿지에 대해서 알고계신가요? 알고 계시다면 설명해주세요.!</summary>
+<summary><strong>Q. 애자일에 대해 설명해주세요!</strong></summary>
 
 답변
 
@@ -203,7 +196,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>지원자님이 생각하시는 클린 코드에 대해 설명해주세요.!</summary>
+<summary><strong>Q. 웹, 앱 브릿지에 대해서 알고계신가요? 알고 계시다면 설명해주세요.!</strong></summary>
 
 답변
 
@@ -214,7 +207,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>지원자님이 생각하시는 클린 아키텍쳐에 대해 설명해주세요.!</summary>
+<summary><strong>Q. 지원자님이 생각하시는 클린 코드에 대해 설명해주세요.!</strong></summary>
 
 답변
 
@@ -225,7 +218,18 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
-<summary>non-blocking과 async의 차이점에 대해 설명해주세요.</summary>
+<summary><strong>Q. 지원자님이 생각하시는 클린 아키텍쳐에 대해 설명해주세요.!</strong></summary>
+
+답변
+
+질문 제작: OOO
+
+출처: (optional)
+
+</details>
+
+<details>
+<summary><strong>Q. non-blocking과 async의 차이점에 대해 설명해주세요.</strong></summary>
 
 non-blocking과 async는 자주 함께 쓰이지만, 의미와 관점이 조금 다릅니다.
 non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까지 기다리지 않고 즉시 제어권을 돌려주는 실행 방식을 의미합니다.
@@ -236,7 +240,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>blocking / non-blocking / sync / async 에 대해 설명해주세요. 그리고 각각을 조합한 것에 대해 설명해주세요.</summary>
+<summary><strong>Q. blocking / non-blocking / sync / async 에 대해 설명해주세요. 그리고 각각을 조합한 것에 대해 설명해주세요.</strong></summary>
 
 1. **blocking + sync** : 다른 작업이 진행되는 동안 자신의 작업을 처리하지 않고 (blocking), 다른 작업의 완료 여부를 바로 받아 순차적으로 처리하는 (sync) 방식이다. 다른 작업의 결과가 자신의 작업에 영향을 주는 경우에 활용할 수 있다.
 2. **blocking + async** : 다른 작업이 진행되는 동안 자신의 작업을 멈추고 기다리는 (blocking), 다른 작업의 결과를 바로 처리하지 않아 순서대로 작업을 수행하지 않는 (async) 방식이다.
@@ -247,7 +251,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 ## Infra, Build, Tools
 
 <details>
-<summary>Nginx에 대해서 설명해주세요.!</summary>
+<summary><strong>Q. Nginx에 대해서 설명해주세요.!</strong></summary>
 
 답변
 
@@ -258,7 +262,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>CI/CD에 대해서 설명해주세요.!</summary>
+<summary><strong>Q. CI/CD에 대해서 설명해주세요.!</strong></summary>
 
 답변
 
@@ -269,7 +273,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>웹 서비스 배포 시스템 구축 경험이 있으신가요?!</summary>
+<summary><strong>Q. 웹 서비스 배포 시스템 구축 경험이 있으신가요?!</strong></summary>
 
 답변
 
@@ -280,7 +284,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>Monorepo 사용 경험에 대해서 말씀해주세요.!</summary>
+<summary><strong>Q. Monorepo 사용 경험에 대해서 말씀해주세요.!</strong></summary>
 
 답변
 
@@ -291,7 +295,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>패키지 매니저(npm, pnpm, yarn, yarn2) 사용 경험에 대해 말씀해주세요.!</summary>
+<summary><strong>Q. 패키지 매니저(npm, pnpm, yarn, yarn2) 사용 경험에 대해 말씀해주세요.!</strong></summary>
 
 답변
 
@@ -302,7 +306,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>Git에 대해서 설명해주세요.!</summary>
+<summary><strong>Q. Git에 대해서 설명해주세요.!</strong></summary>
 
 답변
 
@@ -313,7 +317,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>사용하신 Git 브랜치 전략에 대해 설명해주세요.!</summary>
+<summary><strong>Q. 사용하신 Git 브랜치 전략에 대해 설명해주세요.!</strong></summary>
 
 답변
 
@@ -324,7 +328,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>Git Merge, Squash, Rebase의 차이에 대해서 설명해주세요.!</summary>
+<summary><strong>Q. Git Merge, Squash, Rebase의 차이에 대해서 설명해주세요.!</strong></summary>
 
 답변
 
@@ -335,7 +339,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>dependencies 와 devDependencies 차이에 대해 설명해주세요.!</summary>
+<summary><strong>Q. dependencies 와 devDependencies 차이에 대해 설명해주세요.!</strong></summary>
 
 답변
 
@@ -346,7 +350,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>MSA 경험이 있으신가요? 알고 계시는 만큼 설명해주세요.!</summary>
+<summary><strong>Q. MSA 경험이 있으신가요? 알고 계시는 만큼 설명해주세요.!</strong></summary>
 
 답변
 
@@ -357,7 +361,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>BFF 아키텍처 구현 경험이 있나요? 혹은 알고 계시는 만큼 설명해주세요.</summary>
+<summary><strong>Q. BFF 아키텍처 구현 경험이 있나요? 혹은 알고 계시는 만큼 설명해주세요.</strong></summary>
 
 BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔드만을 위한 맞춤형 백엔드 서버입니다.**
 
@@ -374,7 +378,7 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 </details>
 
 <details>
-<summary>Webpack과 Vite, 기타 번들링 도구에 대한 설명 해주세요.</summary>
+<summary><strong>Q. Webpack과 Vite, 기타 번들링 도구에 대한 설명 해주세요.</strong></summary>
 
 답변
 
@@ -390,7 +394,7 @@ Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들�
 ## Testing
 
 <details>
-<summary>FE 개발에서 테스트 코드를 작성해서 얻는 이점이 무엇인가요?!</summary>
+<summary><strong>Q. FE 개발에서 테스트 코드를 작성해서 얻는 이점이 무엇인가요?!</strong></summary>
 
 답변
 
@@ -401,7 +405,7 @@ Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들�
 </details>
 
 <details>
-<summary>유닛 테스트, 통합 테스트, E2E 테스트에 대해 각각 설명해주세요.!</summary>
+<summary><strong>Q. 유닛 테스트, 통합 테스트, E2E 테스트에 대해 각각 설명해주세요.!</strong></summary>
 
 답변
 
@@ -412,7 +416,7 @@ Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들�
 </details>
 
 <details>
-<summary>만약 간단한 입력 필드 컴포넌트를 만든다면, 어떤 부분을 테스트해봐야 할까요?!</summary>
+<summary><strong>Q. 만약 간단한 입력 필드 컴포넌트를 만든다면, 어떤 부분을 테스트해봐야 할까요?!</strong></summary>
 
 답변
 
@@ -423,7 +427,7 @@ Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들�
 </details>
 
 <details>
-<summary>FE 테스트를 위해 주로 어떤 라이브러리나 프레임워크를 사용하나요?!</summary>
+<summary><strong>Q. FE 테스트를 위해 주로 어떤 라이브러리나 프레임워크를 사용하나요?!</strong></summary>
 
 답변
 
@@ -434,7 +438,7 @@ Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들�
 </details>
 
 <details>
-<summary>컴포넌트를 테스트할 때, API 호출을 실제 네트워크 요청 없이 테스트하려면 어떻게 해야 할까요?!</summary>
+<summary><strong>Q. 컴포넌트를 테스트할 때, API 호출을 실제 네트워크 요청 없이 테스트하려면 어떻게 해야 할까요?!</strong></summary>
 
 답변
 
@@ -445,7 +449,7 @@ Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들�
 </details>
 
 <details>
-<summary>프론트엔드 E2E 테스트에 대해 설명해주세요.!</summary>
+<summary><strong>Q. 프론트엔드 E2E 테스트에 대해 설명해주세요.!</strong></summary>
 
 답변
 
