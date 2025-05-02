@@ -92,6 +92,7 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 </details>
 
 <details>
+
 <summary>PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</summary>
 
 답변
