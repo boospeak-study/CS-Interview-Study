@@ -5,7 +5,43 @@
 
 답변
 
-질문 제작: OOO
+## CSR
+
+초기 로딩 시 최소한의 HTML만 전달하고, JavaScript가 실행된 후 브라우저에서 모든 UI를 구성함
+
+### 장점
+
+SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
+
+### 단점
+
+초기 로딩 속도 느리고 SEO에 불리함
+
+## SSR
+
+요청 시 서버가 HTML을 완전히 구성한 후 브라우저에 전달해 바로 렌더링하는 방식
+
+### 장점
+
+초기 로딩 속도가 빠르고 SEO에 유리, 보안에 유리함
+
+### 단점
+
+서버의 부담이 증가하고 페이지 전환 시 전체 HTML을 다시 요청해야 합니다.
+
+## SSG
+
+빌드 시 미리 HTML을 생성해서 저장해두고, 사용자가 요청할 때 해당 HTML을 그대로 전달하는 방식
+
+### 장점
+
+매우 빠르고 SEO에 매우 유리함
+
+### 단점
+
+실시간 데이터 반영이 어렵고 페이지 수가 많으면 빌드 시간이 길어짐
+
+질문 제작: 강민주
 
 출처: (optional)
 
@@ -16,14 +52,47 @@
 
 답변
 
-질문 제작: OOO
+## CSR 단점 극복 방법
+
+### 초기 로딩이 느림
+
+해결 방법
+
+- code splitting(코드 분할) 필요한 페이지/ 컴포넌트 단위로 JS 번들을 나누어 초기에 최소한의 코드로만 로딩
+- Lazy Loading : 사용자가 실제로 접근할 때 필요한 리소스만 불러옴
+- Preloading/Prefetching : 예상되는 사용자 이동 경로에 있는 리소스를 미리 불러와 준비
+
+### SEO에 불리함
+
+해결 방법
+
+- 사전 렌더링 : 정적 HTML을 미리 생성해 검색 엔진에 제공
+- 동적 렌더링 : 일반 사용자는 CSR로 처리하고, 크롤러에게만 SSR 결과를 전달(Google 추천 방식)
+
+## SSR 단점 극복 방법
+
+### 서버 부하가 큼
+
+해결 방법
+
+- 캐싱 : 페이지 결과나 API 응답을 CDN 또는 서버 메모리에 저장하여 재사용
+- ISR : 정적 페이지를 일정 주기로 백그라운드에서 다시 생성하는 방식
+
+### 페이지 전환 시 깜빡임/느림
+
+해결 방법
+
+- Hydaration 최적화 : 클라이언트 측에서 부드럽게 React가 takeover 하도록 조정
+- client-side routing 병행 : 페이 이동은 CSR 방식으로, 초기 로딩만 SSR로 처리
+
+질문 제작: 강민주
 
 출처: (optional)
 
 </details>
 
 <details>
-<summary>PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.</summary>
+<summary>PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</summary>
 
 답변
 
@@ -34,7 +103,7 @@
 </details>
 
 <details>
-<summary>프론트엔드에서 피처 구현하면서 가장 고려해야 될 게 뭐라고 생각하나요?</summary>
+<summary>프론트엔드에서 피처 구현하면서 가장 고려해야 될 게 뭐라고 생각하나요?!</summary>
 
 답변
 
@@ -45,7 +114,7 @@
 </details>
 
 <details>
-<summary>CLS 말고 Core Web Vitals 측정항목에는 뭐가 있는지 아시나요?</summary>
+<summary>CLS 말고 Core Web Vitals 측정항목에는 뭐가 있는지 아시나요?!</summary>
 
 답변
 
@@ -56,7 +125,7 @@
 </details>
 
 <details>
-<summary>Lighthouse 성능 측정 기준에는 뭐가 있는지 설명해주세요.</summary>
+<summary>Lighthouse 성능 측정 기준에는 뭐가 있는지 설명해주세요.!</summary>
 
 답변
 
@@ -67,7 +136,7 @@
 </details>
 
 <details>
-<summary>웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 설명해주세요.</summary>
+<summary>웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 설명해주세요.!</summary>
 
 답변
 
@@ -78,7 +147,7 @@
 </details>
 
 <details>
-<summary>웹 접근성의 개념과 개선 방법에 대해 설명해주세요.</summary>
+<summary>웹 접근성의 개념과 개선 방법에 대해 설명해주세요.!</summary>
 
 답변
 
@@ -89,7 +158,7 @@
 </details>
 
 <details>
-<summary>낙관적 업데이트에 관해서 설명해 주세요.</summary>
+<summary>낙관적 업데이트에 관해서 설명해 주세요.!</summary>
 
 답변
 
@@ -100,7 +169,7 @@
 </details>
 
 <details>
-<summary>이미지 최적화 방법들에 대해 설명해주세요.</summary>
+<summary>이미지 최적화 방법들에 대해 설명해주세요.!</summary>
 
 답변
 
@@ -111,7 +180,7 @@
 </details>
 
 <details>
-<summary>애자일에 대해 설명해주세요</summary>
+<summary>애자일에 대해 설명해주세요!</summary>
 
 답변
 
@@ -122,7 +191,7 @@
 </details>
 
 <details>
-<summary>웹, 앱 브릿지에 대해서 알고계신가요? 알고 계시다면 설명해주세요.</summary>
+<summary>웹, 앱 브릿지에 대해서 알고계신가요? 알고 계시다면 설명해주세요.!</summary>
 
 답변
 
@@ -133,7 +202,7 @@
 </details>
 
 <details>
-<summary>지원자님이 생각하시는 클린 코드에 대해 설명해주세요.</summary>
+<summary>지원자님이 생각하시는 클린 코드에 대해 설명해주세요.!</summary>
 
 답변
 
@@ -144,7 +213,7 @@
 </details>
 
 <details>
-<summary>지원자님이 생각하시는 클린 아키텍쳐에 대해 설명해주세요.</summary>
+<summary>지원자님이 생각하시는 클린 아키텍쳐에 대해 설명해주세요.!</summary>
 
 답변
 
@@ -177,7 +246,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 ## Infra, Build, Tools
 
 <details>
-<summary>Nginx에 대해서 설명해주세요.</summary>
+<summary>Nginx에 대해서 설명해주세요.!</summary>
 
 답변
 
@@ -188,7 +257,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>CI/CD에 대해서 설명해주세요.</summary>
+<summary>CI/CD에 대해서 설명해주세요.!</summary>
 
 답변
 
@@ -199,7 +268,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>웹 서비스 배포 시스템 구축 경험이 있으신가요?</summary>
+<summary>웹 서비스 배포 시스템 구축 경험이 있으신가요?!</summary>
 
 답변
 
@@ -210,7 +279,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>Monorepo 사용 경험에 대해서 말씀해주세요.</summary>
+<summary>Monorepo 사용 경험에 대해서 말씀해주세요.!</summary>
 
 답변
 
@@ -221,7 +290,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>패키지 매니저(npm, pnpm, yarn, yarn2) 사용 경험에 대해 말씀해주세요.</summary>
+<summary>패키지 매니저(npm, pnpm, yarn, yarn2) 사용 경험에 대해 말씀해주세요.!</summary>
 
 답변
 
@@ -232,7 +301,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>Git에 대해서 설명해주세요.</summary>
+<summary>Git에 대해서 설명해주세요.!</summary>
 
 답변
 
@@ -243,7 +312,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>사용하신 Git 브랜치 전략에 대해 설명해주세요.</summary>
+<summary>사용하신 Git 브랜치 전략에 대해 설명해주세요.!</summary>
 
 답변
 
@@ -254,7 +323,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>Git Merge, Squash, Rebase의 차이에 대해서 설명해주세요.</summary>
+<summary>Git Merge, Squash, Rebase의 차이에 대해서 설명해주세요.!</summary>
 
 답변
 
@@ -265,7 +334,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>dependencies 와 devDependencies 차이에 대해 설명해주세요.</summary>
+<summary>dependencies 와 devDependencies 차이에 대해 설명해주세요.!</summary>
 
 답변
 
@@ -276,7 +345,7 @@ non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까�
 </details>
 
 <details>
-<summary>MSA 경험이 있으신가요? 알고 계시는 만큼 설명해주세요.</summary>
+<summary>MSA 경험이 있으신가요? 알고 계시는 만큼 설명해주세요.!</summary>
 
 답변
 
@@ -308,6 +377,9 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 
 답변
 
+Webpack은 가장 많이 쓰이는 번들러 중 하나로 모든 자원을 JS 모듈로 간주하여, 의존성을 분석하고 하나(또는 여러개)의 파일로 번들링해줍니다. 플러그인/로더 기반 구조로 확장성이 높고 트리 쉐이킹과 코드 분할을 지원해 줍니다.
+Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들링하지 않고, ESM으로 빠르개 실행시켜줍니다. 빌드 시에는 Rollup 기반으로 번들링하고 간단한 설정으로 빠르게 사용할 수 있지만 커스텀하기 어려울 수 있습니다.
+
 질문 제작: OOO
 
 출처: (optional)
@@ -317,7 +389,7 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 ## Testing
 
 <details>
-<summary>FE 개발에서 테스트 코드를 작성해서 얻는 이점이 무엇인가요?</summary>
+<summary>FE 개발에서 테스트 코드를 작성해서 얻는 이점이 무엇인가요?!</summary>
 
 답변
 
@@ -328,7 +400,7 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 </details>
 
 <details>
-<summary>유닛 테스트, 통합 테스트, E2E 테스트에 대해 각각 설명해주세요.</summary>
+<summary>유닛 테스트, 통합 테스트, E2E 테스트에 대해 각각 설명해주세요.!</summary>
 
 답변
 
@@ -339,7 +411,7 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 </details>
 
 <details>
-<summary>만약 간단한 입력 필드 컴포넌트를 만든다면, 어떤 부분을 테스트해봐야 할까요?</summary>
+<summary>만약 간단한 입력 필드 컴포넌트를 만든다면, 어떤 부분을 테스트해봐야 할까요?!</summary>
 
 답변
 
@@ -350,7 +422,7 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 </details>
 
 <details>
-<summary>FE 테스트를 위해 주로 어떤 라이브러리나 프레임워크를 사용하나요?</summary>
+<summary>FE 테스트를 위해 주로 어떤 라이브러리나 프레임워크를 사용하나요?!</summary>
 
 답변
 
@@ -361,7 +433,7 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 </details>
 
 <details>
-<summary>컴포넌트를 테스트할 때, API 호출을 실제 네트워크 요청 없이 테스트하려면 어떻게 해야 할까요?</summary>
+<summary>컴포넌트를 테스트할 때, API 호출을 실제 네트워크 요청 없이 테스트하려면 어떻게 해야 할까요?!</summary>
 
 답변
 
@@ -372,7 +444,7 @@ BFF는 'Backend for Frontend'의 약자인데요, 말 그대로 **프론트엔�
 </details>
 
 <details>
-<summary>프론트엔드 E2E 테스트에 대해 설명해주세요.</summary>
+<summary>프론트엔드 E2E 테스트에 대해 설명해주세요.!</summary>
 
 답변
 
