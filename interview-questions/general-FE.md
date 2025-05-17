@@ -489,3 +489,51 @@ Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들�
 출처: (optional)
 
 </details>
+
+<details>
+<summary><strong>Q. 디바운스와 쓰로틀링에 대해 설명해주세요.</strong></summary>
+
+답변
+
+쓰로틀링
+특정 함수가 연속적으로 호출될 때 일정 시간 간격마다 한 번만 함수를 실행시키도록 하는 방식
+
+```
+function throttle(fn, delay) {
+  let timer = null;
+
+  return (...args) => {
+    if (timer) return;
+
+    timer = setTimeout(() => {
+      fn(...args);
+      timer = null;
+    }, delay);
+  };
+}
+
+```
+
+디바운스
+특정 함수가 연속적으로 호출될 때 마지막 호출 이후 일정 시간 동안 추가 호출이 없을 때 함수를 실행하는 하는 방식
+
+```
+function debounce(fn, delay) {
+  let timer = 0;
+
+  return (...args) => {
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      fn(...args);
+    }, delay);
+  };
+}
+
+```
+
+질문 제작: 강민주
+
+출처: (optional)
+
+</details>
