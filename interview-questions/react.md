@@ -454,13 +454,19 @@
 
 </details>
 
-<details><summary><strong>Q. tanstack-query에서 staleTime과 gcTime의 차이점을 설명해주세요.</strong></summary>
+<details><summary><strong>Q. (TanStack Query) staleTime과 gcTime의 차이점을 설명해주세요.</strong></summary>
 
 - staleTime은 가져온 데이터가 '신선하다'고 판단하는 시간입니다. 이 시간이 지나면 데이터는 '오래된(stale)' 상태가 되어서, 다음에 필요할 때 백그라운드에서 다시 가져오려고 시도합니다. 기본값은 0초입니다.
 
 - gcTime은 'Garbage Collection Time'의 약자인데요, 쿼리가 **'비활성(inactive)' 상태**가 된 후 캐시에서 얼마 동안 데이터를 유지할지를 정하는 시간입니다. 즉, 아무 컴포넌트도 해당 데이터를 사용하지 않을 때, 이 gcTime이 지나면 캐시에서 완전히 제거됩니다. 기본값은 5분입니다.
 
 - 핵심 차이는, staleTime은 데이터의 **신선도**와 **재요청 시점**에 관한 것이고, gcTime은 **사용하지 않는 데이터**의 **캐시 유지 시간**과 **제거 시점**에 관한 것입니다.
+
+</details>
+
+<details><summary><strong>Q. (TanStack Query) 쿼리 키를 기반으로 API 호출을 캐싱하여 동일 키에 대한 중복 호출을 방지하려면 어떻게 해야할까요?</strong></summary>
+
+-
 
 </details>
 
