@@ -3,24 +3,6 @@
 ## HTML
 
 <details>
-<summary><strong>Q. HTML이란 무엇인가요?</strong></summary>
-
-- HTML은 HyperText Markup Language의 약자로, 웹 페이지의 구조를 정의하는 마크업 언어입니다. 하이퍼텍스트는 문서 간 연결을 의미하며, HTML은 다양한 태그를 통해 제목, 문단 등 정보를 구조화합니다. 이는 프로그래밍 언어와 달리 동작이 아닌 문서의 구조와 의미를 표현하는 데 중점을 둡니다.
-  <br/>
-  (HTML은 프로그래밍 언어가 아니라 마크업 언어입니다.)
-
-</details>
-
-<details>
-<summary><strong>Q. HTML5의 주요 특징은 무엇인가요?</strong></summary>
-
-- 가장 먼저, 시맨틱 태그가 도입되었습니다. 기존에는 `<div>` 태그로 구조를 잡는 경우가 많았는데, HTML5에서는 `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>` 과 같이 의미를 명확하게 나타내는 태그들이 추가되어서 웹 페이지의 구조를 더 명확하게 이해할 수 있게 되었고, 검색 엔진 최적화(SEO)에도 도움이 됩니다.
-  <br/>
-  또한 웹 애플리케이션 개발을 위한 기능들이 추가되었습니다. 예를 들어, 사용자의 컴퓨터에 데이터를 저장할 수 있는 로컬 스토리지나 세션 스토리지 기능이 생겼고, 웹 소켓을 통해 서버와 실시간으로 양방향 통신을 하는 것도 가능해졌습니다.
-
-</details>
-
-<details>
 <summary><strong>⭐ Q. script 태그에서 사용하는 async와 defer의 차이에 대해 설명해주세요.</strong></summary>
 
 - 기본적으로 브라우저는 HTML을 위에서 아래로 읽어 내려가다가 `<script>` 태그를 만나면, HTML 파싱을 멈추고 스크립트 파일을 다운로드해서 실행합니다. 스크립트 실행이 끝나야 다시 HTML 파싱을 재개하는데요, 이러면 스크립트 파일이 크거나 네트워크가 느릴 경우 페이지 로딩이 멈춰 보이는 문제가 생길 수 있습니다. async와 defer는 이런 문제를 해결하기 위해 나왔습니다.
@@ -45,6 +27,24 @@
   즉, 자바스크립트 실행과 HTML 렌더링이 **같은 작업 라인(메인 스레드)을 공유**하기 때문에, 자바스크립트가 실행되는 동안에는 렌더링 작업이 멈추게 되는 것입니다.
   <br/>
   이런 이유로 용량이 큰 스크립트나 실행 시간이 긴 스크립트가 HTML 중간에 위치하면 페이지 로딩이 느려지는 현상이 발생할 수 있고, 이를 완화하기 위해 앞서 말씀드린 async나 defer 같은 속성을 사용하거나 스크립트를 `<body>` 태그 맨 끝에 두는 방법을 사용합니다.
+
+</details>
+
+<details>
+<summary><strong>Q. HTML이란 무엇인가요?</strong></summary>
+
+- HTML은 HyperText Markup Language의 약자로, 웹 페이지의 구조를 정의하는 마크업 언어입니다. 하이퍼텍스트는 문서 간 연결을 의미하며, HTML은 다양한 태그를 통해 제목, 문단 등 정보를 구조화합니다. 이는 프로그래밍 언어와 달리 동작이 아닌 문서의 구조와 의미를 표현하는 데 중점을 둡니다.
+  <br/>
+  (HTML은 프로그래밍 언어가 아니라 마크업 언어입니다.)
+
+</details>
+
+<details>
+<summary><strong>Q. HTML5의 주요 특징은 무엇인가요?</strong></summary>
+
+- 가장 먼저, 시맨틱 태그가 도입되었습니다. 기존에는 `<div>` 태그로 구조를 잡는 경우가 많았는데, HTML5에서는 `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>` 과 같이 의미를 명확하게 나타내는 태그들이 추가되어서 웹 페이지의 구조를 더 명확하게 이해할 수 있게 되었고, 검색 엔진 최적화(SEO)에도 도움이 됩니다.
+  <br/>
+  또한 웹 애플리케이션 개발을 위한 기능들이 추가되었습니다. 예를 들어, 사용자의 컴퓨터에 데이터를 저장할 수 있는 로컬 스토리지나 세션 스토리지 기능이 생겼고, 웹 소켓을 통해 서버와 실시간으로 양방향 통신을 하는 것도 가능해졌습니다.
 
 </details>
 
@@ -97,6 +97,33 @@
 ## CSS
 
 <details>
+<summary><strong>⭐ Q. Cascading에 대해 설명해주세요.</strong></summary>
+
+- Cascading은 CSS에서 여러 스타일 규칙이 하나의 요소에 겹쳐서 적용될 때, 어떤 스타일이 우선적으로 적용될지를 결정하는 우선순위 체계를 말합니다. 이때 적용 여부는 크게 명시도, 소스 순서, 중요도 순으로 판단되며, 같은 요소에 여러 스타일이 충돌할 경우 가장 높은 우선순위를 가진 선언이 최종적으로 적용됩니다. 이 특성 덕분에 CSS는 유연하게 스타일을 덮어쓰거나 오버라이딩할 수 있습니다.
+
+중요도, 선언 위치 등에 따라 결정됩니다.
+
+</details>
+
+<details>
+<summary><strong>⭐ Q. 박스 모델, margin, padding, box-sizing의 차이와 관계를 설명해주세요.</strong></summary>
+
+- HTML에서 모든 요소는 박스 형태로 구성되며, 이를 박스 모델이라고 부릅니다. 박스 모델은 바깥쪽부터 margin(바깥 여백), border(테두리), padding(안쪽 여백), content(실제 내용) 순서로 이루어져 있습니다.
+- margin은 요소와 요소 사이의 바깥 여백을 의미하고, padding은 요소의 테두리와 내용 사이의 안쪽 여백을 의미합니다.
+- box-sizing 속성은 요소의 width와 height를 계산할 때 어떤 부분까지 포함할지 결정합니다. 기본값인 content-box는 width와 height가 content 영역만을 의미하고, border-box는 padding과 border까지 포함해서 전체 크기를 계산합니다. 실무에서는 레이아웃이 꼬이지 않도록 border-box를 많이 사용합니다.
+
+</details>
+
+<details>
+<summary><strong>⭐ Q. display, position, top/margin-top/translateY의 차이와 레이아웃에 미치는 영향은?</strong></summary>
+
+- display는 block, inline, flex, grid 등 요소의 레이아웃 방식을 결정합니다.
+- position은 static, relative, absolute, fixed, sticky 등이 있고, 위치 지정 방법이 다릅니다.
+- top은 position과 함께 위치를 이동, margin-top은 바깥 여백, translateY는 transform으로 시각적 이동(레이아웃 영향 없음)입니다. 각각의 목적과 레이아웃 영향이 다르므로 상황에 맞게 사용해야 합니다.
+
+</details>
+
+<details>
 <summary><strong>Q. CSS에서 inline, internal, external 스타일의 차이</strong></summary>
 
 - inline은 태그에 직접 style 속성으로 작성하고, internal은 `<style>` 태그를 HTML 내부에 작성하며, external은 별도 CSS 파일을 `<link>`로 불러오는 방식입니다. 유지보수성과 재사용성 측면에서는 external이 가장 효율적입니다.
@@ -137,24 +164,6 @@
 4. Class 선택자, 속성 기반 선택자, 가상 클래스, 가상요소 선택자
 5. 태그 선택자
 6. 전체 선택자
-
-</details>
-
-<details>
-<summary><strong>⭐ Q. Cascading에 대해 설명해주세요.</strong></summary>
-
-- Cascading은 CSS에서 여러 스타일 규칙이 하나의 요소에 겹쳐서 적용될 때, 어떤 스타일이 우선적으로 적용될지를 결정하는 우선순위 체계를 말합니다. 이때 적용 여부는 크게 명시도, 소스 순서, 중요도 순으로 판단되며, 같은 요소에 여러 스타일이 충돌할 경우 가장 높은 우선순위를 가진 선언이 최종적으로 적용됩니다. 이 특성 덕분에 CSS는 유연하게 스타일을 덮어쓰거나 오버라이딩할 수 있습니다.
-
-중요도, 선언 위치 등에 따라 결정됩니다.
-
-</details>
-
-<details>
-<summary><strong>⭐ Q. 박스 모델, margin, padding, box-sizing의 차이와 관계를 설명해주세요.</strong></summary>
-
-- HTML에서 모든 요소는 박스 형태로 구성되며, 이를 박스 모델이라고 부릅니다. 박스 모델은 바깥쪽부터 margin(바깥 여백), border(테두리), padding(안쪽 여백), content(실제 내용) 순서로 이루어져 있습니다.
-- margin은 요소와 요소 사이의 바깥 여백을 의미하고, padding은 요소의 테두리와 내용 사이의 안쪽 여백을 의미합니다.
-- box-sizing 속성은 요소의 width와 height를 계산할 때 어떤 부분까지 포함할지 결정합니다. 기본값인 content-box는 width와 height가 content 영역만을 의미하고, border-box는 padding과 border까지 포함해서 전체 크기를 계산합니다. 실무에서는 레이아웃이 꼬이지 않도록 border-box를 많이 사용합니다.
 
 </details>
 
@@ -230,15 +239,6 @@
 </details>
 
 <details>
-<summary><strong>⭐ Q. display, position, top/margin-top/translateY의 차이와 레이아웃에 미치는 영향은?</strong></summary>
-
-- display는 block, inline, flex, grid 등 요소의 레이아웃 방식을 결정합니다.
-- position은 static, relative, absolute, fixed, sticky 등이 있고, 위치 지정 방법이 다릅니다.
-- top은 position과 함께 위치를 이동, margin-top은 바깥 여백, translateY는 transform으로 시각적 이동(레이아웃 영향 없음)입니다. 각각의 목적과 레이아웃 영향이 다르므로 상황에 맞게 사용해야 합니다.
-
-</details>
-
-<details>
 <summary><strong>Q. CSS 전처리기(SCSS 등)와 후처리기의 차이, 그리고 SCSS의 특징은?</strong></summary>
 
 - 전처리기(SASS, LESS 등)는 CSS 작성 전 변수, 중첩, 함수 등을 활용해 코드 구조를 개선하며, 후처리기(PostCSS 등)는 CSS가 완성된 후 자동 접두사 추가나 최적화 같은 후처리를 적용합니다.
@@ -270,6 +270,13 @@
 </details>
 
 <details>
+<summary><strong>⭐ Q. 반응형 레이아웃에서 브레이크 포인트는 어떻게 설정하나요?</strong></summary>
+
+- 일반적으로 모바일, 태블릿, 데스크탑, 더 큰 모니터를 기준으로 잡습니다. 최근에는 디바이스 종류가 다양해지면서 단순한 해상도보다는 콘텐츠의 가독성과 UI 배치를 기준으로 브레이크포인트를 잡는 경우도 많습니다. 또한 Grid 레이아웃을 사용할 때는 컬럼이 지나치게 좁아지지 않도록 시각적 안정성을 고려해 세부적인 브레이크포인트를 추가하기도 합니다.
+
+</details>
+
+<details>
 <summary><strong>Q. CSS flex-wrap 속성에 대해서 설명해주세요.</strong></summary>
 
 - flex-wrap은 Flex 컨테이너 안의 Flex 아이템들이 한 줄에 공간이 부족할 때 줄 바꿈을 할지 여부를 결정하는 CSS 속성입니다.
@@ -277,13 +284,6 @@
 - `nowrap`: 줄 바꿈을 하지 않습니다. 아이템들이 컨테이너 너비를 넘어서더라도 한 줄에 계속 배치됩니다.
 - `wrap`: 공간이 부족하면 아이템들이 다음 줄로 넘어갑니다 (아래로).
 - `wrap-reverse`: wrap과 동일하게 줄 바꿈 하지만, 줄의 순서가 반대로 쌓입니다 (위로).
-
-</details>
-
-<details>
-<summary><strong>⭐ Q. 반응형 레이아웃에서 브레이크 포인트는 어떻게 설정하나요?</strong></summary>
-
-- 일반적으로 모바일, 태블릿, 데스크탑, 더 큰 모니터를 기준으로 잡습니다. 최근에는 디바이스 종류가 다양해지면서 단순한 해상도보다는 콘텐츠의 가독성과 UI 배치를 기준으로 브레이크포인트를 잡는 경우도 많습니다. 또한 Grid 레이아웃을 사용할 때는 컬럼이 지나치게 좁아지지 않도록 시각적 안정성을 고려해 세부적인 브레이크포인트를 추가하기도 합니다.
 
 </details>
 
