@@ -21,14 +21,7 @@
 </details>
 
 <details>
-<summary><strong>Q. 시맨틱 마크업이란 무엇인가요?</strong></summary>
-
-- 주어진 용도에 맞는 태그를 사용하는 것입니다. 예를 들어 `<div>` 태그만을 남발하는 것이 아니라, 위치와 용도에 맞게 `<header>`, `<nav>`, `<section>` 태그 등을 사용하는 것이고, 이를 통해 코드의 가독성, 웹 접근성, SEO가 향상됩니다.
-
-</details>
-
-<details>
-<summary><strong>Q. script 태그에서 사용하는 async와 defer의 차이에 대해 설명해주세요.</strong></summary>
+<summary><strong>⭐ Q. script 태그에서 사용하는 async와 defer의 차이에 대해 설명해주세요.</strong></summary>
 
 - 기본적으로 브라우저는 HTML을 위에서 아래로 읽어 내려가다가 `<script>` 태그를 만나면, HTML 파싱을 멈추고 스크립트 파일을 다운로드해서 실행합니다. 스크립트 실행이 끝나야 다시 HTML 파싱을 재개하는데요, 이러면 스크립트 파일이 크거나 네트워크가 느릴 경우 페이지 로딩이 멈춰 보이는 문제가 생길 수 있습니다. async와 defer는 이런 문제를 해결하기 위해 나왔습니다.
   <br/>
@@ -39,7 +32,7 @@
 </details>
 
 <details>
-<summary><strong>Q. HTML 렌더링 도중 JavaScript가 실행되면 렌더링이 멈추는 이유가 뭔가요?</strong></summary>
+<summary><strong>⭐ Q. HTML 렌더링 도중 JavaScript가 실행되면 렌더링이 멈추는 이유가 뭔가요?</strong></summary>
 
 - 브라우저의 **메인 스레드**가 **HTML 파싱/렌더링**과 **자바스크립트 실행**을 함께 처리하기 때문입니다.
   <br/>
@@ -56,7 +49,7 @@
 </details>
 
 <details>
-<summary><strong>Q. 브라우저 동작 중 중단되는 과정</strong></summary>
+<summary><strong>Q. 브라우저 동작 중 중단되는 과정이 어떻게 되나요?</strong></summary>
 
 1. 브라우저는 HTML을 위에서 아래로 순차적으로 파싱하며 DOM을 구성
 2. JavaScript 코드(특히 `<script>` 태그)를 만나면 실행을 위해 HTML 파싱을 중단
@@ -104,9 +97,9 @@
 ## CSS
 
 <details>
-<summary><strong>Q. CSS 속성에는 어떤것들이 있나요?</strong></summary>
+<summary><strong>Q. CSS에서 inline, internal, external 스타일의 차이</strong></summary>
 
-- CSS 속성은 웹 요소의 스타일을 지정하는 데 사용되며 정말 다양한 종류가 있습니다. 크게 레이아웃과 정렬, 텍스트 스타일, 색상 및 배경, 그 외에도 그림자와 투명도 및 트랜지션과 관련된 속성들이 있습니다.
+- inline은 태그에 직접 style 속성으로 작성하고, internal은 `<style>` 태그를 HTML 내부에 작성하며, external은 별도 CSS 파일을 `<link>`로 불러오는 방식입니다. 유지보수성과 재사용성 측면에서는 external이 가장 효율적입니다.
 
 </details>
 
@@ -148,7 +141,7 @@
 </details>
 
 <details>
-<summary><strong>Q. Cascading에 대해 설명해주세요.</strong></summary>
+<summary><strong>⭐ Q. Cascading에 대해 설명해주세요.</strong></summary>
 
 - Cascading은 CSS에서 여러 스타일 규칙이 하나의 요소에 겹쳐서 적용될 때, 어떤 스타일이 우선적으로 적용될지를 결정하는 우선순위 체계를 말합니다. 이때 적용 여부는 크게 명시도, 소스 순서, 중요도 순으로 판단되며, 같은 요소에 여러 스타일이 충돌할 경우 가장 높은 우선순위를 가진 선언이 최종적으로 적용됩니다. 이 특성 덕분에 CSS는 유연하게 스타일을 덮어쓰거나 오버라이딩할 수 있습니다.
 
@@ -157,16 +150,11 @@
 </details>
 
 <details>
-<summary><strong>Q. Box model에 대해 설명해주세요.</strong></summary>
+<summary><strong>⭐ Q. 박스 모델, margin, padding, box-sizing의 차이와 관계를 설명해주세요.</strong></summary>
 
-- 박스 모델은 HTML 요소를 바깥쪽부터 margin, border, padding, content로 나누는 것을 의미합니다. 여기서 width와 height는 content의 크기만을 의미합니다.
-
-</details>
-
-<details>
-<summary><strong>Q. margin과 padding의 차이를 알려주세요.</strong></summary>
-
-- margin은 요소의 바깥 여백, padding은 요소의 안쪽 여백입니다.
+- HTML에서 모든 요소는 박스 형태로 구성되며, 이를 박스 모델이라고 부릅니다. 박스 모델은 바깥쪽부터 margin(바깥 여백), border(테두리), padding(안쪽 여백), content(실제 내용) 순서로 이루어져 있습니다.
+- margin은 요소와 요소 사이의 바깥 여백을 의미하고, padding은 요소의 테두리와 내용 사이의 안쪽 여백을 의미합니다.
+- box-sizing 속성은 요소의 width와 height를 계산할 때 어떤 부분까지 포함할지 결정합니다. 기본값인 content-box는 width와 height가 content 영역만을 의미하고, border-box는 padding과 border까지 포함해서 전체 크기를 계산합니다. 실무에서는 레이아웃이 꼬이지 않도록 border-box를 많이 사용합니다.
 
 </details>
 
@@ -180,13 +168,6 @@
   부모에 `margin`을 0으로 설정하고 자식 요소의 `margin`을 10px로 설정하면, 자식요소의 상하단 `margin`이 부모의 `margin`으로 병합되어 마치 `margin`이 사라진 것 같은 현상이 발생합니다.
   <br/>
   이런 현상을 막기위한 대표적인 해결책으로 부모 요소에 `overflow: hidden`을 주는 방법이 있습니다.
-
-</details>
-
-<details>
-<summary><strong>Q. CSS의 box-sizing에 대해 설명해주세요</strong></summary>
-
-- box-sizing은 요소의 크기를 계산할 때 어떤 부분까지 포함할지를 결정하는 속성입니다. 기본값인 content-box는 width와 height가 콘텐츠 영역만 의미하고, 여기에 padding과 border가 추가되어 실제 크기가 커집니다. 반면 border-box는 width와 height에 padding과 border를 포함하므로, 요소의 전체 크기를 쉽게 제어할 수 있어 실무에서 더 자주 사용됩니다. 레이아웃이 꼬이지 않게 하려면 box-sizing: border-box를 전역 설정하는 것이 일반적입니다.
 
 </details>
 
@@ -233,49 +214,32 @@
 </details>
 
 <details>
-<summary><strong>Q. 가상 클래스에 대해 설명해주세요.</strong></summary>
+<summary><strong>Q. 가상 클래스(:hover 등)와 가상 요소(::before 등)의 차이와 활용법을 설명해주세요.</strong></summary>
 
-- 가상 클래스는 요소의 상태나 위치에 따라 스타일을 적용할 수 있도록 하는 선택자로, :hover, :focus, :nth-child() 등이 있습니다. 실제로 클래스가 존재하지 않아도 조건에 따라 스타일을 줄 수 있어 동적 스타일링에 유용합니다.
-
-</details>
-
-<details>
-<summary><strong>Q. 컨테이닝 블록에 대해 설명해주세요.</strong></summary>
-
-- 컨테이닝 블록은 요소의 위치나 크기를 계산할 때 기준이 되는 영역으로, 일반적으로는 가장 가까운 position 속성이 relative, absolute, fixed인 조상 요소가 기준이 됩니다. 이 개념은 absolute, fixed, sticky 위치 계산 시 특히 중요합니다.
+- 가상 클래스는 요소의 상태나 위치에 따라(:hover, :focus, :nth-child 등) 스타일을 적용하고, 가상 요소(::before, ::after)는 실제로 존재하지 않는 콘텐츠를 생성해 스타일을 적용합니다. 둘 다 동적 스타일링에 유용합니다.
 
 </details>
 
 <details>
-<summary><strong>Q. CSS in JS의 장단점에 대해 설명해주세요.</strong></summary>
+<summary><strong>Q. CSS 애니메이션, 트랜지션, JS 애니메이션의 차이와 각각의 장단점은?</strong></summary>
 
-- 장점은 컴포넌트 단위 스타일 관리가 쉬워지고, props 기반 동적 스타일링과 자동 클래스 중복 방지가 가능하다는 점입니다. 반면 단점은 런타임 성능 저하 가능성과 스타일 분리 원칙 위배, 빌드 설정 복잡성이 있습니다.
-
-</details>
-
-<details>
-<summary><strong>Q. CSS에서 inline, internal, external 스타일의 차이</strong></summary>
-
-- inline은 태그에 직접 style 속성으로 작성하고, internal은 <style> 태그를 HTML 내부에 작성하며, external은 별도 CSS 파일을 <link>로 불러오는 방식입니다. 유지보수성과 재사용성 측면에서는 external이 가장 효율적입니다.
+- CSS 애니메이션은 transition, @keyframes 등으로 선언적으로 정의합니다. 즉, 시작 상태와 끝 상태, 또는 중간 지점들을 정의하면 브라우저가 알아서 중간 과정을 부드럽게 처리해줍니다.
+- 트랜지션은 상태 변화에 따라 한 번만 동작, 애니메이션은 여러 단계 반복/세밀 제어가 가능합니다.
+- JS 애니메이션은 requestAnimationFrame 등으로 직접 제어하며 복잡한 효과에 유리하나, 메인 스레드 사용이 많아 성능 저하가 있을 수 있습니다.
 
 </details>
 
 <details>
-<summary><strong>Q. CSS의 가상 클래스(:hover, :focus 등)와 가상 요소(::before, ::after)의 차이</strong></summary>
+<summary><strong>⭐ Q. display, position, top/margin-top/translateY의 차이와 레이아웃에 미치는 영향은?</strong></summary>
 
-- 가상 클래스(:hover, :focus 등)는 요소의 상태나 위치 조건에 따라 스타일을 적용하고, 가상 요소(::before, ::after)는 요소의 앞이나 뒤에 실제로 존재하지 않는 콘텐츠를 생성해 스타일을 적용합니다.
-
-</details>
-
-<details>
-<summary><strong>Q. CSS에서 트랜지션(transition)과 애니메이션(animation)의 차이</strong></summary>
-
-- transition은 상태 변화에 따라 한 번만 동작하며, animation은 키프레임 기반으로 여러 단계의 동작을 반복하거나 세밀하게 제어할 수 있습니다.
+- display는 block, inline, flex, grid 등 요소의 레이아웃 방식을 결정합니다.
+- position은 static, relative, absolute, fixed, sticky 등이 있고, 위치 지정 방법이 다릅니다.
+- top은 position과 함께 위치를 이동, margin-top은 바깥 여백, translateY는 transform으로 시각적 이동(레이아웃 영향 없음)입니다. 각각의 목적과 레이아웃 영향이 다르므로 상황에 맞게 사용해야 합니다.
 
 </details>
 
 <details>
-<summary><strong>Q. CSS 전처리기와 후처리기의 차이점은 무엇인가요?</strong></summary>
+<summary><strong>Q. CSS 전처리기(SCSS 등)와 후처리기의 차이, 그리고 SCSS의 특징은?</strong></summary>
 
 - 전처리기(SASS, LESS 등)는 CSS 작성 전 변수, 중첩, 함수 등을 활용해 코드 구조를 개선하며, 후처리기(PostCSS 등)는 CSS가 완성된 후 자동 접두사 추가나 최적화 같은 후처리를 적용합니다.
 
@@ -293,7 +257,7 @@
 ### 반응형
 
 <details>
-<summary><strong>Q. Flexbox와 Grid의 차이점에 대해 설명해주세요.</strong></summary>
+<summary><strong>⭐ Q. Flexbox와 Grid의 차이점에 대해 설명해주세요.</strong></summary>
 
 - 둘 다 페이지에서 레이아웃을 구성할 때 사용되는 CSS 속성으로, 화면 요소를 배치하고 정렬하는데 사용됩니다. 차이점으로는 크게 3가지가 있습니다.
   <br/>
@@ -317,7 +281,7 @@
 </details>
 
 <details>
-<summary><strong>Q. 반응형 레이아웃에서 브레이크 포인트는 어떻게 설정하나요?</strong></summary>
+<summary><strong>⭐ Q. 반응형 레이아웃에서 브레이크 포인트는 어떻게 설정하나요?</strong></summary>
 
 - 일반적으로 모바일, 태블릿, 데스크탑, 더 큰 모니터를 기준으로 잡습니다. 최근에는 디바이스 종류가 다양해지면서 단순한 해상도보다는 콘텐츠의 가독성과 UI 배치를 기준으로 브레이크포인트를 잡는 경우도 많습니다. 또한 Grid 레이아웃을 사용할 때는 컬럼이 지나치게 좁아지지 않도록 시각적 안정성을 고려해 세부적인 브레이크포인트를 추가하기도 합니다.
 
@@ -351,11 +315,25 @@
 ### 접근성
 
 <details>
-<summary><strong>Q. 웹 접근성을 위해 고려해야 할 HTML/CSS 측면은 무엇이 있나요?</strong></summary>
+<summary><strong>⭐ Q. 웹 접근성을 위해 고려해야 할 HTML/CSS 측면은 무엇이 있나요?</strong></summary>
 
 - 웹 접근성을 위해 HTML 측면에서는 시맨틱 태그를 활용해 구조를 명확히 표현하고, 이미지에는 alt 속성을 제공해 대체 텍스트를 제공해야 합니다. 폼 요소에는 label을 명확히 연결해 보조기기 사용자도 정보를 인식할 수 있도록 하고, ARIA 속성도 상황에 따라 활용할 수 있습니다.
   <br/>
   CSS 측면에서는 색상 대비를 충분히 확보하고, 중요한 정보는 색상에만 의존하지 않도록 설계해야 하며, 포커스가 가시적으로 표시되도록 해야 키보드 사용자도 원활히 이용할 수 있습니다.
+
+</details>
+
+<details>
+<summary><strong>⭐ Q. 웹 접근성에서 ARIA란 무엇이며, 언제 사용하나요?</strong></summary>
+
+- ARIA(Accessible Rich Internet Applications)는 시각장애인 등 보조기기 사용자가 웹 콘텐츠를 더 잘 이해할 수 있도록 돕는 속성 집합입니다. 시맨틱 태그로 표현이 어려운 동적 UI나 커스텀 컴포넌트에 접근성 정보를 추가할 때 사용합니다. 예를 들어, role, aria-label, aria-hidden 등 다양한 속성이 있습니다.
+
+</details>
+
+<details>
+<summary><strong>Q. SEO(검색 엔진 최적화)를 위해 HTML에서 신경 써야 할 점은?</strong></summary>
+
+- 시맨틱 태그를 활용해 구조를 명확히 하고, title, meta description, alt 속성 등 검색 엔진이 이해할 수 있는 정보를 충분히 제공해야 합니다. 또한 heading 태그(h1~h6)의 계층 구조를 올바르게 사용하고, 링크에는 의미 있는 텍스트를 사용해야 합니다.
 
 </details>
 
@@ -364,13 +342,27 @@
 <details>
 <summary><strong>Q. CSS에서 will-change 속성의 역할은?</strong></summary>
 
-- will-change 속성은 특정 요소에 앞으로 변화가 예상되는 CSS 속성을 미리 브라우저에 알려줘서, 렌더링 최적화를 유도하는 역할을 합니다. 예를 들어 transform, opacity와 같이 성능 비용이 큰 속성이 자주 변경될 경우, will-change를 통해 사전 최적화를 하면 레이아웃 계산이나 페인트, 컴포지팅 비용을 줄일 수 있습니다. 다만 과도하게 사용하면 GPU 메모리를 낭비할 수 있어, 실제 변화가 예상되는 경우에만 제한적으로 사용하는 것이 좋습니다.
+- `will-change` 속성은 특정 요소에 앞으로 변화가 예상되는 CSS 속성을 미리 브라우저에 알려줘서, 렌더링 최적화를 유도하는 역할을 합니다. 예를 들어 `transform`, `opacity`와 같이 성능 비용이 큰 속성이 자주 변경될 경우, will-change를 통해 사전 최적화를 하면 레이아웃 계산이나 페인트, 컴포지팅 비용을 줄일 수 있습니다. 다만 과도하게 사용하면 GPU 메모리를 낭비할 수 있어, 실제 변화가 예상되는 경우에만 제한적으로 사용하는 것이 좋습니다.
 
 </details>
 
 <details>
 <summary><strong>Q. 웹 폰트 적용 시 성능을 최적화하기 위한 방법에는 무엇이 있나요?</strong></summary>
 
-- 웹 폰트를 최적화하려면 먼저 font-display: swap을 사용해 로딩 중에도 텍스트가 바로 보이게 하고, 실제 사용하는 글자만 포함된 서브셋 폰트를 적용해 용량을 줄이는 것이 좋습니다. 또한 압축률이 높은 woff2 포맷을 사용하고, preload로 폰트를 우선 로드하면 렌더링 지연을 줄일 수 있습니다. 이외에도 사용하지 않는 굵기나 스타일은 제외하고 꼭 필요한 것만 불러오는 것이 중요합니다.
+- 웹 폰트를 최적화하려면 먼저 `font-display: swap`을 사용해 로딩 중에도 텍스트가 바로 보이게 하고, 실제 사용하는 글자만 포함된 서브셋 폰트를 적용해 용량을 줄이는 것이 좋습니다. 또한 압축률이 높은 woff2 포맷을 사용하고, preload로 폰트를 우선 로드하면 렌더링 지연을 줄일 수 있습니다. 이외에도 사용하지 않는 굵기나 스타일은 제외하고 꼭 필요한 것만 불러오는 것이 중요합니다.
+
+</details>
+
+<details>
+<summary><strong>Q. CSS 변수(CSS Custom Properties)는 무엇이고, 어떻게 사용하나요?</strong></summary>
+
+- CSS 변수는 :root나 선택자에 --변수명 형태로 선언하고, var(--변수명)으로 사용할 수 있습니다. 테마 변경, 반복되는 값 관리 등에서 유용하며, 런타임에 동적으로 값을 변경할 수도 있습니다.
+
+</details>
+
+<details>
+<summary><strong>Q. 미디어 쿼리에서 orientation, resolution 등 고급 속성은 언제 활용하나요?</strong></summary>
+
+- orientation은 화면이 가로/세로 모드인지에 따라 스타일을 다르게 적용할 때, resolution은 디스플레이의 픽셀 밀도에 따라 이미지를 교체하거나 스타일을 조정할 때 사용합니다. 예시: @media (orientation: landscape), @media (min-resolution: 2dppx)
 
 </details>
