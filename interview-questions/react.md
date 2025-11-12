@@ -184,7 +184,7 @@
 
 ## 렌더링 과정
 
-<details><summary><strong>Q. React의 주요 특징에 대해 설명해주세요.</strong></summary>
+<details><summary><strong>⭐ Q. React의 주요 특징에 대해 설명해주세요.</strong></summary>
 
 - React는 UI를 만들기 위한 JavaScript 라이브러리입니다.
 
@@ -206,7 +206,7 @@
 
 </details>
 
-<details><summary><strong>Q. Virtual DOM에 대해 설명해주세요.</strong></summary>
+<details><summary><strong>⭐ Q. Virtual DOM에 대해 설명해주세요.</strong></summary>
 
 - Virtual DOM(가상돔)은 실제 브라우저의 DOM(Document Object Model)에 대응하는 **가벼운 복사본**을 인메모리로 만들어두고 사용하는 개념입니다.
 
@@ -216,7 +216,7 @@
 
 </details>
 
-<details><summary><strong>Q. 재조정(Reconciliation)에 대해 알고있는대로 설명해주세요.</strong></summary>
+<details><summary><strong>⭐ Q. 재조정(Reconciliation)에 대해 알고있는대로 설명해주세요.</strong></summary>
 
 - 재조정(Reconciliation)은 React가 가상 DOM을 사용하여 실제 DOM을 효율적으로 업데이트하는 과정입니다.
 
@@ -376,7 +376,7 @@
 
 </details>
 
-<details><summary><strong>Q. 부모 컴포넌트가 리렌더링되면, 자식 컴포넌트도 리렌더링 되나요?</strong></summary>
+<details><summary><strong>⭐ Q. 부모 컴포넌트가 리렌더링되면, 자식 컴포넌트도 리렌더링 되나요?</strong></summary>
 
 - 기본적으로 부모 컴포넌트가 리렌더링되면 자식 컴포넌트도 함께 리렌더링됩니다.
 
@@ -464,7 +464,7 @@
 
 </details>
 
-<details><summary><strong>Q. (TanStack Query) 쿼리 키를 기반으로 API 호출을 캐싱하여 동일 키에 대한 중복 호출을 방지하려면 어떻게 해야할까요?</strong></summary>
+<details><summary><strong>Q. (TanStack Query) 쿼리 키를 기반으로 API 호출을 캐싱하여 동일 키에 대한 중복 호출을 방지하려면 어떻게 해야할까요?!</strong></summary>
 
 -
 
@@ -527,7 +527,7 @@
 
 </details>
 
-<details><summary><strong>Q. key값 사용 이유에 대해 설명해주세요.</strong></summary>
+<details><summary><strong>⭐ Q. key값 사용 이유에 대해 설명해주세요.</strong></summary>
 
 - React가 리스트(배열) 형태의 자식 요소들을 렌더링할 때 key prop을 권장하는 주된 이유는 Reconciliation 과정에서 각 요소를 효율적으로 식별하고 추적하기 위해서입니다.
 
@@ -537,7 +537,7 @@
 
 </details>
 
-<details><summary><strong>Q. 리액트에서 index를 key값으로 사용하면 안되는 이유에 대해서 설명해주세요.</strong></summary>
+<details><summary><strong>⭐ Q. 리액트에서 index를 key값으로 사용하면 안되는 이유에 대해서 설명해주세요.</strong></summary>
 
 - index를 key로 사용하면 배열의 항목이 **추가, 삭제, 또는 재정렬**될 때 문제가 발생합니다.
 

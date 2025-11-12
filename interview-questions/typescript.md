@@ -26,6 +26,7 @@
 
   TypeScript는 컴파일 타임에 타입 검사를 통해 코드의 품질을 높이지만, 최종적으로 변환되는 코드는 JavaScript로 컴파일되기 때문에 실행 성능에는 차이가 없습니다.
 
+
 </details>
 
 <details><summary><strong>Q. 타입스크립트를 도입하지 않는 것이 더 나은 경우도 있나요?</strong></summary>
