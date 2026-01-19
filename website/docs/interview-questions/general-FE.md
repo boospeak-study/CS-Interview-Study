@@ -5,6 +5,7 @@ tags: [frontend, interview]
 
 # General FE
 
+
 <details>
 <summary><strong>Q. CSR / SSR / SSG 에 대해 설명해주세요.</strong></summary>
 
@@ -52,6 +53,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. CSR과 SSR의 단점을 극복하는 방법에 대해 설명해주세요.</strong></summary>
 
@@ -96,6 +99,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</strong></summary>
 
@@ -106,6 +111,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 프론트엔드에서 피처 구현하면서 가장 고려해야 될 게 뭐라고 생각하나요?</strong></summary>
@@ -122,19 +129,29 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
-<details><summary><strong>Q. SPA에서 검색 엔진 최적화를 이루는 방법에 대해서 알려주세요.</strong></summary>
+
+
+<details>
+<summary><strong>Q. SPA에서 검색 엔진 최적화를 이루는 방법에 대해서 알려주세요.</strong></summary>
 
 1. **SSR 사용**: 서버에서 페이지의 HTML을 미리 만들어 브라우저와 검색 봇에 전달합니다. 초기 콘텐츠를 바로 인식할 수 있습니다.
 2. **SSG 사용**: 빌드 시점에 모든 페이지의 HTML을 미리 생성해 둡니다. 빠르고 SEO에 매우 유리합니다. (예: Gatsby, Next.js/Nuxt.js의 SSG 모드)
 3. **동적 렌더링:** 사용자에게는 SPA를, 검색 봇에게는 서버에서 미리 렌더링된 버전을 보여주는 방식입니다.
+
 </details>
 
-<details><summary><strong>Q. SSR 방식으로 SPA를 구현하는 과정에 대해서 알려주세요.</strong></summary>
+
+
+<details>
+<summary><strong>Q. SSR 방식으로 SPA를 구현하는 과정에 대해서 알려주세요.</strong></summary>
 
 1. 첫 페이지 로드 시에 서버가 필요한 데이터를 포함한 완전한 HTML을 미리 만들어서 브라우저에 보냅니다.
 2. 그 후, 브라우저는 JavaScript를 로드하여 서버에서 생성된 HTML에 동적인 기능을 추가합니다. 이 과정을 **하이드레이션**이라고 합니다.
 3. 이후에는 일반적인 SPA처럼 클라이언트 측에서 페이지를 업데이트하며 동작합니다.
+
 </details>
+
+
 
 <details>
 <summary><strong>Q. CLS 말고 Core Web Vitals 측정항목에는 뭐가 있는지 아시나요?</strong></summary>
@@ -150,6 +167,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
   TTFB(Time to First Byte): 서버 응답 시간을 측정하는 지표로, 리소스 요청부터 첫 데이터를 받는 시간입니다.
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. Lighthouse 성능 측정 기준에는 뭐가 있는지 설명해주세요.</strong></summary>
@@ -182,6 +201,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 설명해주세요.!</strong></summary>
 
@@ -192,6 +213,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 웹 접근성의 개념과 개선 방법에 대해 설명해주세요.!</strong></summary>
@@ -204,6 +227,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 낙관적 업데이트에 관해서 설명해 주세요.</strong></summary>
 
@@ -213,6 +238,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 이미지 최적화 방법들에 대해 설명해주세요.</strong></summary>
 
@@ -221,6 +248,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 3. 지연 로딩(Lazy Loading): 뷰포트에 들어올 때만 이미지를 로드하여 초기 페이지 로드 시간을 단축할 수 있습니다.
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 애자일에 대해 설명해주세요!</strong></summary>
@@ -233,6 +262,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 웹, 앱 브릿지에 대해서 알고계신가요? 알고 계시다면 설명해주세요.!</strong></summary>
 
@@ -243,6 +274,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 지원자님이 생각하시는 클린 코드에 대해 설명해주세요.!</strong></summary>
@@ -255,6 +288,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 지원자님이 생각하시는 클린 아키텍쳐에 대해 설명해주세요.!</strong></summary>
 
@@ -265,6 +300,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. non-blocking과 async의 차이점에 대해 설명해주세요.</strong></summary>
@@ -277,6 +314,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. blocking / non-blocking / sync / async 에 대해 설명해주세요. 그리고 각각을 조합한 것에 대해 설명해주세요.</strong></summary>
 
@@ -284,9 +323,12 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 2. **blocking + async** : 다른 작업이 진행되는 동안 자신의 작업을 멈추고 기다리는 (blocking), 다른 작업의 결과를 바로 처리하지 않아 순서대로 작업을 수행하지 않는 (async) 방식이다.
 3. **non-blocking + async** : 다른 작업이 진행되는 동안에도 자신의 작업을 처리하고 (non-blocking), 다른 작업의 결과를 바로 처리하지 않아 작업 순서가 지켜지지 않는 (async) 방식이다. 다른 작업의 결과가 자신의 작업에 영향을 주지 않는 경우에 활용할 수 있다.
 4. **non-blocking + sync** : 다른 작업이 진행되는 동안에도 자신의 작업을 처리하고 (non-blocking), 다른 작업의 결과를 바로 처리하여 작업을 순차대로 수행하는 (sync) 방식이다.
+
 </details>
 
+
 ## Infra, Build, Tools
+
 
 <details>
 <summary><strong>Q. Nginx에 대해서 설명해주세요.!</strong></summary>
@@ -299,6 +341,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. CI/CD에 대해서 설명해주세요.!</strong></summary>
 
@@ -310,6 +354,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 웹 서비스 배포 시스템 구축 경험이 있으신가요? 배포 프로세스에 대해 아는대로 설명해주세요.</strong></summary>
 
@@ -319,6 +365,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 - WAS: 클라이언트 요청에 따라서 동적으로 콘텐츠를 생성하여 제공합니다.
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. Monorepo 사용 경험에 대해서 말씀해주세요.!</strong></summary>
@@ -331,6 +379,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 패키지 매니저(npm, pnpm, yarn, yarn2) 사용 경험에 대해 말씀해주세요.!</strong></summary>
 
@@ -341,6 +391,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. Git에 대해서 설명해주세요.!</strong></summary>
@@ -353,6 +405,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 사용하신 Git 브랜치 전략에 대해 설명해주세요.!</strong></summary>
 
@@ -363,6 +417,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. Git Merge, Squash, Rebase의 차이에 대해서 설명해주세요.!</strong></summary>
@@ -375,6 +431,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. dependencies 와 devDependencies 차이에 대해 설명해주세요.</strong></summary>
 
@@ -382,6 +440,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 2. devDependencies: 개발 과정에서만 필요한 패키지들이 담깁니다. 빌드 도구, 테스트 프레임워크, 린터 등이 이곳에 포함됩니다. (ex: Webpack, Babel, ESLint, TypeScript)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. MSA 경험이 있으신가요? 알고 계시는 만큼 설명해주세요.!</strong></summary>
@@ -393,6 +453,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. BFF 아키텍처 구현 경험이 있나요? 혹은 알고 계시는 만큼 설명해주세요.</strong></summary>
@@ -411,6 +473,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. Webpack과 Vite, 기타 번들링 도구에 대한 설명 해주세요.</strong></summary>
 
@@ -419,6 +483,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
   Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들링하지 않고, ESM으로 빠르개 실행시켜줍니다. 빌드 시에는 Rollup 기반으로 번들링하고 간단한 설정으로 빠르게 사용할 수 있지만 커스텀하기 어려울 수 있습니다.
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 디바운스와 쓰로틀에 대해 설명해주세요.</strong></summary>
@@ -466,12 +532,16 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 무한 스크롤 구현 시 디바운스와 쓰로틀링 중 어떤게 더 적합한가요?</strong></summary>
 
 - 쓰로틀이 더 적합하다고 생각합니다. 스크롤은 연속적인 동작이며, 사용자는 스크롤이 페이지 하단에 도달할 때 즉각적인 반응을 기대합니다. 쓰로틀은 스크롤 하단에 위치하게 된 순간 즉시 추가 데이터 요청을 수행하므로 사용자에게 자연스러운 스크롤 경험을 제공합니다. 반면 디바운스를 적용할 경우, 사용자가 반복적으로 스크롤한다면 마지막 스크롤이 멈춘 후에야 데이터를 불러오기 시작하므로 지연이 발생할 수 있습니다.
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 무한 스크롤 구현 방식에 대해 설명해주세요.</strong></summary>
@@ -481,6 +551,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
   이전에 제가 무한스크롤을 구현할때는 React-Query의 useInfiniteQuery 훅을 활용해서 무한스크롤을 구현했습니다. `useInfiniteQuery`는 API 요청, 데이터 병합, 로딩 상태 관리 등 전체 흐름을 처리하는 역할을 했습니다.
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 무한 스크롤의 장단점은 무엇이고, 개선은 어떻게 할 수 있나요?</strong></summary>
@@ -493,6 +565,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 가상스크롤 방식에 대해 좀 더 자세히 설명해주세요. 현재 보이는 부분만 데이터를 가져와 렌더링되고, 위아래로 스크롤할때마다 데이터 요청해서 가져오면 오히려 비효율적인거 아닌가요?</strong></summary>
 
@@ -504,7 +578,9 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
 ## Testing
+
 
 <details>
 <summary><strong>Q. FE 개발에서 테스트 코드를 작성해서 얻는 이점이 무엇인가요?</strong></summary>
@@ -513,6 +589,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 - (본인의 경험 + 회사 서비스에 적용하여 설명하면 Good)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. 유닛 테스트, 통합 테스트, E2E 테스트에 대해 각각 설명해주세요.</strong></summary>
@@ -526,6 +604,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 만약 간단한 입력 필드 컴포넌트를 만든다면, 어떤 부분을 테스트해봐야 할까요?!</strong></summary>
 
@@ -536,6 +616,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 출처: (optional)
 
 </details>
+
+
 
 <details>
 <summary><strong>Q. FE 테스트를 위해 주로 어떤 라이브러리나 프레임워크를 사용하나요?!</strong></summary>
@@ -548,6 +630,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 컴포넌트를 테스트할 때, API 호출을 실제 네트워크 요청 없이 테스트하려면 어떻게 해야 할까요?!</strong></summary>
 
@@ -559,6 +643,8 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
 
 </details>
 
+
+
 <details>
 <summary><strong>Q. 프론트엔드 E2E 테스트에 대해 설명해주세요.</strong></summary>
 
@@ -567,3 +653,4 @@ SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
   단위테스트나 통합테스트와 달리 사용자 관점에서 전체 애플리케이션이 의도한 대로 작동하는지 검증합니다. 브라우저 환경에서 실제 사용자 동작을 흉내내어 다양한 시나리오를 테스트합니다. 브라우저 환경에서 실제 사용자 동작을 흉내내어 다양한 시나리오를 테스트합니다. 보통 E2E테스트는 Cypress, Playwrite와 같은 도구를 이용해 작성합니다. (UI 상호작용, API 호출, 화면 전환 등 여러 구성 요소가 함께 동작하는 과정에서 발생하는 문제를 탐지할 수 있습니다)
 
 </details>
+

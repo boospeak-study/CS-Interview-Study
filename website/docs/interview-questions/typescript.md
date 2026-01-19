@@ -7,7 +7,8 @@ tags: [typescript, interview]
 
 ## 기본
 
-<details><summary><strong>Q. 타입스크립트를 사용하는 이유에 대해서 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트를 사용하는 이유에 대해서 설명해주세요.</strong></summary>
 
 - 가장 큰 이유는 **정적 타입 시스템을 지원**한다는 점입니다.
 
@@ -15,7 +16,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입스크립트와 자바스크립트의 차이는 무엇인가요?</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트와 자바스크립트의 차이는 무엇인가요?</strong></summary>
 
 - JavaScript와 TypeScript의 가장 큰 차이점은 2가지가 있습니다.
 
@@ -25,7 +27,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입스크립트로 작성된 코드의 성능은 자바스크립트와 비교했을 때 어떤가요?</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트로 작성된 코드의 성능은 자바스크립트와 비교했을 때 어떤가요?</strong></summary>
 
 - TypeScript로 작성된 코드의 성능은 JavaScript와 동일합니다.
 
@@ -33,7 +36,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입스크립트를 도입하지 않는 것이 더 나은 경우도 있나요?</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트를 도입하지 않는 것이 더 나은 경우도 있나요?</strong></summary>
 
 - 네 있습니다. 예를 들어, 빠른 개발이 중요한 프로토타입이나 단순한 랜딩 페이지 같은 소규모 프로젝트에서는 TS 도입이 오히려 과도한 비용이 될 수 있습니다.
   또한, 팀 내에 타입스크립트 경험이 부족한 구성원이 있고 학습 시간이나 여유가 부족한 경우, 러닝 커브로 인해 오히려 생산성이 떨어질 수 있습니다.
@@ -41,7 +45,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입스크립트를 새롭게 도입하는걸 추진할 때, 팀원들을 어떻게 설득하실 건가요?</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트를 새롭게 도입하는걸 추진할 때, 팀원들을 어떻게 설득하실 건가요?</strong></summary>
 
 - 타입스크립트의 장점과 실질적 이점을 명확히 전달하는 것이 중요합니다.
   먼저 타입스크립트가 런타임 에러를 줄이고 코드 안전성을 강화한다는 점을 강조할 것입니다. 특히, 유지보수 비용이 큰 프로젝트나 복잡한 코드베이스가 있는 상황이라면, 타입 시스템이 협업 코드 품질을 어떻게 개선할 수 있는지 실제 사례를 통해 차이점을 보여줄 것입니다.
@@ -51,7 +56,8 @@ tags: [typescript, interview]
 
 ## 동작 원리
 
-<details><summary><strong>Q. 타입스크립트의 타입 시스템은 런타임에 어떻게 동작하나요?</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트의 타입 시스템은 런타임에 어떻게 동작하나요?</strong></summary>
 
 - TypeScript의 타입 시스템은 **컴파일 타임**에만 동작하며, 런타임에는 타입 정보가 제거됩니다.
 
@@ -59,7 +65,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입스크립트의 컴파일링 과정에 대해서 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트의 컴파일링 과정에 대해서 설명해주세요.</strong></summary>
 
 1. **타입스크립트 코드 작성:** 먼저 개발자는 .ts 또는 .tsx 확장자를 가진 파일에 타입스크립트 문법을 사용해서 코드를 작성합니다.
 
@@ -69,9 +76,10 @@ tags: [typescript, interview]
 
 4. **자바스크립트 코드 실행:** 이렇게 생성된 **순수한 자바스크립트 파일**을 브라우저나 Node.js 환경에서 로드하여 **실행**합니다. 이 단계에서는 더 이상 타입스크립트와 직접적인 관련은 없고, 일반적인 자바스크립트 실행 과정과 동일하게 진행됩니다.
 
-  </details>
+</details>
 
-  <details><summary><strong>Q. 타입스크립트는 어떻게 실행 전에 타입 오류를 잡아서 빨간줄로 표시할 수 있나요?</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트는 어떻게 실행 전에 타입 오류를 잡아서 빨간줄로 표시할 수 있나요?</strong></summary>
 
 - TypeScript는 정적 타입 검사 언어이기 때문에 런타임 전에 타입 오류를 잡을 수 있습니다.
 
@@ -79,11 +87,12 @@ tags: [typescript, interview]
 
   만약 타입이 일치하지 않으면 컴파일 에러가 발생하고, 터미널에서는 오류 메시지로, 에디터에서는 해당 부분에 빨간 줄로 표시되어 문제를 알려줍니다.
 
-  </details>
+</details>
 
 ## 문법
 
-<details><summary><strong>Q. interface와 type의 차이점에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. interface와 type의 차이점에 대해 설명해주세요.</strong></summary>
 
 - interface는 객체 형태의 확장에 유리하고, type은 튜플, 유니온 등 더 복잡한 타입 조합에 유리합니다.
   1. **확장(상속)** 하는 법
@@ -101,7 +110,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 제네릭에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. 제네릭에 대해 설명해주세요.</strong></summary>
 
 - 제너릭은 타입을 마치 함수의 파라미터처럼 받아서 사용하는 기능으로, `<T>`와 같이 표기합니다.
 
@@ -111,7 +121,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 유니언 타입( | )과 인터섹션 타입(&)의 차이를 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. 유니언 타입( | )과 인터섹션 타입(&)의 차이를 설명해주세요.</strong></summary>
 
 - 유니언 타입은 둘 중 하나라도 만족하면 되는 타입이고,
 
@@ -119,18 +130,20 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 유틸리티 타입에 대해서 설명해주세요</strong></summary>
-  
+<details>
+<summary><strong>Q. 유틸리티 타입에 대해서 설명해주세요</strong></summary>
+
 - 제너릭, 맵드 타입, 조건부 타입 등의 타입 조작 기능을 이용해 실무에서 자주 사용되는 타입을 미리 만들어 놓은것 입니다.
-  
+
   대표적으로 Partial, Pick, Omit이 있습니다.
   - `Partial` : 객체 타입의 모든 속성을 선택적으로 만드는 타입입니다.
   - `Pick` : 객체 타입에서 특정 속성만 선택하여 새로운 타입을 만듭니다.
   - `Omit` : 객체 타입에서 특정 속상만 제외하여 새로운 타입을 만듭니다.
-  
+
 </details>
 
-<details><summary><strong>Q. 타입 단언과 타입 가드의 차이점은 무엇인가요?</strong></summary>
+<details>
+<summary><strong>Q. 타입 단언과 타입 가드의 차이점은 무엇인가요?</strong></summary>
 
 - 타입 단언은 `as`를 사용하여 타입을 **강제로 지정**하는 것이고,
 
@@ -138,16 +151,19 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입스크립트에서 private, protected, public 키워드는 어떤 역할을 하나요?</strong></summary>
+<details>
+<summary><strong>Q. 타입스크립트에서 private, protected, public 키워드는 어떤 역할을 하나요?</strong></summary>
 
 - **public**의 경우 클래스의 모든 속성이나 메서드는 외부에서 접근이 가능합니다.
 
   **private**의 경우 클래스 내에서만 접근할 수 있는 속성이나 메서드를 정의합니다. 따라서, 클래스 외부에서 접근할 수 없고, 상속된 클래스에서도 접근할 수 없습니다.
 
   **protected**의 경우 private과 비슷하지만, 자식 클래스에서는 접근할 수 있습니다.
-  </details>
 
-<details><summary><strong>Q. 타입 추론(Type Inference)이란 무엇인가요?</strong></summary>
+</details>
+
+<details>
+<summary><strong>Q. 타입 추론(Type Inference)이란 무엇인가요?</strong></summary>
 
 - 개발자가 명시적으로 타입을 선언하지 않아도, 타입스크립트 컴파일러가 문맥이나 값에 따라 자동으로 타입을 유추하는 기능입니다.
 
@@ -156,7 +172,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. any 타입의 사용을 어떻게 피하고 계신가요?</strong></summary>
+<details>
+<summary><strong>Q. any 타입의 사용을 어떻게 피하고 계신가요?</strong></summary>
 
 - 첫째, 가능한 구체적인 타입을 명시하려고 합니다. 원시 타입의 경우에도 string, number와 같이 명시를 해주고 객체의 경우에는 별칭을 사용하여 명확하게 정의합니다.
 
@@ -164,7 +181,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. TypeScript에서 undefined, null를 다루는 방법에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. TypeScript에서 undefined, null를 다루는 방법에 대해 설명해주세요.</strong></summary>
 
 - 자바스크립트에서는 이 두 값이 런타임 에러의 주요 원인이 되곤 하는데요, 타입스크립트는 이런 문제를 해결하기 위해 **strictNullChecks** 라는 매우 중요한 컴파일러 옵션을 제공합니다. tsconfig.json 파일에서 이 옵션을 true로 설정하는 것이 강력히 권장됩니다.
 
@@ -172,7 +190,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. Partial / Pick / Omit 에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. Partial / Pick / Omit 에 대해 설명해주세요.</strong></summary>
 
 - 셋 다 타입스크립트의 유틸리티 타입으로, 기존 타입을 기반으로 새로운 타입을 생성합니다.
 
@@ -184,15 +203,17 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. Record / Array에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. Record / Array에 대해 설명해주세요.</strong></summary>
 
 - 두 타입 모두 반복적인 데이터 구조를 표현할때 사용합니다.
-  Record<K, T>는 key와 value의 타입을 명시해 객체를 정의할 때 쓰는 매핑 타입입니다. 예를 들어 Record<string, number>는 { [key: string]: number } 와 같습니다.
-  Array<T>는 제너릭 기반 배열 타입으로 T[]와 동일합니다.
+  `Record<K, T>`는 key와 value의 타입을 명시해 객체를 정의할 때 쓰는 매핑 타입입니다. 예를 들어 `Record<string, number>`는 `{ [key: string]: number }` 와 같습니다.
+  `Array<T>`는 제너릭 기반 배열 타입으로 `T[]`와 동일합니다.
 
 </details>
 
-<details><summary><strong>Q. void란 무엇이며 언제 void 유형을 사용해야 할까요?</strong></summary>
+<details>
+<summary><strong>Q. void란 무엇이며 언제 void 유형을 사용해야 할까요?</strong></summary>
 
 - void는 아무런 값이 없다는 걸 의미하는 타입이고,
 
@@ -200,7 +221,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. any / unkown / never 은 무엇이고 TypeScript에서 언제 사용해야 할까요?</strong></summary>
+<details>
+<summary><strong>Q. any / unkown / never 은 무엇이고 TypeScript에서 언제 사용해야 할까요?</strong></summary>
 
 - any는 타입 검사를 완전히 비활성화해서 가능한 피해야 합니다.
 
@@ -212,9 +234,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 0 / null / undefined / NaN 에 대해 설명해주세요.</strong></summary>
-  
-
+<details>
+<summary><strong>Q. 0 / null / undefined / NaN 에 대해 설명해주세요.</strong></summary>
 
 - 0은 내용물이 다 떨어진 것 (타입X 값O)
 
@@ -236,29 +257,31 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 옵셔널 체이닝 연산자(?.), non-null 단언 연산자(!.), 널 병합 연산자(??.) 에 대해 설명해주세요</strong></summary>
+<details>
+<summary><strong>Q. 옵셔널 체이닝 연산자(?.), non-null 단언 연산자(!.), 널 병합 연산자(??.) 에 대해 설명해주세요</strong></summary>
 
 - 옵셔널 체이닝은 `null`이나 `undefined`인것을 에러없이 undefined로 반환합니다.
   주로 객체나 배열의 중첩된 속성에 접근할 때 사용합니다.
-      ```jsx
-      // 중간에 undefined나 null이 있으면 에러가 아니라 undefined를 반환
-      const city = user?.address?.city;
-      ```
+  `jsx
+  // 중간에 undefined나 null이 있으면 에러가 아니라 undefined를 반환
+  const city = user?.address?.city;
+  `
   non-null 단언은 `null`또는 `undefined`가 아닐 것이라고 단언(보장)하는 것입니다.
   즉, 타입스크립트의 `null` 경고를 무시하고, 무조건 있다고 선언해서 타입 에러를 피하는 것 입니다.
-      ```jsx
-      // 무조건 값이 있다고 단언하는것
-      // 만약 중간에 null이나 undefined가 있으면 런타임에서 에러가 난다.
-      const city = user!.address!.city;
-      ```
+  `jsx
+  // 무조건 값이 있다고 단언하는것
+  // 만약 중간에 null이나 undefined가 있으면 런타임에서 에러가 난다.
+  const city = user!.address!.city;
+  `
   널 병합 연산자는 왼쪽 값이 `null`또는 `undefined`일때, 오른쪽 대체값을 변환하는 연산자입니다.
-      ```jsx
-      const name = user.name ?? 'Guest';
-      ```
+  `jsx
+  const name = user.name ?? 'Guest';
+  `
 
 </details>
 
-<details><summary><strong>Q. 타입 단언에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. 타입 단언에 대해 설명해주세요.</strong></summary>
 
 - 내 손모가지를 걸고 이 타입은 내가 정의한게 맞다고 컴파일러에게 알려주는 것입니다.
 
@@ -284,7 +307,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입 단언과 강제 형변환은 같은 개념인가요?</strong></summary>
+<details>
+<summary><strong>Q. 타입 단언과 강제 형변환은 같은 개념인가요?</strong></summary>
 
 - 타입 단언은 강제 형변환과 다른 개념입니다.
 
@@ -292,7 +316,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입 단언을 남발하면 안되는 이유는 무엇인가요?</strong></summary>
+<details>
+<summary><strong>Q. 타입 단언을 남발하면 안되는 이유는 무엇인가요?</strong></summary>
 
 - 타입 단언을 남발하면 타입 안전성이 깨지기 때문입니다.
 
@@ -302,7 +327,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 타입 가드에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. 타입 가드에 대해 설명해주세요.</strong></summary>
 
 - 타입 가드는 에러를 줄일 수 있는 방어 코드 기법입니다.
 
@@ -316,7 +342,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. Enum 타입에 대해 설명해주세요.</strong></summary>
+<details>
+<summary><strong>Q. Enum 타입에 대해 설명해주세요.</strong></summary>
 
 - enum은 여러 개의 상수값을 하나의 타입으로 묶어서 관리할 수 있게 하는 타입입니다.
 
@@ -348,7 +375,8 @@ tags: [typescript, interview]
 
 </details>
 
-<details><summary><strong>Q. 리터럴 타입이란 무엇인가요?</strong></summary>
+<details>
+<summary><strong>Q. 리터럴 타입이란 무엇인가요?</strong></summary>
 
 - 값 자체를 타입으로 가지는 타입입니다.
 
@@ -388,15 +416,18 @@ tags: [typescript, interview]
 
 - 맵드 타입 기반
 
-  <details><summary><strong>Partial<T></strong></summary>
-  - 특정 객체 타입의 모든 프로퍼티를 선택적 프로퍼티로 바꿔주는 타입
-          ```tsx
-          interface Post {
-          	title: string;
-          	tags: string[];
-          	content: string;
-          	thumbnailURL?: string;
-          }
+<details>
+<summary><strong>Partial&lt;T&gt;</strong></summary>
+
+- 특정 객체 타입의 모든 프로퍼티를 선택적 프로퍼티로 바꿔주는 타입
+
+  ````tsx
+  interface Post {
+  title: string;
+  tags: string[];
+  content: string;
+  thumbnailURL?: string;
+  }
 
           type Partial<T> = {
           	[key in keyof T]? : T[key];
@@ -407,43 +438,51 @@ tags: [typescript, interview]
           	content: "초안..."
           }
           ```
-    </details>
+  ````
 
-  <details><summary><strong>Required</strong></summary>
-  - 특정 객체 타입의 모든 프로퍼티를 필수 프로퍼티로 바꿔주는 타입
-    ```tsx
-    interface Post {
-      title: string;
-      tags: string[];
-      content: string;
-      thumbnailURL?: string;
-    }
+</details>
 
-    type Required<T> = {
-      [key in keyof T]-?: T[key];
-    };
+<details>
+<summary><strong>Required</strong></summary>
 
-    // 썸네일URL이 현재 선택인데, 이게 필수로 필요한 경우
-    const withThumbnailPost: Required<Post> = {
-      title: "한입 타스 후기",
-      tags: ["ts"],
-      content: "",
-      thumbnailURL: "https://...",
-    };
-    ```
+- 특정 객체 타입의 모든 프로퍼티를 필수 프로퍼티로 바꿔주는 타입
 
-  </details>
+  ```tsx
+  interface Post {
+    title: string;
+    tags: string[];
+    content: string;
+    thumbnailURL?: string;
+  }
 
-  <details><summary><strong>Readonly<T></strong></summary>
-  - 읽기전용
+  type Required<T> = {
+    [key in keyof T]-?: T[key];
+  };
+
+  // 썸네일URL이 현재 선택인데, 이게 필수로 필요한 경우
+  const withThumbnailPost: Required<Post> = {
+    title: "한입 타스 후기",
+    tags: ["ts"],
+    content: "",
+    thumbnailURL: "https://...",
+  };
+  ```
+
+</details>
+
+<details>
+<summary><strong>Readonly&lt;T&gt;</strong></summary>
+
+- 읽기전용
   - 특정 객체 타입에서 모든 프로퍼티를 읽기 전용 프로퍼티로 만들어주는 타입
-          ```tsx
-          interface Post {
-          	title: string;
-          	tags: string[];
-          	content: string;
-          	thumbnailURL?: string;
-          }
+
+    ````tsx
+    interface Post {
+    title: string;
+    tags: string[];
+    content: string;
+    thumbnailURL?: string;
+    }
 
           type Readonly<T> = {
           	readonly [key in keyof T]: T[key];
@@ -455,35 +494,43 @@ tags: [typescript, interview]
           	content: "",
           }
           ```
-    </details>
+    ````
 
-  <details><summary><strong>Pick<T, K></strong></summary>
-  - 객체 타입으로부터 특정 프로퍼티만 딱 골라내는 타입
-    ```tsx
-    interface Post {
-      title: string;
-      tags: string[];
-      content: string;
-      thumbnailURL?: string;
-    }
+</details>
 
-    type Pick<T, K extends keyof T> = {
-      // K extends 'title' | 'tags | 'content' | 'thumbnailURL'
-      // 'title' | 'content' extends 'title' | 'tags | 'content' | 'thumbnailURL'
-      [key in K]: T[key];
-    };
+<details>
+<summary><strong>Pick&lt;T, K&gt;</strong></summary>
 
-    const legacyPost: Pick<Post, "title" | "content"> = {
-      title: "엤날 글",
-      content: "옛날 컨텐츠",
-    };
-    ```
+- 객체 타입으로부터 특정 프로퍼티만 딱 골라내는 타입
 
-  </details>
+  ```tsx
+  interface Post {
+    title: string;
+    tags: string[];
+    content: string;
+    thumbnailURL?: string;
+  }
 
-  <details><summary><strong>Omit<T, K></strong></summary>
-  - 객체 타입으로부터 특정 프로퍼티를 제거하는 타입
+  type Pick<T, K extends keyof T> = {
+    // K extends 'title' | 'tags | 'content' | 'thumbnailURL'
+    // 'title' | 'content' extends 'title' | 'tags | 'content' | 'thumbnailURL'
+    [key in K]: T[key];
+  };
+
+  const legacyPost: Pick<Post, "title" | "content"> = {
+    title: "엤날 글",
+    content: "옛날 컨텐츠",
+  };
+  ```
+
+</details>
+
+<details>
+<summary><strong>Omit&lt;T, K&gt;</strong></summary>
+
+- 객체 타입으로부터 특정 프로퍼티를 제거하는 타입
   - 비슷하게 Exclude는 유니언에서 특정 타입을 제외할 때 사용합니다.
+
     ```tsx
     interface Post {
       title: string;
@@ -505,97 +552,105 @@ tags: [typescript, interview]
     };
     ```
 
-  </details>
+</details>
 
-  <details><summary><strong>Record<K, V></strong></summary>
+<details>
+<summary><strong>Record&lt;K, V&gt;</strong></summary>
 
-  ```tsx
-  type ThumbnailLegacy = {
-    large: {
-      url: string;
-    };
-    medium: {
-      url: string;
-    };
-    small: {
-      url: string;
-    };
-    watch: {
-      url: string;
-    };
+```tsx
+type ThumbnailLegacy = {
+  large: {
+    url: string;
   };
-
-  // K extends keyof any
-  // 어떤 타입이 될지 모르겠는데 적어도 타입 변수 k 에 들어오는 타입은
-  // 어떤 객체 타입의 키를 추출해 놓은 유니언 타입이야
-  type Record<K extends keyof any, V> = {
-    [key in K]: V;
+  medium: {
+    url: string;
   };
+  small: {
+    url: string;
+  };
+  watch: {
+    url: string;
+  };
+};
 
-  type Thumbnail = Record<
-    "large" | "medium" | "small" | "watch",
-    { url: string }
-  >;
-  ```
+// K extends keyof any
+// 어떤 타입이 될지 모르겠는데 적어도 타입 변수 k 에 들어오는 타입은
+// 어떤 객체 타입의 키를 추출해 놓은 유니언 타입이야
+type Record<K extends keyof any, V> = {
+  [key in K]: V;
+};
 
-  </details>
+type Thumbnail = Record<
+  "large" | "medium" | "small" | "watch",
+  { url: string }
+>;
+```
+
+</details>
 
 - 조건부 타입 기반
 
-  <details><summary><strong>Exclude<T, U></strong></summary>
-    
-    - T에서 U를 제거하는 타입
-    - 유니언에서 특정 타입을 제외할 때 사용 (Omit은 객체의 특정 속성을 제외한 타입을 만들때 사용)
-        
-        ```tsx
-        type Exclude<T, U> = T extends U ? never : T;
-        // 1단계
-        // Exclude<string, boolean> |
-        // Exclude<boolean, boolean>
-        
-        // 2단계
-        // string | never
-        
-        // 최종적으로는
-        // string
-        
-        type A = Exclude<string | boolean, boolean>;
-        ```
-        
-  </details>
+<details>
+<summary><strong>Exclude&lt;T, U&gt;</strong></summary>
 
-  <details><summary><strong>Extract<T, U></strong></summary>
-  - T에서 U를 추출하는 타입
+- T에서 U를 제거하는 타입
+  - 유니언에서 특정 타입을 제외할 때 사용 (Omit은 객체의 특정 속성을 제외한 타입을 만들때 사용)
+
     ```tsx
-    type Exract<T, U> = T extends U ? T : never;
+    type Exclude<T, U> = T extends U ? never : T;
+    // 1단계
+    // Exclude<string, boolean> |
+    // Exclude<boolean, boolean>
 
-    type B = Extract<string | boolean, boolean>;
+    // 2단계
+    // string | never
+
+    // 최종적으로는
+    // string
+
+    type A = Exclude<string | boolean, boolean>;
     ```
 
-  </details>
+</details>
 
-  <details><summary><strong>ReturnType<T></strong></summary>
-  - 함수의 반환값 타입을 추출하는 타입
-    ```tsx
-    function funcA() {
-      return "hello";
-    }
+<details>
+<summary><strong>Extract&lt;T, U&gt;</strong></summary>
 
-    function funcB() {
-      return 10;
-    }
+- T에서 U를 추출하는 타입
 
-    type ReturnType<T extends (...any) => any> = T extends (
-      ...args: any
-    ) => infer R
-      ? R
-      : never;
+  ```tsx
+  type Exract<T, U> = T extends U ? T : never;
 
-    // ReturnA의 타입은 string
-    type ReturnA = ReturnType<typeof funcA>;
+  type B = Extract<string | boolean, boolean>;
+  ```
 
-    // ReturnB의 타입은 number
-    type ReturnB = returnType<typeof funcB>;
-    ```
+</details>
 
-  </details>
+<details>
+<summary><strong>ReturnType&lt;T&gt;</strong></summary>
+
+- 함수의 반환값 타입을 추출하는 타입
+
+  ```tsx
+  function funcA() {
+    return "hello";
+  }
+
+  function funcB() {
+    return 10;
+  }
+
+  type ReturnType<T extends (...any) => any> = T extends (
+    ...args: any
+  ) => infer R
+    ? R
+    : never;
+
+  // ReturnA의 타입은 string
+  type ReturnA = ReturnType<typeof funcA>;
+
+  // ReturnB의 타입은 number
+  type ReturnB = returnType<typeof funcB>;
+  ```
+
+</details>

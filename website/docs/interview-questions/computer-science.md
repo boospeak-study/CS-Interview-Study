@@ -7,6 +7,7 @@ tags: [cs, interview]
 
 ## 자료구조
 
+
 <details>
 <summary>선형 자료구조와 비선형 자료구조에 대해 설명해주세요.</summary>
 
@@ -14,6 +15,8 @@ tags: [cs, interview]
 - 비선형 자료구조: 데이터 요소들이 계층적 또는 네트워크 형태로 연결된 구조입니다. 각 요소는 여러 다른 요소와 관계를 맺을 수 있습니다. 대표적으로 트리, 그래프가 있습니다.
 
 </details>
+
+
 
 <details>
 <summary>값을 추가 및 삭제할 때 logN의 복잡도가 소요되는 자료구조는?</summary>
@@ -23,6 +26,8 @@ tags: [cs, interview]
 
 </details>
 
+
+
 <details>
 <summary>연결 리스트와 해시 테이블에 대해서 설명해 주세요.</summary>
 
@@ -31,6 +36,8 @@ tags: [cs, interview]
 해시 테이블은 키-값 쌍을 저장하며, 해시 함수를 사용하여 키를 배열의 인덱스로 변환하여 데이터에 빠르게 접근하는 자료구조입니다. 삽입, 삭제, 검색이 빠릅니다. (O(1)) JavaSCript의 Object나 Map이 내부적으로 해시 테이블과 유사하게 동작합니다.
 
 </details>
+
+
 
 <details>
 <summary>해쉬 테이블의 검색 시간 복잡도는 항상 O(1)인가요?</summary>
@@ -42,6 +49,8 @@ tags: [cs, interview]
 
 </details>
 
+
+
 <details>
 <summary>해시 충돌을 해결하는 방법에 대해서 설명해 주세요.</summary>
 
@@ -49,6 +58,8 @@ tags: [cs, interview]
 2. 개방 주소법: 충돌이 발생하면, 미리 정해진 규칙에 따라 다른 비어있는 인덱스를 찾아 데이터를 저장하는 방식입니다.
 
 </details>
+
+
 
 <details>
 <summary>좋은 해시 함수의 조건은 뭘까요?</summary>
@@ -58,6 +69,8 @@ tags: [cs, interview]
 3. 동일한 키에 대해서는 항상 동일한 해시 값을 반환해야 합니다.
 
 </details>
+
+
 
 <details>
 <summary>Stack과 Queue의 차이에 대해 설명해 주세요</summary>
@@ -77,6 +90,8 @@ tags: [cs, interview]
 예시 : 은행업무, 놀이기구 대기줄
 
 </details>
+
+
 
 <details>
 <summary>List, Map, Set의 차이점을 설명해 주세요.</summary>
@@ -102,6 +117,8 @@ tags: [cs, interview]
 
 </details>
 
+
+
 <details>
 <summary>시간복잡도와 공간복잡도에 대해 설명해주세요.</summary>
 
@@ -111,6 +128,8 @@ tags: [cs, interview]
   알고리즘이 실행되는 동안 사용하는 **메모리 공간**의 양이 입력 데이터의 크기에 따라 어떻게 증가하는지를 나타내는 척도입니다. 역시 **Big O 표기법**을 사용하며, 메모리 사용량의 효율성을 평가합니다.
 
 </details>
+
+
 
 <details>
 <summary>O(2^n), O(1), O(n^3), O(n!), O(n log n), O(log n), O(n), O(n^2)를 시간복잡도 순서대로 나열해주세요.</summary>
@@ -128,6 +147,8 @@ tags: [cs, interview]
 
 </details>
 
+
+
 <details>
 <summary>그래프와 트리의 차이점을 설명해주세요.</summary>
 
@@ -135,6 +156,8 @@ tags: [cs, interview]
 - **트리:** 그래프의 한 종류로, **사이클이 없는 연결 그래프**입니다. 일반적으로 **하나의 루트 노드**를 가지며, **계층적인 구조**를 나타냅니다. N개의 노드는 항상 N-1개의 간선을 가집니다.
 
 </details>
+
+
 
 <details>
 <summary>전위순회 vs 중위순회 vs 후위순회 를 비교해서 설명해주세요.</summary>
@@ -147,6 +170,8 @@ tags: [cs, interview]
 
 </details>
 
+
+
 <details>
 <summary>Array (배열) vs Linked List (링크드 리스트) 를 비교해서 설명해주세요.</summary>
 
@@ -155,6 +180,8 @@ tags: [cs, interview]
 반면 링크드 리스트는 각 노드가 포인터를 통해 다음 노드를 가리키는 구조로, 동적으로 크기를 조절할 수 있고 중간 삽입이나 삭제가 포인터만 바꾸면 되기 때문에 O(1)에 가능하지만, 임의 접근이 어려워 검색에는 O(n)의 시간이 필요합니다. 즉, 배열은 빠른 접근이, 링크드 리스트는 유연한 삽입·삭제가 강점입니다.
 
 </details>
+
+
 
 <details>
 <summary>힙에 대해 설명해주시고, 각 연산의 시간복잡도를 설명해주세요.</summary>
@@ -166,12 +193,16 @@ tags: [cs, interview]
 
 </details>
 
+
+
 <details>
 <summary>AVL트리는 무엇인가요?</summary>
 
 이진탐색 트리에서 최악의 경우인 선형 트리가 되는 것을 방지하여, 균형을 잡기 위해 트리 일부를 왼쪽 혹은 오른쪽으로 회전시키는 이진 탐색 트리 (탐색, 삽입, 삭제 모두 시간복잡도 O(log n))
 
 </details>
+
+
 
 <details>
 <summary>FIFO와 LIFO 형태의 자료구조를 각각 설명해주세요</summary>
@@ -182,6 +213,8 @@ LIFO(Last-In-First-Out)는 나중에 들어온 데이터가 먼저 나가는 구
 
 </details>
 
+
+
 <details>
 <summary>1부터 100까지의 정수를 완전 이진트리로 위부터 채운다면 높이는 어떻게 되나요?</summary>
 
@@ -190,6 +223,8 @@ LIFO(Last-In-First-Out)는 나중에 들어온 데이터가 먼저 나가는 구
 루트부터 레벨은 1부터 시작, 높이는 0부터 시작 (높이 = 레벨 - 1)
 
 </details>
+
+
 
 <details>
 <summary>이진트리란 무엇이고 어떤 종류가 있나요?</summary>
@@ -204,6 +239,8 @@ LIFO(Last-In-First-Out)는 나중에 들어온 데이터가 먼저 나가는 구
 
 </details>
 
+
+
 <details>
 <summary>이진 트리 모양에 값을 채워넣은 것. 왼쪽 하위 트리에는 작은값, 오른쪽 하위 트리에는 큰 값이 들어있음. (탐색 시 보통 O(log n)이지만, 최악에는 O(n))</summary>
 
@@ -212,6 +249,8 @@ LIFO(Last-In-First-Out)는 나중에 들어온 데이터가 먼저 나가는 구
 종류는 AVL 트리, 레드 블랙 트리가 있습니다.
 
 </details>
+
+
 
 <details>
 <summary>우선순위 큐의 동작, 구현방식에 대해 설명해주세요.</summary>
@@ -222,6 +261,8 @@ LIFO(Last-In-First-Out)는 나중에 들어온 데이터가 먼저 나가는 구
 
 </details>
 
+
+
 <details>
 <summary>트리의 구성요소인 노드에서, 어떤 노드들이 있는지 설명해주세요.</summary>
 
@@ -231,12 +272,16 @@ LIFO(Last-In-First-Out)는 나중에 들어온 데이터가 먼저 나가는 구
 
 </details>
 
+
+
 <details>
 <summary>트리의 레벨과 높이의 차이점은 무엇인가요?</summary>
 
 - 루트부터 레벨은 1부터 시작, 높이는 0부터 시작 (높이 = 레벨 - 1)
 
 </details>
+
+
 
 <details>
 <summary>DFS와 BFS을 비교하고, 각각의 시,공간 복잡도를 설명하세요.</summary>
@@ -246,6 +291,8 @@ DFS(Depth-First Search)는 한 경로를 끝까지 탐색한 뒤 다른 경로�
 두 알고리즘 모두 정점 V개와 간선 E개일 때 시간 복잡도는 O(V + E)로 동일합니다. 공간 복잡도는 DFS가 재귀 호출 또는 스택에 의해 O(V), BFS는 큐에 의해 O(V)의 공간을 사용하지만, BFS는 모든 노드를 한 번에 큐에 담을 수 있어 실제 메모리 사용량은 DFS보다 더 클 수 있습니다.
 
 </details>
+
+
 
 <details>
 <summary><strong>트라이(Trie) 자료구조에 대해 설명하고 사용 예시에 대해 설명하세요.</strong></summary>
@@ -258,9 +305,11 @@ DFS(Depth-First Search)는 한 경로를 끝까지 탐색한 뒤 다른 경로�
 
 </details>
 
+
 ---
 
 ## 알고리즘
+
 
 <details>
 <summary>Dynamic Programming에 대해 설명해주세요.</summary>
@@ -268,6 +317,8 @@ DFS(Depth-First Search)는 한 경로를 끝까지 탐색한 뒤 다른 경로�
 Dynamic Programming(동적 프로그래밍)은 복잡한 문제를 작은 부분 문제로 나누고, 그 결과를 저장해 중복 계산을 피함으로써 전체 문제를 효율적으로 해결하는 기법입니다. 이를 통해 동일한 부분 문제를 반복적으로 계산하지 않고 메모이제이션 또는 테이블 방식으로 재사용합니다.
 
 </details>
+
+
 
 <details>
 <summary>그리디 알고리즘에 대해 설명해주세요</summary>
@@ -278,6 +329,8 @@ Dynamic Programming(동적 프로그래밍)은 복잡한 문제를 작은 부분
 
 </details>
 
+
+
 <details>
 <summary>Kruskal Algorithm(크루스칼 알고리즘)에 대해 설명해주세요.</summary>
 
@@ -286,6 +339,8 @@ Kruskal 알고리즘은 최소 신장 트리(MST, Minimum Spanning Tree)를 찾�
 사이클 여부를 판단하기 위해 주로 Union-Find(Disjoint Set) 자료구조를 사용하며, 시간 복잡도는 간선의 개수를 E, 정점의 개수를 V라 할 때 O(E log E)입니다. 연결 요소 간 비용 최소 연결을 찾는 데 유용하며, 간선 중심의 알고리즘이라는 점에서 Prim 알고리즘과 차별됩니다.
 
 </details>
+
+
 
 <details>
 <summary>Prime Algorithm(프림 알고리즘)에 대해 설명해주세요.</summary>
@@ -296,6 +351,8 @@ Prim 알고리즘은 최소 신장 트리(MST)를 구하는 그리디 알고리�
 
 </details>
 
+
+
 <details>
 <summary>BFS와 다익스트라의 공통점과 차이점은 뭘까요?</summary>
 
@@ -304,6 +361,8 @@ BFS와 다익스트라는 모두 그래프에서 최단 경로를 찾기 위한 
 차이점은 가중치 처리 여부에 있으며, BFS는 간선의 가중치가 모두 1일 때만 최단 경로를 보장하지만, 다익스트라는 가중치가 있는 그래프에서도 올바른 최단 경로를 계산합니다. 또한 다익스트라는 각 노드의 최단 거리를 우선순위 큐를 통해 갱신하며 탐색 순서가 동적으로 정해진다는 점에서 BFS보다 계산이 복잡합니다.
 
 </details>
+
+
 
 <details>
 <summary>다익스트라 알고리즘을 개선한 알고리즘에는 뭐가 있나요?</summary>
@@ -314,6 +373,8 @@ A\* 알고리즘은 다익스트라에 **휴리스틱 함수**를 결합해 목�
 
 </details>
 
+
+
 <details>
 <summary>플로이드-워셜 알고리즘에 대해 설명해주세요.</summary>
 
@@ -322,6 +383,8 @@ A\* 알고리즘은 다익스트라에 **휴리스틱 함수**를 결합해 목�
 시간 복잡도는 O(V³)로 느리지만, **음의 가중치 간선**도 허용되며, 간단한 구현으로 모든 경로의 최단 거리를 구할 수 있어 정점 수가 적은 밀집 그래프에 적합합니다. 다만 **음수 사이클이 존재할 경우** 이를 감지할 수는 있지만, 최단 경로 자체는 의미 없게 됩니다.
 
 </details>
+
+
 
 <details>
 <summary>P / NP / NP-Complete / P=NP? 에 대해 설명해주세요.</summary>
@@ -334,6 +397,8 @@ A\* 알고리즘은 다익스트라에 **휴리스틱 함수**를 결합해 목�
 | **P = NP?**     | 복잡도 이론의 대표적 난제  | P와 NP가 같은 집합인지에 대한 미해결 문제              |
 
 </details>
+
+
 
 <details>
 <summary>Comparisons Sorting와 그 종류에 대해 설명해주세요.</summary>
@@ -361,6 +426,8 @@ Comparison Sorting은 요소들 간의 **크기 비교**를 통해 정렬 순서
 
 </details>
 
+
+
 <details>
 <summary>non-Comparisons Sorting와 그 종류에 대해 설명해주세요.</summary>
 
@@ -373,6 +440,8 @@ Non-Comparison Sorting은 원소 간의 직접적인 크기 비교 없이 정렬
 
 </details>
 
+
+
 <details>
 <summary>Stable sort & Unstable sort에 대해 설명해주세요.</summary>
 
@@ -383,6 +452,8 @@ Non-Comparison Sorting은 원소 간의 직접적인 크기 비교 없이 정렬
 
 </details>
 
+
+
 <details>
 <summary>Quick Sort의 시간복잡도를 설명해주세요.</summary>
 
@@ -392,6 +463,8 @@ Quick Sort의 평균 시간 복잡도는 O(n log n)으로, 분할 정복 방식�
 
 </details>
 
+
+
 <details>
 <summary>위상 정렬 (Topology Sort)에 대해 설명해주세요.</summary>
 
@@ -400,6 +473,8 @@ Quick Sort의 평균 시간 복잡도는 O(n log n)으로, 분할 정복 방식�
 대표적인 구현 방식으로는 진입 차수가 0인 노드를 큐에 넣고, 해당 노드를 제거하면서 연결된 노드의 진입 차수를 줄이는 **Kahn’s 알고리즘**과, DFS 기반으로 후위 순회를 이용해 순서를 결정하는 방식이 있습니다. 시간 복잡도는 O(V + E)이며, **사이클이 존재하면 위상 정렬이 불가능**하다는 특징이 있습니다.
 
 </details>
+
+
 
 <details>
 <summary>캐시 교체 알고리즘에 대해 설명해주세요.</summary>
@@ -417,6 +492,8 @@ Quick Sort의 평균 시간 복잡도는 O(n log n)으로, 분할 정복 방식�
 
 </details>
 
+
+
 <details>
 <summary>소수 판별 방식을 O(N), O(N/2), O(N^0.5) 별로 설명해주세요.</summary>
 
@@ -429,6 +506,8 @@ Quick Sort의 평균 시간 복잡도는 O(n log n)으로, 분할 정복 방식�
 
 </details>
 
+
+
 <details>
 <summary>에라토스테네스의 체에 대해 설명해주세요.</summary>
 
@@ -440,6 +519,8 @@ ex) 100 이하의 소수를 찾으려면 1을 제외하고, 2부터 100의 제�
 
 </details>
 
+
+
 <details>
 <summary>그리디 vs 백트래킹 vs DP vs 분할 정복 을 비교해서 설명해주세요.</summary>
 
@@ -450,9 +531,11 @@ ex) 100 이하의 소수를 찾으려면 1을 제외하고, 2부터 100의 제�
 
 </details>
 
+
 ---
 
 ## 데이터베이스
+
 
 <details>
 <summary>ERD 풀네임과 무엇인지?</summary>
@@ -460,6 +543,8 @@ ex) 100 이하의 소수를 찾으려면 1을 제외하고, 2부터 100의 제�
 Entity-Relationship Diagram으로, 데이터베이스의 구조를 시각적으로 표현한 다이어그램
 
 </details>
+
+
 
 <details>
 <summary>SQL과 NoSQL의 차이점에 대해 설명해주세요.</summary>
@@ -470,6 +555,8 @@ SQL은 정해진 스키마를 기반으로 테이블 구조에 데이터를 저�
 
 </details>
 
+
+
 <details>
 <summary>쿠키, 로컬 스토리지, 세션 스토리지를 비교해서 설명해주세요.</summary>
 
@@ -478,6 +565,8 @@ SQL은 정해진 스키마를 기반으로 테이블 구조에 데이터를 저�
 - 세션 스토리지 → 브라우저가 닫힐 때마다 데이터가 삭제되는 특징이 있어 일시적인 데이터 저장에 적합하다.
 
 </details>
+
+
 
 <details>
 <summary>데이터베이스에서 인덱스(Index)에 대해 설명해주세요.</summary>
@@ -490,12 +579,16 @@ Index란 테이블을 처음부터 끝까지 검색하는 방법인 FTS(Full Tab
 
 </details>
 
+
+
 <details>
 <summary>DBMS가 Index를 어떤 자료구조로 관리하고 있는지 설명해주세요.</summary>
 
 Index는 주로 B+Tree 인덱스 자료구조를 사용합니다. 자식 노드가 2개 이상인 B-Tree를 개선시킨 자료구조이며, BTree 리프노드들을 LinkedList로 연결하여 순차 검색을 용이하게 합니다. 해시 테이블보다 나쁜 O(log2N)의 시간복잡도를 갖지만 일반적으로 사용되는 자료구조입니다.
 
 </details>
+
+
 
 <details>
 <summary>DBMS가 무엇인지 설명해주세요</summary>
@@ -506,6 +599,8 @@ DBMS(Database Management System)는 데이터를 효율적으로 저장, 관리,
 
 </details>
 
+
+
 <details>
 <summary>트랜잭션에 대해 설명해주세요</summary>
 
@@ -515,6 +610,8 @@ DBMS(Database Management System)는 데이터를 효율적으로 저장, 관리,
 
 </details>
 
+
+
 <details>
 <summary>트랜잭션의 상태는 어떤 것이 있을까요?</summary>
 
@@ -523,6 +620,8 @@ DBMS(Database Management System)는 데이터를 효율적으로 저장, 관리,
 처음 트랜잭션이 시작되면 **활동 상태**가 되며, 연산이 정상적으로 수행되면 **부분 완료** 상태로 넘어갑니다. 이후 커밋 명령이 성공적으로 처리되면 **커밋 상태**로 전환되어 트랜잭션 결과가 영구 반영됩니다. 반면 수행 중 오류가 발생하면 **실패 상태**가 되고, 이때 복구 작업을 통해 이전 상태로 되돌리면 **철회 상태**가 됩니다.
 
 </details>
+
+
 
 <details>
 <summary>트랜잭션 고립 수준(Isolation Level)에 대해서 간략하게 설명해주세요.</summary>
@@ -535,6 +634,8 @@ DB는 ACID 특징과 같이 트랜잭션이 독립적인 수행을 하도록 해
 
 </details>
 
+
+
 <details>
 <summary>교착상태에 대해 설명해주세요.</summary>
 
@@ -543,6 +644,8 @@ DB는 ACID 특징과 같이 트랜잭션이 독립적인 수행을 하도록 해
 교착상태가 발생하려면 **상호 배제, 점유와 대기, 비선점, 환형 대기**의 네 가지 조건이 모두 만족해야 하며, 이를 해결하거나 방지하기 위해 **자원 요청 순서 지정, 타임아웃 설정, 교착 상태 탐지 및 회복, 은행가 알고리즘 같은 회피 기법** 등이 사용됩니다.
 
 </details>
+
+
 
 <details>
 <summary>Inner Join과 Outer Join의 차이에 대해 설명해주세요</summary>
@@ -555,6 +658,8 @@ DB는 ACID 특징과 같이 트랜잭션이 독립적인 수행을 하도록 해
 
 </details>
 
+
+
 <details>
 <summary>cascade에 대해 설명해주세요</summary>
 
@@ -563,6 +668,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 예를 들어 `ON DELETE CASCADE`를 설정하면 부모 테이블의 행이 삭제될 때 **해당 키를 참조하는 자식 테이블의 행도 자동으로 삭제**됩니다. 반대로 `ON UPDATE CASCADE`는 부모 테이블의 키 값이 변경될 경우 **자식 테이블의 외래 키도 함께 수정**됩니다. 이 기능은 수동 정리 없이도 관계형 데이터의 일관성을 유지할 수 있다는 장점이 있지만, **예상치 못한 대량 삭제나 수정이 발생할 수 있어 주의가 필요**합니다.
 
 </details>
+
+
 
 <details>
 <summary>슈퍼키, 후보키, 대체키, 기본키, 외래키에 대해 설명해주세요.</summary>
@@ -575,6 +682,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 
 </details>
 
+
+
 <details>
 <summary>트리거가 무엇인지 설명해주세요</summary>
 
@@ -583,6 +692,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 트리거는 **BEFORE 또는 AFTER** 옵션을 통해 이벤트 발생 시점을 지정할 수 있으며, 장점으로는 반복적인 작업 자동화와 데이터 보호가 있지만, **복잡한 로직은 성능 저하와 디버깅 어려움**을 초래할 수 있어 신중하게 설계해야 합니다.
 
 </details>
+
+
 
 <details>
 <summary>정규화에 대해 설명해주세요</summary>
@@ -598,6 +709,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 
 </details>
 
+
+
 <details>
 <summary>무결성이 무엇인가요?</summary>
 
@@ -606,6 +719,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 예를 들어, 데이터베이스에서는 **참조 무결성, 엔티티 무결성, 도메인 무결성** 같은 제약 조건을 통해 잘못된 데이터 입력이나 갱신을 방지하고, 시스템에서는 해시값이나 접근 제어를 통해 데이터의 무단 변경을 막아 무결성을 보장합니다.
 
 </details>
+
+
 
 <details>
 <summary>정규화의 목적과 단계를 설명해주세요.</summary>
@@ -620,6 +735,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 
 </details>
 
+
+
 <details>
 <summary>이상현상에 대해 설명해주세요</summary>
 
@@ -628,6 +745,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 **삽입 이상**은 불필요한 정보를 함께 입력해야만 원하는 데이터를 저장할 수 있는 문제이고, **삭제 이상**은 특정 데이터를 삭제할 때 관련 없는 정보까지 함께 사라지는 문제입니다. **갱신 이상**은 동일한 데이터가 여러 곳에 중복되어 있을 때, 일부만 수정되어 데이터 불일치가 발생하는 문제를 말합니다. 이를 해결하기 위해 정규화를 통해 테이블을 구조적으로 분해하고, 데이터의 중복과 종속성을 줄이는 작업이 필요합니다.
 
 </details>
+
+
 
 <details>
 <summary>NoSQL의 장단점은?</summary>
@@ -638,6 +757,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 
 </details>
 
+
+
 <details>
 <summary>Statement vs PreparedStatement 를 비교해주세요.</summary>
 
@@ -646,9 +767,11 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 
 </details>
 
+
 ---
 
 ## 운영체제
+
 
 <details>
 <summary>운영체제란 무엇인가요?</summary>
@@ -656,6 +779,8 @@ Cascade(카스케이드)는 데이터베이스에서 **부모 테이블의 변�
 프로그램들에게 자원을 할당해주고 올바르게 실행되도록 돕는 프로그램. 운영체제도 프로그램이기 때문에 실행되기 위해서 메모리에 저장되어 있어야하고, 메모리의 커널 영역에 적재되어 있다. 웹브라우저, 게임, 메모장 같은 일반적인 응용 프로그램들은 사용자 영역에 적재된다.
 
 </details>
+
+
 
 <details>
 <summary>운영체제를 알아야 하는 이유가 뭘까요?</summary>
@@ -668,6 +793,8 @@ CPU나 메모리 같은 하드웨어들은 문제가 생기면 동작 안하고 
 
 </details>
 
+
+
 <details>
 <summary>뮤텍스와 세마포어의 차이</summary>
 
@@ -675,6 +802,8 @@ CPU나 메모리 같은 하드웨어들은 문제가 생기면 동작 안하고 
 - **세마포** : 여러 스레드가 접근할 수 있는 카운터 기반 동기화 메커니즘. 소유권 개념이 없어 다른 스레드가 세마포를 해제할 수 있고, 여러 개의 자원을 관리할 수 있다.
 
 </details>
+
+
 
 <details>
 <summary>메모리 할당방식의 여러 방식들에 대해 설명해주세요</summary>
@@ -704,6 +833,8 @@ CPU나 메모리 같은 하드웨어들은 문제가 생기면 동작 안하고 
 
 </details>
 
+
+
 <details>
 <summary>프로세스와 스레드의 차이에 대해 설명해 주세요.</summary>
 
@@ -713,6 +844,8 @@ CPU나 메모리 같은 하드웨어들은 문제가 생기면 동작 안하고 
 하나의 프로세스에서 스레드들은 각각 stack영역만 따로 할당받고 code, data, heap영역은 공유합니다.
 
 </details>
+
+
 
 <details>
 <summary>멀티 프로세스와 멀티 스레드의 차이에 대해 설명해 주세요.</summary>
@@ -729,6 +862,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>내부단편화와 외부단편화 차이에 대해 설명해주세요</summary>
 
@@ -738,6 +873,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>데드락에 대해 설명해주세요</summary>
 
@@ -746,6 +883,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 데드락이 발생하려면 **상호 배제, 점유와 대기, 비선점, 환형 대기**라는 네 가지 조건이 모두 만족해야 하며, 이를 방지하거나 해결하기 위해 자원 순서 고정, 타임아웃, 교착 회피 알고리즘(예: 은행가 알고리즘) 등을 사용합니다.
 
 </details>
+
+
 
 <details>
 <summary>데드락의 4가지 조건과 해결 방법에 대해 설명해주세요</summary>
@@ -761,6 +900,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>페이징 알고리즘에 대해 아는대로 설명해주세요</summary>
 
@@ -769,6 +910,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 대표적인 페이징 알고리즘에는 **FIFO(선입선출)**, **LRU(Least Recently Used)**, **Optimal(최적)**, **LFU(Least Frequently Used)** 등이 있으며, 각각 교체 기준이 다릅니다. 예를 들어 LRU는 가장 오랫동안 사용되지 않은 페이지를 제거하고, Optimal은 앞으로 가장 오랫동안 사용되지 않을 페이지를 제거하지만 실제 구현은 어렵습니다. 이 알고리즘들은 페이지 부재율을 낮추고 메모리 사용 효율을 높이는 것이 핵심입니다.
 
 </details>
+
+
 
 <details>
 <summary>스케쥴 알고리즘에 대해 아는대로 설명해주세요</summary>
@@ -779,6 +922,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>starvation과 convoy effect의 차이에 대해 설명해주세요</summary>
 
@@ -787,6 +932,8 @@ Starvation(기아 현상)은 우선순위가 낮은 프로세스가 자원을 �
 반면 Convoy Effect(호위 효과)는 하나의 긴 작업이 자원을 점유한 동안, **짧은 작업들이 줄줄이 대기하며 전체 시스템 효율이 저하되는 현상**입니다. 이는 주로 FCFS 같은 선입선출 스케줄링에서 발생하며, 한 작업이 끝날 때까지 나머지들이 묶여 기다리는 구조적 병목이 원인입니다.
 
 </details>
+
+
 
 <details>
 <summary>캐시히트와 캐시미스에 대해 설명해주세요</summary>
@@ -797,6 +944,8 @@ Starvation(기아 현상)은 우선순위가 낮은 프로세스가 자원을 �
 
 </details>
 
+
+
 <details>
 <summary>프로세스 동기화란 뭔가요?</summary>
 
@@ -806,6 +955,8 @@ Starvation(기아 현상)은 우선순위가 낮은 프로세스가 자원을 �
 
 </details>
 
+
+
 <details>
 <summary>busy waiting에 대해 설명해주세요</summary>
 
@@ -814,6 +965,8 @@ Busy Waiting은 프로세스가 원하는 자원을 얻기 위해 **계속해서
 이 방식은 구현이 단순하고 빠르지만, **CPU 자원을 낭비**하므로 효율이 낮고, 다른 프로세스의 실행을 방해할 수 있습니다. 따라서 운영체제나 동기화 메커니즘에서는 보통 Busy Waiting 대신 **블로킹 기반 대기 방식**을 선호합니다.
 
 </details>
+
+
 
 <details>
 <summary>바이너리 세마포어와 뮤텍스의 차이는?</summary>
@@ -830,6 +983,8 @@ Busy Waiting은 프로세스가 원하는 자원을 얻기 위해 **계속해서
 
 </details>
 
+
+
 <details>
 <summary>(카운팅)세마포어와 뮤텍스의 차이는?</summary>
 
@@ -840,6 +995,8 @@ Busy Waiting은 프로세스가 원하는 자원을 얻기 위해 **계속해서
 
 </details>
 
+
+
 <details>
 <summary>바이너리 세마포어와 뮤텍스의 차이는?</summary>
 
@@ -849,6 +1006,8 @@ Busy Waiting은 프로세스가 원하는 자원을 얻기 위해 **계속해서
 4. Binary Semaphore는 시스템 범위에 걸쳐 있고, 파일 시스템 상의 파일로 존재합니다. 반면, Mutex는 프로세스의 범위를 가지며 프로세스 종료될 때 자동으로 Clean up 됩니다.
 
 </details>
+
+
 
 <details>
 <summary>가상 메모리 (Virtual Memory)에 대해 설명해 주세요.</summary>
@@ -865,6 +1024,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>프로세스의 상태전이를 설명해주세요.</summary>
 
@@ -876,6 +1037,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 - Running → Terminated: 프로세스 실행 완료
 
 </details>
+
+
 
 <details>
 <summary>메모리 관리 전략에 대해 설명해주세요.</summary>
@@ -891,6 +1054,8 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>캐시에 대해 설명해주세요.</summary>
 
@@ -898,12 +1063,16 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>캐시와 CDN은 어떤 차이가 있나요?</summary>
 
 목적과 동작 방식에서 차이가 있습니다. 캐시는 자주 사용되는 데이터를 임시 저장하여 재사용성을 극대화하고, 반복적인 요청 시 빠르게 반환.하는 방식입니다. CDN은 사용자와 가까운 서버(엣지 서버)에서 데이터를 제공하여 네트워크 지연을 줄이고 로딩 속도를 최적화하는 방식입니다
 
 </details>
+
+
 
 <details>
 <summary>context switching (문맥 교환)에 대해 설명해주세요.</summary>
@@ -914,9 +1083,11 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
 ---
 
 ## 네트워크
+
 
 <details>
 <summary>HTTP란 무엇인가요?</summary>
@@ -941,12 +1112,16 @@ Multi-Thread : 프로그램을 여러 개의 스레드로 구성하고 각 스�
 
 </details>
 
+
+
 <details>
 <summary>HTTP의 특징</summary>
 
 HTTP는 클라이언트-서버구조로 되어있고, 서버가 클라이언트의 상태를 저장하지 않는 무상태 프로토콜입니다. 또한, 요청을 주고받을 때만 연결을 유지하고 응답 이후 연결이 끊어지는 비연결성을 갖고 있습니다.
 
 </details>
+
+
 
 <details>
 <summary>HTTP 버전의 발전 단계</summary>
@@ -959,6 +1134,8 @@ HTTP는 클라이언트-서버구조로 되어있고, 서버가 클라이언트�
 
 </details>
 
+
+
 <details>
 <summary>HTTPS와 HTTP의 차이</summary>
 
@@ -970,12 +1147,16 @@ HTTPS는 HTTP에 SSL/TLS 프로토콜을 추가하여 보안이 강화된 프로
 
 </details>
 
+
+
 <details>
 <summary>HTTP의 멱등성</summary>
 
 HTTP 멱등성(idempotent)이란 하나의 요청이 아닌 여러번 동일한 요청을 보냈을 때 서버가 같은 상태를 가지는 것을 멱등성이라고 합니다. 따라서 GET, PUT, DELETE와 같은 메서드는 멱등성을 갖고, POST나 PATCH의 경우는 멱등성을 갖지 않습니다.
 
 </details>
+
+
 
 <details>
 <summary>PUT과 PATCH의 차이</summary>
@@ -985,6 +1166,8 @@ PUT의 경우 업데이트를 할 때 전체의 데이터를 보내야하고, �
 PATCH의 경우 업데이트를 할 때 원하는 데이터만 보내도 됩니다.
 
 </details>
+
+
 
 <details>
 <summary>HTTP의 상태 코드</summary>
@@ -1002,6 +1185,8 @@ PATCH의 경우 업데이트를 할 때 원하는 데이터만 보내도 됩니�
 
 </details>
 
+
+
 <details>
 <summary>DNS의 역할과 동작 원리에 대해 설명</summary>
 
@@ -1017,6 +1202,8 @@ TLD를 통해 알아낸 **권한 네임 서버**에 최종적으로 실제 주�
 
 </details>
 
+
+
 <details>
 <summary>웹 소켓이란 무엇이며, 어떻게 작동하는지</summary>
 
@@ -1026,12 +1213,16 @@ TLD를 통해 알아낸 **권한 네임 서버**에 최종적으로 실제 주�
 
 </details>
 
+
+
 <details>
 <summary>CDN은 무엇인가요?</summary>
 
 CDN(Content Delivery Network)은 웹 콘텐츠(HTML, CSS, JavaScript, 이미지, 동영상 등)를 사용자와 가까운 서버에서 제공하여 로딩 속도를 최적화하는 분산 네트워크 시스템입니다.
 
 </details>
+
+
 
 <details>
 <summary>TCP와 UDP의 차이</summary>
@@ -1062,6 +1253,8 @@ TCP는 가상회선(Virtual Circuit)을 사용하고 UDP는 데이터그램(Data
 
 </details>
 
+
+
 <details>
 <summary>UDP vs QUIC</summary>
 
@@ -1070,6 +1263,8 @@ UDP는 연결 설정 없이 데이터를 빠르게 전송할 수 있는 단순�
 QUIC은 UDP 위에서 동작하면서 TCP의 신뢰성, TLS 기반의 보안, 멀티플렉싱, 연결 이관 등의 기능을 결합한 신형 전송 프로토콜입니다. 빠른 연결 수립과 지연 최소화를 통해 HTTP/3의 기반이 되며, 전송 계층과 암호화 계층을 통합해 성능과 보안을 동시에 강화합니다.
 
 </details>
+
+
 
 <details>
 <summary>OSI 7계층과 TCP/IP 4계층에 대해 설명해주세요.</summary>
@@ -1090,6 +1285,8 @@ QUIC은 UDP 위에서 동작하면서 TCP의 신뢰성, TLS 기반의 보안, �
 
 </details>
 
+
+
 <details>
 <summary>TCP의 3-way handshake와 4-way handshake</summary>
 
@@ -1105,12 +1302,16 @@ TCP의 연결과정과 해제과정은 각각 3-way handshake, 4-way handshake �
 
 </details>
 
+
+
 <details>
 <summary>TCP의 연결 설정 과정(3단계)과 연결 종료 과정(4단계)이 단계가 차이나는 이유는?</summary>
 
 TCP의 연결 설정은 신뢰성을 확보하기 위해 클라이언트와 서버가 서로 송수신 가능 상태임을 확인하는 3-way handshake 방식으로 충분하지만, 연결 종료는 데이터를 모두 안전하게 주고받았는지 확인하고 양쪽이 각각 종료 의사를 명확히 표현해야 하므로 4-way handshake로 처리됩니다. 종료 과정에서는 양측이 독립적으로 FIN과 ACK를 주고받기 때문에 두 번의 종료 요청과 두 번의 확인 응답이 필요해 단계 수가 더 많아집니다.
 
 </details>
+
+
 
 <details>
 <summary>TCP 연결 해제 과정에서 TIME_WAIT이 발생하는 이유에 대해 설명해주세요.</summary>
@@ -1119,6 +1320,8 @@ TIME_WAIT은 TCP 연결 종료 과정에서 마지막 ACK를 보낸 측이 일�
 
 </details>
 
+
+
 <details>
 <summary>만약 Server에서 FIN 플래그를 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 FIN 패킷보다 늦게 도착하는 상황이 발생하면 어떻게 될까?</summary>
 
@@ -1126,12 +1329,16 @@ TCP는 시퀀스 번호로 순서를 보장하므로, 서버가 FIN을 전송한
 
 </details>
 
+
+
 <details>
 <summary>TCP/IP 4계층에서의 데이터 캡슐화 과정을 설명해주세요.</summary>
 
 TCP/IP 4계층에서의 데이터 캡슐화 과정은 애플리케이션 계층에서 시작하여 물리 계층으로 내려가면서 각 계층마다 헤더 정보를 덧붙이는 방식으로 이루어집니다. 먼저 애플리케이션 계층에서는 사용자 데이터를 생성하고, 전송 계층은 이 데이터를 세그먼트로 분할한 뒤 송신지 및 수신지 포트 번호가 포함된 TCP 또는 UDP 헤더를 붙입니다. 이후 인터넷 계층에서는 IP 헤더를 추가해 IP 패킷을 만들고, 네트워크 상에서 올바르게 라우팅될 수 있도록 합니다. 마지막으로 네트워크 인터페이스 계층에서는 MAC 주소 등의 정보가 포함된 프레임 헤더와 트레일러를 추가해 실제 전송 가능한 프레임을 완성하고, 이를 물리 매체를 통해 전송하게 됩니다.
 
 </details>
+
+
 
 <details>
 <summary>HTTPS에서 TLS 핸드셰이크 과정</summary>
@@ -1148,6 +1355,8 @@ TCP/IP 4계층에서의 데이터 캡슐화 과정은 애플리케이션 계층�
 - 핸드셰이크 완료클라이언트와 서버가 생성한 세션 키를 통해 암호화된 메시지를 교환
 
 </details>
+
+
 
 <details>
 <summary>CORS란?</summary>
@@ -1174,6 +1383,8 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
 
 </details>
 
+
+
 <details>
 <summary>브라우저 접속과정</summary>
 
@@ -1183,6 +1394,8 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
 4. 브라우저는 서버로 HTTP요청을 보내 데이터를 받아 렌더링을 합니다.
 
 </details>
+
+
 
 <details>
 <summary>브라우저 렌더링 설명</summary>
@@ -1196,6 +1409,8 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
 
 </details>
 
+
+
 <details>
 <summary>브라우저의 캐시 동작 방식</summary>
 
@@ -1206,6 +1421,8 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
 메모리 캐시의 경우 현재 열린 탭에서 저장하고 브라우저가 닫히면 사라지지만, 디스크 캐시는 브라우저가 파일을 디스크에 저장하여 브라우저를 닫아도 유지됩니다.
 
 </details>
+
+
 
 <details>
 <summary>브라우저에서 발생할 수 있는 메모리 누수 방지방법</summary>
@@ -1220,6 +1437,8 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
   - 선언한 클로저에 대해 사용하지 않는다면 클로저의 내부에 필요없는 데이터를 정리해야 합니다.
 
 </details>
+
+
 
 <details>
 <summary>브라우저의 주요 엔진(렌더링 엔진, JavaScript엔진)에 대해 설명</summary>
@@ -1239,12 +1458,16 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
 
 </details>
 
+
+
 <details>
 <summary>반응성과 부하의 차이</summary>
 
 반응성은 시스템이 사용자 입력에 얼마나 빠르게 응답하는가의 의미이고, 부하는 시스템이 처리해야하는 작업량을 의미합니다.
 
 </details>
+
+
 
 <details>
 <summary>쿠키, 세션, 로컬스토리지에 대해 설명</summary>
@@ -1263,6 +1486,8 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
 
 </details>
 
+
+
 <details>
 <summary>인증과 인가에 대해 설명</summary>
 
@@ -1270,12 +1495,16 @@ CORS문제를 해결하려면 서버단에서 Access-Control-Allow-Origin을 서
 
 </details>
 
+
+
 <details>
 <summary>토큰기반 인증방식에 대해 설명</summary>
 
 사용자가 로그인하면 서버는 사용자를 인증한 후에 Access Token, Refresh Token을 발급합니다. 사용자는 이후 요청 시에 헤더에 토큰을 포함하여 전송합니다. 서버는 토큰을 검증하여 요청을 처리하고, 만료된 경우 Refresh Token을 통해 새로운 Access Token을 발급받습니다.
 
 </details>
+
+
 
 <details>
 <summary>JWT(JSON Web Token)의 보안적인 취약점</summary>
@@ -1286,6 +1515,8 @@ JWT는 클라이언트에서 보관하므로 XSS공격으로 쉽게 유출될 �
 
 </details>
 
+
+
 <details>
 <summary>XSS(Cross-Site Scripting) 공격이 무엇이고, 이를 방지하는 방법에 대해 설명</summary>
 
@@ -1294,6 +1525,8 @@ XSS는 공격자가 악성 스크립트를 웹사이트에 삽입하여 실행�
 이를 방지하는 방법 중 하나는 쿠키 탈취 방지를 위해 HttpOnly 속성을 설정하거나 Secure 속성을 추가하여 HTTPS 환경에서만 쿠키가 전송되도록 설정하면 됩니다.
 
 </details>
+
+
 
 <details>
 <summary>크로스 브라우징에 대해 설명해주세요</summary>
@@ -1310,6 +1543,8 @@ XSS는 공격자가 악성 스크립트를 웹사이트에 삽입하여 실행�
 
 </details>
 
+
+
 <details>
 <summary>REST API에 대해 설명</summary>
 
@@ -1320,6 +1555,8 @@ REST API는 REST(Representational State Transfer) 아키텍처 스타일을 따�
 REST는 아키텍처 스타일이고, RESTful은 REST원칙을 지킨 API입니다.
 
 </details>
+
+
 
 <details>
 <summary>리플로우와 리페인트의 차이</summary>
@@ -1344,6 +1581,8 @@ REST는 아키텍처 스타일이고, RESTful은 REST원칙을 지킨 API입니�
 
 </details>
 
+
+
 <details>
 <summary>SEO에 대해 설명</summary>
 
@@ -1352,3 +1591,4 @@ REST는 아키텍처 스타일이고, RESTful은 REST원칙을 지킨 API입니�
 메타 태그, 헤더 태크 혹은 시멘틱 태그 등을 활용하여 SEO를 올릴 수 있습니다. 또한, 이미지에 Alt설명을 넣는 것도 SEO를 올릴 수 있습니다.
 
 </details>
+
