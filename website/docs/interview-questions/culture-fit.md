@@ -1,5 +1,6 @@
 ---
 title: Culture Fit
+sidebar_label: Culture Fit
 tags: [culture, interview]
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: JavaScript
+sidebar_label: JavaScript
 tags: [javascript, interview]
 ---
 
 # JavaScript
 
 ## JS 핵심 개념
-
 
 <details>
 <summary><strong>Q. 자바스크립트는 무슨 언어인가요?</strong></summary>
@@ -16,8 +16,6 @@ tags: [javascript, interview]
   하지만, 자바스크립트는 명령형, 함수형, 객체지향 프로그래밍이 모두 가능한 **멀티 패러다임** 언어입니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 자바스크립트가 동적 언어인 이유는 무엇인가요?</strong></summary>
@@ -29,8 +27,6 @@ tags: [javascript, interview]
   객체도 속성을 동적으로 추가 및 삭제할 수 있으므로 자바스크립트는 동적언어입니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 클로저란 무엇이고 적용할때 주의할점은 무엇인가요?</strong></summary>
@@ -47,8 +43,6 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 실행 컨텍스트에 대해 설명해주세요.</strong></summary>
 
@@ -59,8 +53,6 @@ tags: [javascript, interview]
   실행 컨텍스트는 스택 구조(Execution Context Stack)로 관리되며, 가장 위에 있는 컨텍스트가 현재 실행 중인 코드에 해당합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 클로저와 실행 컨텍스트를 연관지어서 설명해주세요.</strong></summary>
@@ -73,8 +65,6 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 렉시컬 환경에 대해 설명해주세요.</strong></summary>
 
@@ -86,16 +76,12 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 스코프(Scope)에 대해 설명해주세요</strong></summary>
 
 - 스코프는 변수나 함수가 유효한 범위, 즉 해당 변수나 함수에 접근할 수 있는 코드의 영역을 의미합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 스코프의 종류에 대해 설명해주세요.</strong></summary>
@@ -106,8 +92,6 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 스코프 체인에 대해 설명해주세요</strong></summary>
 
@@ -116,8 +100,6 @@ tags: [javascript, interview]
   즉, 가장 안쪽부터 변수를 찾을 때까지 바깥쪽으로 스코프를 넓혀나갑니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 호이스팅에 대해 설명해주세요.</strong></summary>
@@ -128,8 +110,6 @@ tags: [javascript, interview]
   여기서 중요한 점은 선언(Declaration)만 끌어올려진다는 것입니다. 값을 할당(Assignment)하는 부분은 원래 자리에 그대로 남아있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 자바스크립트의 메모리 관리에 대해 아는 대로 설명해주세요</strong></summary>
@@ -151,8 +131,6 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 콜 스택 (Call Stack)과 힙 (Heap)에 대해 설명해주세요</strong></summary>
 
@@ -165,8 +143,6 @@ tags: [javascript, interview]
   **가비지 컬렉터**에 의해 객체를 정리해 메모리를 관리됩니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. JS에서 Garbage Collection에 대해 설명해주세요.</strong></summary>
@@ -181,8 +157,6 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 엄격(strict) 모드에 대해 설명해주세요</strong></summary>
 
@@ -192,8 +166,6 @@ tags: [javascript, interview]
   일반 함수 내에서 this가 원래는 전역 객체(브라우저에서는 window)를 가리켰는데, 엄격 모드에서는 undefined를 가리키게 해서 의도치 않은 전역 오염을 막아줍니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 일반 함수와 화살표 함수의 this 바인딩 차이에 대해서 설명해주세요.</strong></summary>
@@ -214,8 +186,6 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 일급 객체의 조건에 대해 설명해주세요</strong></summary>
 
@@ -225,8 +195,6 @@ tags: [javascript, interview]
 4. 함수의 반환값으로 사용할 수 있다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. Call By Value, Call By Reference에 대해 설명해주세요.</strong></summary>
@@ -249,8 +217,6 @@ tags: [javascript, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. call, apply, bind에 대해서 설명해주세요.</strong></summary>
 
@@ -267,8 +233,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 </aside>
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. this에 대해 설명해주세요</strong></summary>
@@ -287,8 +251,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 이터러블과 이터레이터 프로토콜에 대해 설명해주세요</strong></summary>
 
@@ -305,8 +267,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   이터레이터 프로토콜을 준수한 객체를 **이터레이터**라 합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 제너레이터에 대해 설명해주세요</strong></summary>
@@ -325,9 +285,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 변수
-
 
 <details>
 <summary><strong>Q. var, let, const 차이를 설명해주세요</strong></summary>
@@ -352,8 +310,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. TDZ에 대해 설명해주세요</strong></summary>
 
@@ -362,8 +318,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   let과 const는 호이스팅이 되지만 초기화되지는 않기때문에 TDZ에 들어갑니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. JS의 데이터 타입에 대해 설명해주세요</strong></summary>
@@ -378,8 +332,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 변수 선언, 초기화, 할당의 차이점에 대해 설명해주세요</strong></summary>
 
@@ -390,8 +342,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 - 마지막으로 **할당**은 이미 선언되고 (보통 초기화까지 된) 변수에 **새로운 값을 저장**하는 것을 의미합니다. 예를 들어, 아까 let myVar = 10; 으로 초기화했다면, 나중에 코드에서 myVar = 20; 이렇게 다른 값을 넣는 것이 바로 할당입니다. 이미 존재하는 변수에 값을 업데이트하는 과정입니다. 물론 const로 선언된 변수는 재할당이 불가능하죠.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. null / undefined / NaN 을 비교해서 설명해주세요.</strong></summary>
@@ -404,8 +354,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 얕은 복사와 깊은 복사에 대해 설명해주세요</strong></summary>
 
@@ -415,8 +363,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 얕은 비교와 깊은 비교에 대해 설명해주세요</strong></summary>
 
@@ -425,8 +371,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 - 깊은 비교는 두 객체나 배열의 모든 속성이나 모든 원소를 재귀적으로 비교합니다. 즉, 객체가 중첩되어 있으면 그 내부의 속성까지 비교하여 두 객체나 배열이 동일한지 확인합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 자바스크립트에서 일어나는 데이터 형변환에 대해 설명해주세요.</strong></summary>
@@ -438,9 +382,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 프로토타입
-
 
 <details>
 <summary><strong>Q. Prototype과 Prototype Chaining이란?</strong></summary>
@@ -453,8 +395,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 프로토타입과 일반 객체지향 언어의 차이는?</strong></summary>
 
@@ -465,8 +405,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 - **`this` 바인딩** : 프로토타입기반 언어는 this가 호출하는 문맥에 따라 동적으로 결정되지만 객체지향 언어는 고정적으로 인스턴스 자신을 가리킵니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 프로토타입이 존재하는데, 왜 자바스크립트는 클래스를 도입했을까요?</strong></summary>
@@ -481,8 +419,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 최상위 루트의 프로토타입은 무엇인가요?</strong></summary>
 
@@ -496,9 +432,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 이벤트
-
 
 <details>
 <summary><strong>Q. 이벤트 버블링, 이벤트 캡쳐링, 이벤트 전파에 대해 설명해주세요.</strong></summary>
@@ -515,8 +449,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 이벤트 전파 제어</strong></summary>
 
@@ -525,8 +457,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 - `preventDefault` : 이벤트의 기본 동작을 취소합니다. 버블링이나 캡처링은 막을 수 없습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. event.target과 event.currentTarget의 차이</strong></summary>
@@ -537,9 +467,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 비동기 처리 방식
-
 
 <details>
 <summary><strong>Q. 동기(sync)와 비동기(async)에 대해 설명해주세요</strong></summary>
@@ -549,8 +477,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 - **비동기 방식**은 특정 작업이 끝날 때까지 기다리지 않고, 다음 작업을 실행하는 방식입니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 이벤트 루프에 대해 설명해주세요.</strong></summary>
@@ -567,8 +493,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 자바스크립트에서 비동기 로직이 어떻게 동작하는지 설명해주세요.</strong></summary>
 
@@ -584,8 +508,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 더 자세한 이벤트 루프 동작</strong></summary>
 
@@ -597,8 +519,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 콜백 함수에 대해 설명해주세요</strong></summary>
 
@@ -607,8 +527,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   즉, 어떤 함수가 실행된 후에 호출되는 함수라고 할 수 있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 콜백 지옥을 해결하는 방법을 설명해주세요</strong></summary>
@@ -621,8 +539,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. Promise/then 에 대해 설명해주세요.</strong></summary>
 
@@ -634,8 +550,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. async/await 에 대해 설명해주세요.</strong></summary>
 
@@ -646,8 +560,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   또한 try/catch 문을 통해 비동기 함수 내부에서 발생한 에러를 동기 코드처럼 처리할 수 있어서 에러 핸들링도 훨씬 명확해집니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. Promise.all()과 Promise.race()에 대해서 설명해주세요</strong></summary>
@@ -667,9 +579,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## Babel, Webpack
-
 
 <details>
 <summary><strong>Q. Babel과 같은 트랜스파일러(Transpiler)의 역할은 무엇인가요? 왜 현대 프론트엔드 개발에서 필요한가요?</strong></summary>
@@ -680,8 +590,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 웹팩(Webpack), Vite와 같은 모듈 번들러(Module Bundler)는 왜 필요하며, 주요 기능은 무엇인가요?</strong></summary>
 
@@ -690,8 +598,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   Babel을 통한 트랜스파일링, 코드 압축과 트리 쉐이킹을 통한 최적화, HMR을 통한 개발 생산성 향상과 같은 기능을 통해 현대 프론트엔드 개발의 필수적인 도구로 자리잡고 있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. require vs import 를 비교해서 설명해주세요.</strong></summary>
@@ -702,9 +608,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 함수
-
 
 <details>
 <summary><strong>Q. 화살표 함수와 일반 함수의 차이</strong></summary>
@@ -719,8 +623,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 함수 선언형과 함수 표현식의 차이</strong></summary>
 
@@ -729,8 +631,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   함수 선언문의 경우 호이스팅이 발생하여 실제 코드 라인 이전에 호출하여도 정상적인 값을 반환하는 반면, 함수 표현식의 경우는 실제 코드 라인 이전에 호출하면 에러를 반환합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 즉시 실행 함수(IIFE)에 대해 설명해주세요</strong></summary>
@@ -741,8 +641,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   또한, 한 번 실행되면 메모리가 남지 않아 일시적인 데이터 처리에 적합합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 커링(Currying)에 대해서 설명해주세요.</strong></summary>
@@ -757,9 +655,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 자바스크립트 문법
-
 
 <details>
 <summary><strong>Q. ES6에 대해서 설명해주세요.</strong></summary>
@@ -770,8 +666,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. Rest 연산자와 Spread 연산자에 대해 설명해주세요</strong></summary>
 
@@ -780,8 +674,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 - Spread 연산자는 배열이나 객체의 요소를 **펼칠 때** 사용됩니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. **옵셔널 체이닝(Optional Chaining) `?.` 과 Nullish Coalescing `??` 연산자는 무엇이며, 어떤 상황에서 유용하게 사용될 수 있나요?**</strong></summary>
@@ -800,8 +692,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. JS의 Array.flat()을 어떻게 구현해볼 수 있을까요?</strong></summary>
 
@@ -817,8 +707,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 불변성을 유지하려면 어떻게 해야하나요?</strong></summary>
 
@@ -832,9 +720,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 성능 최적화
-
 
 <details>
 <summary><strong>Q. requestAnimationFrame에 대해 설명해주세요</strong></summary>
@@ -846,8 +732,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   또한, 브라우저는 화면이 리프레시될 때만 애니메이션을 실행합니다. 그래서 사용자가 다른 탭으로 전환하거나, 페이지가 백그라운드에 있을 경우 불필요한 애니메이션이 실행되지 않으며, 이로 인해 불필요한 CPU 리소스를 절약할 수 있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. **코드 스플리팅(Code Splitting)과 지연 로딩(Lazy Loading)은 무엇이며, 웹 성능 최적화에 어떻게 기여하나요?**</strong></summary>
@@ -865,8 +749,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   **왜 필요한가요?** 웹 페이지를 처음 열 때 사용자가 즉시 보거나 사용하지 않을 모든 것을 미리 로드하는 것은 비효율적입니다. 예를 들어, 페이지 하단에 있는 이미지나, 특정 버튼을 클릭해야만 보이는 모달 창의 코드는 사용자가 해당 영역에 도달하거나 버튼을 누르기 전까지는 필요 없을 수 있습니다. 지연 로딩을 통해 이런 **비핵심적인(non-critical) 리소스의 로딩을 뒤로 미루면** 초기 로딩 속도를 크게 개선할 수 있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 디바운스, 쓰로틀링에 대해서 설명해주세요.</strong></summary>
@@ -886,9 +768,7 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
 
 </details>
 
-
 ## 기타
-
 
 <details>
 <summary><strong>Q. AJAX에 대해 설명해주세요</strong></summary>
@@ -898,8 +778,6 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   `fetch API`를 통해 사용할 수 있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 왜 함수 실행을 Stack으로 관리하나요?</strong></summary>
@@ -911,4 +789,3 @@ call과 apply의 차이는 인자 전달 방식밖에 없음.
   콜 스택은 바로 이런 순서를 관리하기에 딱 좋은 자료구조입니다.
 
 </details>
-

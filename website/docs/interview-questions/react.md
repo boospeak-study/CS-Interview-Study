@@ -1,5 +1,6 @@
 ---
 title: React
+sidebar_label: React
 tags: [react, interview]
 ---
 

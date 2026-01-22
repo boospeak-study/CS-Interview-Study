@@ -1,5 +1,6 @@
 ---
 title: TypeScript
+sidebar_label: TypeScript
 tags: [typescript, interview]
 ---
 
@@ -263,20 +264,20 @@ tags: [typescript, interview]
 - 옵셔널 체이닝은 `null`이나 `undefined`인것을 에러없이 undefined로 반환합니다.
   주로 객체나 배열의 중첩된 속성에 접근할 때 사용합니다.
   `jsx
-  // 중간에 undefined나 null이 있으면 에러가 아니라 undefined를 반환
-  const city = user?.address?.city;
-  `
+// 중간에 undefined나 null이 있으면 에러가 아니라 undefined를 반환
+const city = user?.address?.city;
+`
   non-null 단언은 `null`또는 `undefined`가 아닐 것이라고 단언(보장)하는 것입니다.
   즉, 타입스크립트의 `null` 경고를 무시하고, 무조건 있다고 선언해서 타입 에러를 피하는 것 입니다.
   `jsx
-  // 무조건 값이 있다고 단언하는것
-  // 만약 중간에 null이나 undefined가 있으면 런타임에서 에러가 난다.
-  const city = user!.address!.city;
-  `
+// 무조건 값이 있다고 단언하는것
+// 만약 중간에 null이나 undefined가 있으면 런타임에서 에러가 난다.
+const city = user!.address!.city;
+`
   널 병합 연산자는 왼쪽 값이 `null`또는 `undefined`일때, 오른쪽 대체값을 변환하는 연산자입니다.
   `jsx
-  const name = user.name ?? 'Guest';
-  `
+const name = user.name ?? 'Guest';
+`
 
 </details>
 

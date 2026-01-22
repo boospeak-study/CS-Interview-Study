@@ -1,12 +1,12 @@
 ---
 title: HTML/CSS
+sidebar_label: HTML/CSS
 tags: [html, css, interview]
 ---
 
 # HTML/CSS
 
 ## HTML
-
 
 <details>
 <summary><strong>⭐ Q. script 태그에서 사용하는 async와 defer의 차이에 대해 설명해주세요.</strong></summary>
@@ -18,8 +18,6 @@ tags: [html, css, interview]
   **defer** 속성도 async처럼 스크립트 파일을 다운로드하는 동안 HTML 파싱을 멈추지 않고 **비동기적**으로 진행합니다. 하지만 async와 달리 스크립트 다운로드가 완료되어도 즉시 실행하지 않고, HTML 파싱이 **모두 끝난 후**에 스크립트를 실행합니다. 여러 개의 defer 스크립트가 있다면 HTML에 명시된 순서대로 실행되는 것이 보장됩니다. 따라서 DOM 요소에 접근하거나 스크립트 간의 실행 순서가 중요한 경우에 주로 사용합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>⭐ Q. HTML 렌더링 도중 JavaScript가 실행되면 렌더링이 멈추는 이유가 뭔가요?</strong></summary>
@@ -38,8 +36,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. HTML이란 무엇인가요?</strong></summary>
 
@@ -49,8 +45,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. HTML5의 주요 특징은 무엇인가요?</strong></summary>
 
@@ -59,8 +53,6 @@ tags: [html, css, interview]
   또한 웹 애플리케이션 개발을 위한 기능들이 추가되었습니다. 예를 들어, 사용자의 컴퓨터에 데이터를 저장할 수 있는 로컬 스토리지나 세션 스토리지 기능이 생겼고, 웹 소켓을 통해 서버와 실시간으로 양방향 통신을 하는 것도 가능해졌습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 브라우저 동작 중 중단되는 과정이 어떻게 되나요?</strong></summary>
@@ -72,8 +64,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. DOCTYPE 이란 무엇인가요?</strong></summary>
 
@@ -81,8 +71,6 @@ tags: [html, css, interview]
   브라우저는 이 DOCTYPE 선언을 보고 해당 문서가 HTML5인지, 아니면 이전 버전의 HTML이나 XHTML인지를 파악하고, 그에 맞는 방식으로 문서를 해석하고 렌더링합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. 메타 태그(Meta Tag)란?</strong></summary>
@@ -92,8 +80,6 @@ tags: [html, css, interview]
   주로 `<head>` 태그 안에 위치하는데요, 예를 들어서 어떤 문자 인코딩 방식을 사용하는지(charset="UTF-8"), 검색 엔진을 위해 페이지의 설명(name="description")이나 키워드(name="keywords")는 무엇인지, 또는 모바일 기기에서 화면을 어떻게 보여줄지 뷰포트(name="viewport") 설정 같은 것들을 메타 태그를 통해 지정할 수 있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. HTML에서의 attributes와 properties의 차이점을 설명해 주세요.</strong></summary>
@@ -106,8 +92,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. HTML과 XML의 차이</strong></summary>
 
@@ -117,9 +101,7 @@ tags: [html, css, interview]
 
 </details>
 
-
 ## CSS
-
 
 <details>
 <summary><strong>⭐ Q. Cascading에 대해 설명해주세요.</strong></summary>
@@ -130,8 +112,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>⭐ Q. 박스 모델, margin, padding, box-sizing의 차이와 관계를 설명해주세요.</strong></summary>
 
@@ -140,8 +120,6 @@ tags: [html, css, interview]
 - box-sizing 속성은 요소의 width와 height를 계산할 때 어떤 부분까지 포함할지 결정합니다. 기본값인 content-box는 width와 height가 content 영역만을 의미하고, border-box는 padding과 border까지 포함해서 전체 크기를 계산합니다. 실무에서는 레이아웃이 꼬이지 않도록 border-box를 많이 사용합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>⭐ Q. display, position, top/margin-top/translateY의 차이와 레이아웃에 미치는 영향은?</strong></summary>
@@ -152,16 +130,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. CSS에서 inline, internal, external 스타일의 차이</strong></summary>
 
 - inline은 태그에 직접 style 속성으로 작성하고, internal은 `<style>` 태그를 HTML 내부에 작성하며, external은 별도 CSS 파일을 `<link>`로 불러오는 방식입니다. 유지보수성과 재사용성 측면에서는 external이 가장 효율적입니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. CSS에서 Reflow와 Repaint는 무엇이며, 성능에 어떤 영향을 미치나요?</strong></summary>
@@ -172,8 +146,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. CSS 애니메이션과 JS 애니메이션의 차이</strong></summary>
 
@@ -183,16 +155,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. visibility: hidden과 display: none의 차이는?</strong></summary>
 
 - visibility: hidden은 요소를 화면에 보이지 않게 하지만 공간은 그대로 유지되고, display: none은 요소 자체를 문서 흐름에서 제거해 공간도 차지하지 않게 됩니다. 즉, visibility: hidden은 자리만 숨기고 레이아웃에 영향이 있지만, display: none은 요소가 아예 없는 것처럼 동작합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. CSS 선택자 우선순위는 어떻게 되나요?</strong></summary>
@@ -205,8 +173,6 @@ tags: [html, css, interview]
 6. 전체 선택자
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. margin 병합에 대해 설명해주세요.</strong></summary>
@@ -221,16 +187,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. z-index는 무엇이고, 어떻게 동작하나요?</strong></summary>
 
 - z-index는 요소의 쌓임 순서를 지정하는 속성으로, 숫자가 클수록 앞쪽에 표시됩니다. 단, z-index가 적용되려면 해당 요소에 position 속성(relative, absolute, fixed, sticky) 중 하나가 설정되어 있어야 합니다. 같은 stacking context 안에서는 z-index 값에 따라 우선순위가 정해지지만, 서로 다른 컨텍스트끼리는 부모-자식 관계에 따라 우선순위가 달라질 수 있어 의도한 레이어링을 위해서는 position, z-index, stacking context를 함께 고려해야 합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. float 동작에 대해 설명해주세요.</strong></summary>
@@ -239,16 +201,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. top, margin-top, translate-y 차이에 대해 설명해주세요.</strong></summary>
 
 - top은 요소의 위치를 위쪽 기준으로 얼마나 떨어뜨릴지를 지정하는 속성으로, position 속성과 함께 사용됩니다. position: relative일 경우 원래 위치 기준으로 이동하고, absolute나 fixed는 기준이 되는 부모나 뷰포트를 기준으로 위치가 결정됩니다. 반면 margin-top은 요소의 바깥 여백을 지정하며, 문서 흐름에 영향을 주어 주변 요소와의 간격을 조절할 때 사용됩니다. translateY는 transform 속성의 하위 개념으로, 현재 위치를 기준으로 요소를 y축 방향으로 시각적으로 이동시키며, 레이아웃에 영향을 주지 않기 때문에 애니메이션이나 동적 인터페이스에서 자주 사용됩니다. 각각의 속성은 사용 목적과 레이아웃에 미치는 영향이 다르므로 상황에 맞게 선택하는 것이 중요합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. SCSS에 대해 설명해주세요.</strong></summary>
@@ -257,16 +215,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. position 속성에는 뭐가 있는지 설명해주세요</strong></summary>
 
 - position에는 static, relative, absolute, fixed, sticky가 있으며, static은 기본값이고 위치 이동 불가합니다. relative는 원래 위치 기준으로 이동하고, absolute는 가장 가까운 위치 지정 조상을 기준으로 절대 위치됩니다. fixed는 화면 기준으로 고정되며, sticky는 스크롤 위치에 따라 static과 fixed처럼 동작합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. display 속성에는 뭐가 있는지 설명해주세요</strong></summary>
@@ -275,16 +229,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 가상 클래스(:hover 등)와 가상 요소(::before 등)의 차이와 활용법을 설명해주세요.</strong></summary>
 
 - 가상 클래스는 요소의 상태나 위치에 따라(:hover, :focus, :nth-child 등) 스타일을 적용하고, 가상 요소(::before, ::after)는 실제로 존재하지 않는 콘텐츠를 생성해 스타일을 적용합니다. 둘 다 동적 스타일링에 유용합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. CSS 애니메이션, 트랜지션, JS 애니메이션의 차이와 각각의 장단점은?</strong></summary>
@@ -295,16 +245,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. CSS 전처리기(SCSS 등)와 후처리기의 차이, 그리고 SCSS의 특징은?</strong></summary>
 
 - 전처리기(SASS, LESS 등)는 CSS 작성 전 변수, 중첩, 함수 등을 활용해 코드 구조를 개선하며, 후처리기(PostCSS 등)는 CSS가 완성된 후 자동 접두사 추가나 최적화 같은 후처리를 적용합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. Styled-Components와 Tailwind CSS의 차이를 말해주세요.</strong></summary>
@@ -315,9 +261,7 @@ tags: [html, css, interview]
 
 </details>
 
-
 ### 반응형
-
 
 <details>
 <summary><strong>⭐ Q. Flexbox와 Grid의 차이점에 대해 설명해주세요.</strong></summary>
@@ -332,16 +276,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>⭐ Q. 반응형 레이아웃에서 브레이크 포인트는 어떻게 설정하나요?</strong></summary>
 
 - 일반적으로 모바일, 태블릿, 데스크탑, 더 큰 모니터를 기준으로 잡습니다. 최근에는 디바이스 종류가 다양해지면서 단순한 해상도보다는 콘텐츠의 가독성과 UI 배치를 기준으로 브레이크포인트를 잡는 경우도 많습니다. 또한 Grid 레이아웃을 사용할 때는 컬럼이 지나치게 좁아지지 않도록 시각적 안정성을 고려해 세부적인 브레이크포인트를 추가하기도 합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. CSS flex-wrap 속성에 대해서 설명해주세요.</strong></summary>
@@ -354,8 +294,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. px, em, rem의 차이를 설명해주세요.</strong></summary>
 
@@ -366,8 +304,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. vw, vh에 대해서 설명해주세요.</strong></summary>
 
@@ -377,8 +313,6 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 페이지 크기가 변해도 항상 같은 비율을 유지하는 요소를 만들려면 CSS를 어떻게 설정해야될까요?</strong></summary>
 
@@ -386,9 +320,7 @@ tags: [html, css, interview]
 
 </details>
 
-
 ### 접근성
-
 
 <details>
 <summary><strong>⭐ Q. 웹 접근성을 위해 고려해야 할 HTML/CSS 측면은 무엇이 있나요?</strong></summary>
@@ -399,16 +331,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>⭐ Q. 웹 접근성에서 ARIA란 무엇이며, 언제 사용하나요?</strong></summary>
 
 - ARIA(Accessible Rich Internet Applications)는 시각장애인 등 보조기기 사용자가 웹 콘텐츠를 더 잘 이해할 수 있도록 돕는 속성 집합입니다. 시맨틱 태그로 표현이 어려운 동적 UI나 커스텀 컴포넌트에 접근성 정보를 추가할 때 사용합니다. 예를 들어, role, aria-label, aria-hidden 등 다양한 속성이 있습니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. SEO(검색 엔진 최적화)를 위해 HTML에서 신경 써야 할 점은?</strong></summary>
@@ -417,9 +345,7 @@ tags: [html, css, interview]
 
 </details>
 
-
 ### 성능 최적화
-
 
 <details>
 <summary><strong>Q. CSS에서 will-change 속성의 역할은?</strong></summary>
@@ -428,16 +354,12 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 웹 폰트 적용 시 성능을 최적화하기 위한 방법에는 무엇이 있나요?</strong></summary>
 
 - 웹 폰트를 최적화하려면 먼저 `font-display: swap`을 사용해 로딩 중에도 텍스트가 바로 보이게 하고, 실제 사용하는 글자만 포함된 서브셋 폰트를 적용해 용량을 줄이는 것이 좋습니다. 또한 압축률이 높은 woff2 포맷을 사용하고, preload로 폰트를 우선 로드하면 렌더링 지연을 줄일 수 있습니다. 이외에도 사용하지 않는 굵기나 스타일은 제외하고 꼭 필요한 것만 불러오는 것이 중요합니다.
 
 </details>
-
-
 
 <details>
 <summary><strong>Q. CSS 변수(CSS Custom Properties)는 무엇이고, 어떻게 사용하나요?</strong></summary>
@@ -446,12 +368,9 @@ tags: [html, css, interview]
 
 </details>
 
-
-
 <details>
 <summary><strong>Q. 미디어 쿼리에서 orientation, resolution 등 고급 속성은 언제 활용하나요?</strong></summary>
 
 - orientation은 화면이 가로/세로 모드인지에 따라 스타일을 다르게 적용할 때, resolution은 디스플레이의 픽셀 밀도에 따라 이미지를 교체하거나 스타일을 조정할 때 사용합니다. 예시: @media (orientation: landscape), @media (min-resolution: 2dppx)
 
 </details>
-
