@@ -5,9 +5,9 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "CS Interview Study",
+  title: "Boospeak Study",
   tagline: "Computer Science Interview Preparation for Developers",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://parkblo.github.io",
+  url: "https://boospeak-study.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/CS-Interview-Study/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "parkblo", // Usually your GitHub org/user name.
+  organizationName: "boospeak-study", // Usually your GitHub org/user name.
   projectName: "CS-Interview-Study", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/boospeak-study/CS-Interview-Study/tree/main/website/",
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/boospeak-study/CS-Interview-Study/tree/main/website/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -75,7 +75,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "CS Interview Study",
+      title: "Boospeak Study",
       logo: {
         alt: "CS Interview Study Logo",
         src: "img/logo.svg",
@@ -83,68 +83,22 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
+          sidebarId: "interviewSidebar",
+          position: "left",
+          label: "면접 질문",
+        },
+        {
+          type: "docSidebar",
           sidebarId: "csTestSidebar",
           position: "left",
           label: "CS 테스트",
         },
         {
-          type: "docSidebar",
-          sidebarId: "interviewSidebar",
-          position: "left",
-          label: "면접 질문 리스트",
-        },
-        { to: "/blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/parkblo/CS-Interview-Study",
+          href: "https://github.com/boospeak-study/CS-Interview-Study",
           label: "GitHub",
           position: "right",
         },
       ],
-    },
-    footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Interview Notes",
-              to: "/docs/cs-test/algorithm/알고리즘",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/parkblo/CS-Interview-Study",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} @parkblo. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
