@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - byeongju/docusaurus
     # Review gh-pages-related files if you want
     paths:
       - "src/**"
