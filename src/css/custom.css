@@ -1,0 +1,205 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Pretendard Webfont */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base:
+    "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  /* Purple Palette */
+  --ifm-color-primary: #a855f7;
+  --ifm-color-primary-dark: #9333ea;
+  --ifm-color-primary-darker: #7e22ce;
+  --ifm-color-primary-darkest: #6b21a8;
+  --ifm-color-primary-light: #c084fc;
+  --ifm-color-primary-lighter: #d8b4fe;
+  --ifm-color-primary-lightest: #f3e8ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #c084fc;
+  --ifm-color-primary-dark: #a855f7;
+  --ifm-color-primary-darker: #9333ea;
+  --ifm-color-primary-darkest: #7e22ce;
+  --ifm-color-primary-light: #d8b4fe;
+  --ifm-color-primary-lighter: #e9d5ff;
+  --ifm-color-primary-lightest: #f3e8ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Override default blue info/note admonitions to gray */
+:root {
+  --ifm-color-info: #85929e;
+  --ifm-color-info-dark: #6e7e8c;
+  --ifm-color-info-darker: #627280;
+  --ifm-color-info-darkest: #465561;
+  --ifm-color-info-light: #9ba6b0;
+  --ifm-color-info-lighter: #a5b0b9;
+  --ifm-color-info-lightest: #c5ced4;
+}
+
+html[data-theme="dark"] {
+  --ifm-color-info: #85929e;
+  --ifm-color-info-dark: #6e7e8c;
+  --ifm-color-info-darker: #627280;
+  --ifm-color-info-darkest: #465561;
+  --ifm-color-info-light: #9ba6b0;
+  --ifm-color-info-lighter: #a5b0b9;
+  --ifm-color-info-lightest: #c5ced4;
+}
+
+/* Admonition/Callout borders */
+.theme-admonition.alert {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Details/Accordion background match with base background */
+details {
+  background-color: var(--ifm-background-color) !important;
+}
+
+/* Animated Hero Background */
+.hero-header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
+}
+
+.hero-blobs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: float 20s infinite alternate-reverse ease-in-out;
+}
+
+.blob-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #f3e8ff 0%, #e9d5ff 100%);
+  top: -100px;
+  left: -100px;
+  animation-duration: 25s;
+}
+
+.blob-2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #fae8ff 0%, #f5d0fe 100%);
+  bottom: -150px;
+  right: -100px;
+  animation-duration: 30s;
+  animation-delay: -5s;
+}
+
+.blob-3 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #f5f3ff 0%, #ede9fe 100%);
+  top: 40%;
+  left: 30%;
+  animation-duration: 20s;
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1) rotate(10deg);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card Hover Animation */
+.card-hover {
+  transition:
+    transform 0.5s cubic-bezier(0.2, 0, 0.2, 1),
+    box-shadow 0.5s ease-in-out !important;
+}
+
+.card-hover:hover {
+  transform: scale(1.03) !important;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .hero-header {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%) !important;
+}
+
+[data-theme="dark"] .hero-subtitle {
+  color: #cbd5e1;
+  opacity: 0.8;
+}
+
+[data-theme="dark"] .blob-1 {
+  background: radial-gradient(circle, #581c87 0%, #3b0764 100%);
+  opacity: 0.3;
+}
+
+[data-theme="dark"] .blob-2 {
+  background: radial-gradient(circle, #4c1d95 0%, #2e1065 100%);
+  opacity: 0.3;
+}
+
+/* Dark Mode Logo Adaptation */
+[data-theme="dark"] .navbar__logo {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 6px;
+  margin-right: 8px; /* Adjust margin to compensate for padding if needed */
+}
+
+[data-theme="dark"] .hero-logo {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+  border-radius: 16px !important; /* Override inline style if necessary, or complement it */
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3); /* Purple glow match */
+  box-sizing: content-box; /* Ensure padding adds to the visual size */
+}
+
+[data-theme="dark"] .blob-3 {
+  background: radial-gradient(circle, #0f766e 0%, #042f2e 100%);
+  opacity: 0.3;
+}

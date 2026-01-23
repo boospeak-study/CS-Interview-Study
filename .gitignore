@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# build directory
+/build
+
+# docusaurus
+/.docusaurus
+/.cache
+/.temp
+/sw.js
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development
+.env.test
+.env.production
