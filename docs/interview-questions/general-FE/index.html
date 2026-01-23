@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-interview-questions/general-FE" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">General FE | Boospeak</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://boospeak-study.github.io/CS-Interview-Study/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://boospeak-study.github.io/CS-Interview-Study/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://boospeak-study.github.io/CS-Interview-Study/docs/interview-questions/general-FE"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="General FE | Boospeak"><meta data-rh="true" name="description" content="Q. CSR / SSR / SSG 에 대해 설명해주세요."><meta data-rh="true" property="og:description" content="Q. CSR / SSR / SSG 에 대해 설명해주세요."><link data-rh="true" rel="icon" href="/CS-Interview-Study/img/logo.png"><link data-rh="true" rel="canonical" href="https://boospeak-study.github.io/CS-Interview-Study/docs/interview-questions/general-FE"><link data-rh="true" rel="alternate" href="https://boospeak-study.github.io/CS-Interview-Study/docs/interview-questions/general-FE" hreflang="en"><link data-rh="true" rel="alternate" href="https://boospeak-study.github.io/CS-Interview-Study/docs/interview-questions/general-FE" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"General FE","item":"https://boospeak-study.github.io/CS-Interview-Study/docs/interview-questions/general-FE"}]}</script><link rel="stylesheet" href="/CS-Interview-Study/assets/css/styles.7d8e12d0.css">
+<script src="/CS-Interview-Study/assets/js/runtime~main.fff0f10c.js" defer="defer"></script>
+<script src="/CS-Interview-Study/assets/js/main.afbf1646.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CS-Interview-Study/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CS-Interview-Study/"><div class="navbar__logo"><img src="/CS-Interview-Study/img/logo.png" alt="Boospeak Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CS-Interview-Study/img/logo.png" alt="Boospeak Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Boospeak</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CS-Interview-Study/docs/interview-questions/computer-science">면접 질문</a><a class="navbar__item navbar__link" href="/CS-Interview-Study/docs/cs-test/algorithm/알고리즘">CS 테스트</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/boospeak-study/CS-Interview-Study" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/interview-questions/computer-science"><span title="Computer Science" class="linkLabel_WmDU">Computer Science</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/interview-questions/culture-fit"><span title="Culture Fit" class="linkLabel_WmDU">Culture Fit</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/CS-Interview-Study/docs/interview-questions/general-FE"><span title="General FE" class="linkLabel_WmDU">General FE</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/interview-questions/html-css"><span title="HTML/CSS" class="linkLabel_WmDU">HTML/CSS</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/interview-questions/javascript"><span title="JavaScript" class="linkLabel_WmDU">JavaScript</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/interview-questions/react"><span title="React" class="linkLabel_WmDU">React</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/interview-questions/typescript"><span title="TypeScript" class="linkLabel_WmDU">TypeScript</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/CS-Interview-Study/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">General FE</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>General FE</h1></header>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. CSR / SSR / SSG 에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="csr">CSR<a href="#csr" class="hash-link" aria-label="Direct link to CSR" title="Direct link to CSR" translate="no">​</a></h2><p>초기 로딩 시 최소한의 HTML만 전달하고, JavaScript가 실행된 후 브라우저에서 모든 UI를 구성함</p><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="장점">장점<a href="#장점" class="hash-link" aria-label="Direct link to 장점" title="Direct link to 장점" translate="no">​</a></h3><p>SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.</p><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="단점">단점<a href="#단점" class="hash-link" aria-label="Direct link to 단점" title="Direct link to 단점" translate="no">​</a></h3><p>초기 로딩 속도 느리고 SEO에 불리함</p><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ssr">SSR<a href="#ssr" class="hash-link" aria-label="Direct link to SSR" title="Direct link to SSR" translate="no">​</a></h2><p>요청 시 서버가 HTML을 완전히 구성한 후 브라우저에 전달해 바로 렌더링하는 방식</p><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="장점-1">장점<a href="#장점-1" class="hash-link" aria-label="Direct link to 장점" title="Direct link to 장점" translate="no">​</a></h3><p>초기 로딩 속도가 빠르고 SEO에 유리, 보안에 유리함</p><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="단점-1">단점<a href="#단점-1" class="hash-link" aria-label="Direct link to 단점" title="Direct link to 단점" translate="no">​</a></h3><p>서버의 부담이 증가하고 페이지 전환 시 전체 HTML을 다시 요청해야 합니다.</p><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ssg">SSG<a href="#ssg" class="hash-link" aria-label="Direct link to SSG" title="Direct link to SSG" translate="no">​</a></h2><p>빌드 시 미리 HTML을 생성해서 저장해두고, 사용자가 요청할 때 해당 HTML을 그대로 전달하는 방식</p><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="장점-2">장점<a href="#장점-2" class="hash-link" aria-label="Direct link to 장점" title="Direct link to 장점" translate="no">​</a></h3><p>매우 빠르고 SEO에 매우 유리함</p><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="단점-2">단점<a href="#단점-2" class="hash-link" aria-label="Direct link to 단점" title="Direct link to 단점" translate="no">​</a></h3><p>실시간 데이터 반영이 어렵고 페이지 수가 많으면 빌드 시간이 길어짐</p><p>질문 제작: 강민주</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. CSR과 SSR의 단점을 극복하는 방법에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="csr-단점-극복-방법">CSR 단점 극복 방법<a href="#csr-단점-극복-방법" class="hash-link" aria-label="Direct link to CSR 단점 극복 방법" title="Direct link to CSR 단점 극복 방법" translate="no">​</a></h2><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="초기-로딩이-느림">초기 로딩이 느림<a href="#초기-로딩이-느림" class="hash-link" aria-label="Direct link to 초기 로딩이 느림" title="Direct link to 초기 로딩이 느림" translate="no">​</a></h3><p>해결 방법</p><ul>
+<li class="">code splitting(코드 분할) 필요한 페이지/ 컴포넌트 단위로 JS 번들을 나누어 초기에 최소한의 코드로만 로딩</li>
+<li class="">Lazy Loading : 사용자가 실제로 접근할 때 필요한 리소스만 불러옴</li>
+<li class="">Preloading/Prefetching : 예상되는 사용자 이동 경로에 있는 리소스를 미리 불러와 준비</li>
+</ul><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="seo에-불리함">SEO에 불리함<a href="#seo에-불리함" class="hash-link" aria-label="Direct link to SEO에 불리함" title="Direct link to SEO에 불리함" translate="no">​</a></h3><p>해결 방법</p><ul>
+<li class="">사전 렌더링 : 정적 HTML을 미리 생성해 검색 엔진에 제공</li>
+<li class="">동적 렌더링 : 일반 사용자는 CSR로 처리하고, 크롤러에게만 SSR 결과를 전달(Google 추천 방식)</li>
+</ul><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ssr-단점-극복-방법">SSR 단점 극복 방법<a href="#ssr-단점-극복-방법" class="hash-link" aria-label="Direct link to SSR 단점 극복 방법" title="Direct link to SSR 단점 극복 방법" translate="no">​</a></h2><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="서버-부하가-큼">서버 부하가 큼<a href="#서버-부하가-큼" class="hash-link" aria-label="Direct link to 서버 부하가 큼" title="Direct link to 서버 부하가 큼" translate="no">​</a></h3><p>해결 방법</p><ul>
+<li class="">캐싱 : 페이지 결과나 API 응답을 CDN 또는 서버 메모리에 저장하여 재사용</li>
+<li class="">ISR : 정적 페이지를 일정 주기로 백그라운드에서 다시 생성하는 방식</li>
+</ul><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="페이지-전환-시-깜빡임느림">페이지 전환 시 깜빡임/느림<a href="#페이지-전환-시-깜빡임느림" class="hash-link" aria-label="Direct link to 페이지 전환 시 깜빡임/느림" title="Direct link to 페이지 전환 시 깜빡임/느림" translate="no">​</a></h3><p>해결 방법</p><ul>
+<li class="">Hydaration 최적화 : 클라이언트 측에서 부드럽게 React가 takeover 하도록 조정</li>
+<li class="">client-side routing 병행 : 페이 이동은 CSR 방식으로, 초기 로딩만 SSR로 처리</li>
+</ul><p>질문 제작: 강민주</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 프론트엔드에서 피처 구현하면서 가장 고려해야 될 게 뭐라고 생각하나요?</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>프론트엔드에서 피처를 구현할 때 가장 중요하게 고려해야 할 점은 사용자 경험이라고 생각합니다. 최종적으로 프론트엔드가 개발하는 모든 기능은 사용자를 위한 것이기 때문입니다.</p>
+<p>구체적으로 다음 요소들을 균형 있게 고려해야 합니다.</p>
+<p>성능과 속도: 사용자는 빠른 응답을 기대합니다. 불필요한 렌더링을 줄이고, 코드 스플리팅, 이미지 최적화, 캐싱 전략 등을 통해 로딩 시간을 최소화해야 합니다.</p>
+<p>접근성(Accessibility): 모든 사용자가 장애 여부와 관계없이 기능을 사용할 수 있어야 합니다. 시맨틱 HTML, ARIA 속성, 키보드 네비게이션 지원이 필수적입니다.</p>
+<p>유지보수성: 코드베이스가 확장 가능하고 다른 개발자들이 쉽게 이해할 수 있도록 설계해야 합니다. 컴포넌트의 재사용성과 명확한 관심사 분리가 중요합니다.</p>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. SPA에서 검색 엔진 최적화를 이루는 방법에 대해서 알려주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ol>
+<li class=""><strong>SSR 사용</strong>: 서버에서 페이지의 HTML을 미리 만들어 브라우저와 검색 봇에 전달합니다. 초기 콘텐츠를 바로 인식할 수 있습니다.</li>
+<li class=""><strong>SSG 사용</strong>: 빌드 시점에 모든 페이지의 HTML을 미리 생성해 둡니다. 빠르고 SEO에 매우 유리합니다. (예: Gatsby, Next.js/Nuxt.js의 SSG 모드)</li>
+<li class=""><strong>동적 렌더링:</strong> 사용자에게는 SPA를, 검색 봇에게는 서버에서 미리 렌더링된 버전을 보여주는 방식입니다.</li>
+</ol></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. SSR 방식으로 SPA를 구현하는 과정에 대해서 알려주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ol>
+<li class="">첫 페이지 로드 시에 서버가 필요한 데이터를 포함한 완전한 HTML을 미리 만들어서 브라우저에 보냅니다.</li>
+<li class="">그 후, 브라우저는 JavaScript를 로드하여 서버에서 생성된 HTML에 동적인 기능을 추가합니다. 이 과정을 <strong>하이드레이션</strong>이라고 합니다.</li>
+<li class="">이후에는 일반적인 SPA처럼 클라이언트 측에서 페이지를 업데이트하며 동작합니다.</li>
+</ol></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. CLS 말고 Core Web Vitals 측정항목에는 뭐가 있는지 아시나요?</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>Core Web Vitals는 Google이 웹사이트 사용자 경험을 측정하는 핵심 지표들입니다.</p>
+<p>LCP(Largest Contentful Paint): 페이지의 가장 큰 콘텐츠가 화면에 표시되는 시간을 측정합니다. 좋은 사용자 경험을 위해서는 2.5초 이내여야 합니다.</p>
+<p>FID(First Input Delay): 사용자가 페이지와 처음 상호작용할 때 응답 지연 시간을 측정합니다. 100ms 이하가 권장됩니다.</p>
+<p>INP(Interaction to Next Paint): FID를 대체할 새로운 지표로, 모든 사용자 상호작용의 응답성을 측정합니다. 200ms 이하가 좋은 경험입니다.</p>
+<p>TTFB(Time to First Byte): 서버 응답 시간을 측정하는 지표로, 리소스 요청부터 첫 데이터를 받는 시간입니다.</p>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. Lighthouse 성능 측정 기준에는 뭐가 있는지 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>Lighthouse는 Google에서 개발한 웹페이지 품질 측정 도구로, 다음과 같은 주요 성능 측정 기준들을 포함합니다.</p>
+</li>
+<li class="">
+<p>성능(Performance)</p>
+<ul>
+<li class="">First Contentful Paint(FCP): 페이지가 로드되기 시작한 시점부터 콘텐츠의 일부가 화면에 렌더링될 때까지의 시간</li>
+<li class="">Largest Contentful Paint(LCP): 가장 큰 콘텐츠 요소가 화면에 렌더링되는 시간 (Core Web Vitals의 일부)</li>
+<li class="">Speed Index: 페이지 콘텐츠가 얼마나 빨리 시각적으로 표시되는지 측정</li>
+<li class="">Time to Interactive(TTI): 페이지가 완전히 상호작용 가능한 상태가 되는 데 걸리는 시간</li>
+<li class="">Total Blocking Time(TBT): FCP와 TTI 사이에서 메인 스레드가 차단된 총 시간</li>
+<li class="">Cumulative Layout Shift(CLS): 페이지 로드 중 예기치 않은 레이아웃 이동의 정도 (Core Web Vitals의 일부)</li>
+</ul>
+</li>
+<li class="">
+<p>접근성(Accessibility)</p>
+<ul>
+<li class="">웹사이트가 장애가 있는 사용자들에게 얼마나 접근 가능한지 측정</li>
+<li class="">ARIA 속성의 올바른 사용, 색상 대비, 키보드 접근성 등 평가</li>
+</ul>
+</li>
+<li class="">
+<p>최적화 권장사항(Best Practices)</p>
+<ul>
+<li class="">HTTPS 사용, 안전하지 않은 JavaScript 방지, 올바른 이미지 비율 사용 등</li>
+<li class="">브라우저 오류 로깅, 사용자 경험을 저해하는 요소들 체크</li>
+</ul>
+</li>
+<li class="">
+<p>SEO(Search Engine Optimization)</p>
+<ul>
+<li class="">검색 엔진이 페이지를 얼마나 잘 이해할 수 있는지 측정</li>
+<li class="">meta 태그, 텍스트 크기, 크롤링 가능 여부 등 확인</li>
+</ul>
+</li>
+<li class="">
+<p>PWA(Progressive Web App)</p>
+<ul>
+<li class="">웹사이트가 PWA 기준을 얼마나 충족하는지 측정</li>
+<li class="">오프라인 작동, 설치 가능성, HTTPS 사용 등 평가</li>
+</ul>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 웹 애플리케이션의 성능을 최적화할 수 있는 방법들에 대해서 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 웹 접근성의 개념과 개선 방법에 대해 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 낙관적 업데이트에 관해서 설명해 주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">낙관적 업데이트는 사용자 인터페이스를 즉각적으로 반응하게 만들어 사용자 경험을 향상시키는 패턴입니다. 서버 응답을 기다리지 않고 UI를 먼저 업데이트한 후, 서버 응답이 돌아오면 그에 맞게 상태를 최종 조정하는 방식입니다.</li>
+<li class="">장점: 사용자에게 즉각적인 피드백 제공으로 앱이 더 빠르게 느껴집니다.</li>
+<li class="">단점: 서버 요청이 실패하면 롤백 로직을 구현해야 합니다, 이에 따라서 상태 관리의 복잡성이 증가할 수 있습니다.</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 이미지 최적화 방법들에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ol>
+<li class="">적절한 이미지 포맷 선택: WebP를 사용하면 JPG, PNG보다 30~50% 작은 파일 크기로 동일한 품질을 제공합니다.</li>
+<li class="">반응형 이미지: <code>&lt;picture&gt;</code> 요소를 활용하여 기기 특성마다 이미지 포맷을 다르게 전달할 수 있습니다.</li>
+<li class="">지연 로딩(Lazy Loading): 뷰포트에 들어올 때만 이미지를 로드하여 초기 페이지 로드 시간을 단축할 수 있습니다.</li>
+</ol></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 애자일에 대해 설명해주세요!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 웹, 앱 브릿지에 대해서 알고계신가요? 알고 계시다면 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 지원자님이 생각하시는 클린 코드에 대해 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 지원자님이 생각하시는 클린 아키텍쳐에 대해 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. non-blocking과 async의 차이점에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">non-blocking과 async는 자주 함께 쓰이지만, 의미와 관점이 조금 다릅니다.
+non-blocking은 함수가 작업을 수행하더라도 결과가 나올 때까지 기다리지 않고 즉시 제어권을 돌려주는 실행 방식을 의미합니다.
+반면, async는 함수가 호출된 이후의 작업 완료 시점에 실행될 로직을 미리 지정해두는 코드 구조를 말합니다.
+예를 들어, <code>non-blocking</code>은 A 함수가 B 함수를 호출했을 때 B 함수가 작업을 끝내지 않아도 A 함수가 계속 실행될 수 있도록 하는 실행 흐름이고, <code>async</code>는 그 작업이 끝났을 때 어떻게 처리할지를 명시하는 방식입니다.
+즉, non-blocking은 실행 방식, async는 그 실행을 처리하는 코드 스타일이라고 볼 수 있습니다.</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. blocking / non-blocking / sync / async 에 대해 설명해주세요. 그리고 각각을 조합한 것에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ol>
+<li class=""><strong>blocking + sync</strong> : 다른 작업이 진행되는 동안 자신의 작업을 처리하지 않고 (blocking), 다른 작업의 완료 여부를 바로 받아 순차적으로 처리하는 (sync) 방식이다. 다른 작업의 결과가 자신의 작업에 영향을 주는 경우에 활용할 수 있다.</li>
+<li class=""><strong>blocking + async</strong> : 다른 작업이 진행되는 동안 자신의 작업을 멈추고 기다리는 (blocking), 다른 작업의 결과를 바로 처리하지 않아 순서대로 작업을 수행하지 않는 (async) 방식이다.</li>
+<li class=""><strong>non-blocking + async</strong> : 다른 작업이 진행되는 동안에도 자신의 작업을 처리하고 (non-blocking), 다른 작업의 결과를 바로 처리하지 않아 작업 순서가 지켜지지 않는 (async) 방식이다. 다른 작업의 결과가 자신의 작업에 영향을 주지 않는 경우에 활용할 수 있다.</li>
+<li class=""><strong>non-blocking + sync</strong> : 다른 작업이 진행되는 동안에도 자신의 작업을 처리하고 (non-blocking), 다른 작업의 결과를 바로 처리하여 작업을 순차대로 수행하는 (sync) 방식이다.</li>
+</ol></div></div></details>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="infra-build-tools">Infra, Build, Tools<a href="#infra-build-tools" class="hash-link" aria-label="Direct link to Infra, Build, Tools" title="Direct link to Infra, Build, Tools" translate="no">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. Nginx에 대해서 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. CI/CD에 대해서 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 웹 서비스 배포 시스템 구축 경험이 있으신가요? 배포 프로세스에 대해 아는대로 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>예시 답변: AWS 환경에서 배포해본 경험이 있습니다. 배포 프로세스는 개발 -&gt; 빌드 -&gt; 테스트 -&gt; 배포 -&gt; 모니터링 순서로 이루어집니다.</p>
+</li>
+<li class="">
+<p>웹서버: HTTP 요청에 대해 정적으로 HTML 페이지를 전달합니다.</p>
+</li>
+<li class="">
+<p>WAS: 클라이언트 요청에 따라서 동적으로 콘텐츠를 생성하여 제공합니다.</p>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. Monorepo 사용 경험에 대해서 말씀해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 패키지 매니저(npm, pnpm, yarn, yarn2) 사용 경험에 대해 말씀해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. Git에 대해서 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 사용하신 Git 브랜치 전략에 대해 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. Git Merge, Squash, Rebase의 차이에 대해서 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. dependencies 와 devDependencies 차이에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ol>
+<li class="">dependencies: 프로덕션 환경에서 앱을 실행하는데 필요한 패키지들이 담깁니다. (ex: React, Redux, Axios)</li>
+<li class="">devDependencies: 개발 과정에서만 필요한 패키지들이 담깁니다. 빌드 도구, 테스트 프레임워크, 린터 등이 이곳에 포함됩니다. (ex: Webpack, Babel, ESLint, TypeScript)</li>
+</ol></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. MSA 경험이 있으신가요? 알고 계시는 만큼 설명해주세요.!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. BFF 아키텍처 구현 경험이 있나요? 혹은 알고 계시는 만큼 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>BFF는 &#x27;Backend for Frontend&#x27;의 약자인데요, 말 그대로 <strong>프론트엔드만을 위한 맞춤형 백엔드 서버입니다.</strong></p>
+<p>요즘 서비스들은 웹, 모바일 앱 등 다양한 프론트엔드 환경을 가지는 경우가 많잖아요? 그리고 백엔드는 여러 기능을 제공하는 범용 API나 마이크로서비스로 구성되기도 하고요.</p>
+<p>이때 프론트엔드 입장에서는, 화면 하나를 그리기 위해 여러 백엔드 API를 호출해야 하거나, 반대로 너무 많은 불필요한 데이터까지 받아와서 직접 가공해야 하는 불편함이 생길 수 있습니다.</p>
+<p><strong>BFF는 이런 문제를 해결하기 위해 중간에 위치</strong>합니다. 특정 프론트엔드(예: 웹 앱용 BFF, 모바일 앱용 BFF)를 타겟으로 해서, <strong>백엔드의 여러 API를 대신 호출</strong>해서 데이터를 가져오고, 프론트엔드가 <strong>필요로 하는 형태로 데이터를 조합하고 가공</strong>해서, <strong>딱 맞는 응답 하나로 만들어서</strong> 프론트엔드에 전달해주는 역할을 합니다.</p>
+<p>덕분에 프론트엔드 개발자는 복잡한 데이터 처리나 여러 번의 API 호출 없이, BFF가 제공하는 API만 호출하면 되니까 <strong>개발이 훨씬 편해지고</strong>, 필요한 데이터만 받으니 <strong>성능 개선</strong>에도 도움이 됩니다.</p>
+<p>결국, 프론트엔드 개발 경험과 사용자 경험을 향상시키기 위한 아키텍처 패턴이라고 생각합니다.</p>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. Webpack과 Vite, 기타 번들링 도구에 대한 설명 해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>Webpack은 가장 많이 쓰이는 번들러 중 하나로 모든 자원을 JS 모듈로 간주하여, 의존성을 분석하고 하나(또는 여러개)의 파일로 번들링해줍니다. 플러그인/로더 기반 구조로 확장성이 높고 트리 쉐이킹과 코드 분할을 지원해 줍니다.</p>
+<p>Vite는 최근 떠오른 매우 빠른 빌드 도구로 개발 시에는 번들링하지 않고, ESM으로 빠르개 실행시켜줍니다. 빌드 시에는 Rollup 기반으로 번들링하고 간단한 설정으로 빠르게 사용할 수 있지만 커스텀하기 어려울 수 있습니다.</p>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 디바운스와 쓰로틀에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>둘 다 이벤트 핸들러가 너무 자주 실행되지 않도록 조절하는 기법입니다.</p>
+<p>디바운스는 이벤트가 연속적으로 발생할 때, 마지막 이벤트가 발생한 후 일정 시간이 지나야 이벤트 핸들러가 실행되는 방식입니다. 예를 들어 검색창에 검색할 때 한 글자씩 입력할때마다 검색 요청을 보내면 부하가 불필요하게 커지니, 입력을 멈춘 후 일정 시간이 지나면 검색 요청을 보내는 방식으로 디바운스를 적용할 수 있습니다.</p>
+<p>쓰로틀링은 일정 시간 간격 동안 발생한 이벤트 중 첫번째 또는 마지막 이벤트만 처리하는 방식입니다. 이벤트가 계속 발생하더라도 설정된 시간 동안은 한번만 이벤트가 실행되는 것입니다. 예를 들어 매우 빠른 속도로 연속 클릭을 한다면, 클릭할 때마다 발생하는 이벤트를 전부 처리하면 부하가 불필요하게 커지니, 쓰로틀을 적용해서 일정 시간 내 한 번만 처리하게 할 수 있습니다.</p>
+<p>[ 쓰로틀 코드 ]</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">function throttle(fn, delay) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  let timer = null;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  return (...args) =&gt; {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    if (timer) return;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    timer = setTimeout(() =&gt; {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      fn(...args);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      timer = null;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }, delay);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  };</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>[ 디바운스 코드 ]</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">function debounce(fn, delay) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  let timer = 0;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  return (...args) =&gt; {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    clearTimeout(timer);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    timer = setTimeout(() =&gt; {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      fn(...args);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }, delay);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  };</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 무한 스크롤 구현 시 디바운스와 쓰로틀링 중 어떤게 더 적합한가요?</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">쓰로틀이 더 적합하다고 생각합니다. 스크롤은 연속적인 동작이며, 사용자는 스크롤이 페이지 하단에 도달할 때 즉각적인 반응을 기대합니다. 쓰로틀은 스크롤 하단에 위치하게 된 순간 즉시 추가 데이터 요청을 수행하므로 사용자에게 자연스러운 스크롤 경험을 제공합니다. 반면 디바운스를 적용할 경우, 사용자가 반복적으로 스크롤한다면 마지막 스크롤이 멈춘 후에야 데이터를 불러오기 시작하므로 지연이 발생할 수 있습니다.</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 무한 스크롤 구현 방식에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>사용자가 페이지를 아래로 스크롤할 때 마지막 요소가 뷰포트에 닿는 순간을 감지하여, 추가로 다음 데이터를 요청하는 방식입니다. 주로 Intersection Observer API를 사용합니다.</p>
+<p>이전에 제가 무한스크롤을 구현할때는 React-Query의 useInfiniteQuery 훅을 활용해서 무한스크롤을 구현했습니다. <code>useInfiniteQuery</code>는 API 요청, 데이터 병합, 로딩 상태 관리 등 전체 흐름을 처리하는 역할을 했습니다.</p>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 무한 스크롤의 장단점은 무엇이고, 개선은 어떻게 할 수 있나요?</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>무한 스크롤의 장점은 초기에 모든 데이터를 한 번에 불러오는 대신, 사용자의 스크롤에 따라 필요한 데이터만 점진적으로 요청하기 때문에 초기 로딩 속도를 개선하고 UX를 향상시킬 수 있다는 점입니다. 특히 수백 개 이상의 데이터를 다룰 때 유용합니다.</p>
+<p>하지만 단점도 존재합니다. 스크롤이 계속되면서 DOM에 컴포넌트가 무한히 쌓이면, 브라우저가 많은 요소를 렌더링하고 유지해야 하므로 성능 저하가 발생할 수 있습니다. 극단적으로 수만 개의 노드가 누적되면 브라우저에서 렌더링 에러가 발생할 수 있습니다.</p>
+<p>이러한 문제를 해결하기 위해 가상 스크롤 기법을 사용할 수 있습니다. 이 기법은 화면에 보이는 영역만 실제 DOM에 렌더링하고, 스크롤에 따라 보이지 않는 영역은 제거하거나 교체함으로써 전체 DOM 노드 수를 최소화하여 성능을 최적화합니다.</p>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 가상스크롤 방식에 대해 좀 더 자세히 설명해주세요. 현재 보이는 부분만 데이터를 가져와 렌더링되고, 위아래로 스크롤할때마다 데이터 요청해서 가져오면 오히려 비효율적인거 아닌가요?</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>가상 스크롤은 데이터를 요청하는 방식이 아니라, 이미 로딩된 데이터를 화면에 효율적으로 렌더링하기 위한 기술입니다.</p>
+<p>즉, 수백 개의 데이터가 클라이언트에 존재하더라도 DOM에는 보이는 일부만 렌더링하고, 스크롤 위치에 따라 렌더링 대상을 교체합니다. 이로써 렌더링 성능을 유지하면서도 스크롤에 따른 부하를 줄일 수 있습니다.</p>
+<p>가상 스크롤 구현 방식은, 위아래에 Intersection Observer를 사용하는 것이 아니라, 스크롤 위치(scrollTop)와 아이템 높이를 기준으로 현재 화면에 보여줄 데이터의 인덱스를 계산해 해당 항목만 렌더링하는 방식입니다. 이렇게 계산된 구간의 데이터만 DOM에 표시하고 나머지는 제거해, 많은 데이터가 있어도 성능을 효율적으로 유지할 수 있습니다.</p>
+</li>
+</ul></div></div></details>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing">Testing<a href="#testing" class="hash-link" aria-label="Direct link to Testing" title="Direct link to Testing" translate="no">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. FE 개발에서 테스트 코드를 작성해서 얻는 이점이 무엇인가요?</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">예시 답변: 저는 Jest를 통해서 간단한 테스트 코드를 작성해본 경험이 있습니다. 테스트 코드를 작성하면, 코드 수정이 발생할 때마다 동작의 성공 여부를 빠르게 판단할 수 있어서 생산성에 유리하다고 생각합니다. 특히 OOO 회사의 서비스에서 OOO 요구사항이 변동되는 경우에 빠르게 대응이 가능합니다.</li>
+<li class="">(본인의 경험 + 회사 서비스에 적용하여 설명하면 Good)</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 유닛 테스트, 통합 테스트, E2E 테스트에 대해 각각 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">유닛 테스트: 앱의 개별 구성 요소(컴포넌트)를 독립적으로 테스트합니다.<!-- -->
+<ul>
+<li class="">ex: Button 컴포넌트 클릭 시, 함수가 호출되는지 테스트</li>
+</ul>
+</li>
+<li class="">통합 테스트: 여러 구성 요소(컴포넌트)가 함께 동작할 때 올바른지 테스트합니다.<!-- -->
+<ul>
+<li class="">ex: 폼을 제출할 시, API 호출이 올바르게 발생하는지 테스트</li>
+</ul>
+</li>
+<li class="">E2E 테스트: 사용자의 관점에서 앱의 전체적인 흐름을 테스트합니다.<!-- -->
+<ul>
+<li class="">ex: 사용자가 로그인하고 상품을 구매하는 전체 과정 테스트</li>
+</ul>
+</li>
+</ul></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 만약 간단한 입력 필드 컴포넌트를 만든다면, 어떤 부분을 테스트해봐야 할까요?!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. FE 테스트를 위해 주로 어떤 라이브러리나 프레임워크를 사용하나요?!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 컴포넌트를 테스트할 때, API 호출을 실제 네트워크 요청 없이 테스트하려면 어떻게 해야 할까요?!</strong></summary><div><div class="collapsibleContent_i85q"><p>답변</p><p>질문 제작: OOO</p><p>출처: (optional)</p></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary><strong>Q. 프론트엔드 E2E 테스트에 대해 설명해주세요.</strong></summary><div><div class="collapsibleContent_i85q"><ul>
+<li class="">
+<p>애플리케이션의 사용자 경험을 처음부터 끝까지 시뮬레이션하여 테스트하는 방식입니다.</p>
+<p>단위테스트나 통합테스트와 달리 사용자 관점에서 전체 애플리케이션이 의도한 대로 작동하는지 검증합니다. 브라우저 환경에서 실제 사용자 동작을 흉내내어 다양한 시나리오를 테스트합니다. 브라우저 환경에서 실제 사용자 동작을 흉내내어 다양한 시나리오를 테스트합니다. 보통 E2E테스트는 Cypress, Playwrite와 같은 도구를 이용해 작성합니다. (UI 상호작용, API 호출, 화면 전환 등 여러 구성 요소가 함께 동작하는 과정에서 발생하는 문제를 탐지할 수 있습니다)</p>
+</li>
+</ul></div></div></details></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/CS-Interview-Study/docs/tags/frontend">frontend</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/CS-Interview-Study/docs/tags/interview">interview</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/boospeak-study/CS-Interview-Study/tree/main/docs/interview-questions/general-FE.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/CS-Interview-Study/docs/interview-questions/culture-fit"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Culture Fit</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CS-Interview-Study/docs/interview-questions/html-css"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">HTML/CSS</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#csr" class="table-of-contents__link toc-highlight">CSR</a><ul><li><a href="#장점" class="table-of-contents__link toc-highlight">장점</a></li><li><a href="#단점" class="table-of-contents__link toc-highlight">단점</a></li></ul></li><li><a href="#ssr" class="table-of-contents__link toc-highlight">SSR</a><ul><li><a href="#장점-1" class="table-of-contents__link toc-highlight">장점</a></li><li><a href="#단점-1" class="table-of-contents__link toc-highlight">단점</a></li></ul></li><li><a href="#ssg" class="table-of-contents__link toc-highlight">SSG</a><ul><li><a href="#장점-2" class="table-of-contents__link toc-highlight">장점</a></li><li><a href="#단점-2" class="table-of-contents__link toc-highlight">단점</a></li></ul></li><li><a href="#csr-단점-극복-방법" class="table-of-contents__link toc-highlight">CSR 단점 극복 방법</a><ul><li><a href="#초기-로딩이-느림" class="table-of-contents__link toc-highlight">초기 로딩이 느림</a></li><li><a href="#seo에-불리함" class="table-of-contents__link toc-highlight">SEO에 불리함</a></li></ul></li><li><a href="#ssr-단점-극복-방법" class="table-of-contents__link toc-highlight">SSR 단점 극복 방법</a><ul><li><a href="#서버-부하가-큼" class="table-of-contents__link toc-highlight">서버 부하가 큼</a></li><li><a href="#페이지-전환-시-깜빡임느림" class="table-of-contents__link toc-highlight">페이지 전환 시 깜빡임/느림</a></li></ul></li><li><a href="#infra-build-tools" class="table-of-contents__link toc-highlight">Infra, Build, Tools</a></li><li><a href="#testing" class="table-of-contents__link toc-highlight">Testing</a></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>

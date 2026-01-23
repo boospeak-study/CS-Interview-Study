@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-cs-test/datastructure/자료구조" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">자료구조 | Boospeak</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://boospeak-study.github.io/CS-Interview-Study/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://boospeak-study.github.io/CS-Interview-Study/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/datastructure/자료구조"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="자료구조 | Boospeak"><meta data-rh="true" name="description" content="문제 1"><meta data-rh="true" property="og:description" content="문제 1"><link data-rh="true" rel="icon" href="/CS-Interview-Study/img/logo.png"><link data-rh="true" rel="canonical" href="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/datastructure/자료구조"><link data-rh="true" rel="alternate" href="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/datastructure/자료구조" hreflang="en"><link data-rh="true" rel="alternate" href="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/datastructure/자료구조" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"자료구조","item":"https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/datastructure/자료구조"}]}</script><link rel="stylesheet" href="/CS-Interview-Study/assets/css/styles.7d8e12d0.css">
+<script src="/CS-Interview-Study/assets/js/runtime~main.fff0f10c.js" defer="defer"></script>
+<script src="/CS-Interview-Study/assets/js/main.afbf1646.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CS-Interview-Study/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CS-Interview-Study/"><div class="navbar__logo"><img src="/CS-Interview-Study/img/logo.png" alt="Boospeak Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CS-Interview-Study/img/logo.png" alt="Boospeak Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Boospeak</b></a><a class="navbar__item navbar__link" href="/CS-Interview-Study/docs/interview-questions/computer-science">면접 질문</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CS-Interview-Study/docs/cs-test/algorithm/알고리즘">CS 테스트</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/boospeak-study/CS-Interview-Study" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/cs-test/algorithm/알고리즘"><span title="알고리즘" class="linkLabel_WmDU">알고리즘</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/cs-test/database/데이터베이스"><span title="데이터베이스" class="linkLabel_WmDU">데이터베이스</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/CS-Interview-Study/docs/cs-test/datastructure/자료구조"><span title="자료구조" class="linkLabel_WmDU">자료구조</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/CS-Interview-Study/docs/category/네트워크"><span title="네트워크" class="categoryLinkLabel_W154">네트워크</span></a><button aria-label="Expand sidebar category &#x27;네트워크&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/cs-test/os/운영체제"><span title="운영체제" class="linkLabel_WmDU">운영체제</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/CS-Interview-Study/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">자료구조</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>자료구조</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-1">문제 1<a href="#문제-1" class="hash-link" aria-label="Direct link to 문제 1" title="Direct link to 문제 1" translate="no">​</a></h2>
+<p><strong>유형</strong>: OX형</p>
+<p><strong>문제</strong>: 연결 리스트는 연속된 메모리 공간을 차지해야 한다.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: X</p><p><strong>해설</strong>: 연결 리스트는 동적 메모리 할당을 사용하여 연속되지 않은 메모리 공간을 차지할 수 있음. 따라서 배열과 달리 크기를 미리 정할 필요가 없음.</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-2">문제 2<a href="#문제-2" class="hash-link" aria-label="Direct link to 문제 2" title="Direct link to 문제 2" translate="no">​</a></h2>
+<p><strong>유형</strong>: OX형</p>
+<p><strong>문제</strong>: 해시 테이블의 충돌 해결 방법으로 체이닝과 개방 주소법이 있다.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: O</p><p><strong>해설</strong>: 해시 테이블에서 같은 해시 값을 가지는 키가 여러 개 나올 수 있음. 이를 해결하기 위해 체이닝(연결 리스트 사용)과 개방 주소법(빈 슬롯 탐색)이 있음.</p><p><strong>참고자료</strong>: <a href="https://ryu-e.tistory.com/87" target="_blank" rel="noopener noreferrer" class="">https://ryu-e.tistory.com/87</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-3">문제 3<a href="#문제-3" class="hash-link" aria-label="Direct link to 문제 3" title="Direct link to 문제 3" translate="no">​</a></h2>
+<p><strong>유형</strong>: OX형</p>
+<p><strong>문제</strong>: 배열에서 요소를 삭제할 때 O(1) 시간 복잡도를 가진다.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: X</p><p><strong>해설</strong>: 배열에서 중간의 요소를 삭제할 경우, 삭제된 요소 뒤에 있는 모든 요소들이 한 칸씩 왼쪽으로 이동해야 하므로 시간 복잡도가 O(n)이 됨</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-4">문제 4<a href="#문제-4" class="hash-link" aria-label="Direct link to 문제 4" title="Direct link to 문제 4" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 문제: 다음 중 큐(Queue)의 특징으로 옳은 것을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">후입선출(LIFO) 방식으로 동작한다.</li>
+<li class="">선입선출(FIFO) 방식으로 동작한다.</li>
+<li class="">삽입(Enqueue)과 삭제(Dequeue) 연산이 있다.</li>
+<li class="">큐는 배열 또는 연결 리스트로 구현될 수 있으며, 상황에 따라 원형 큐 방식이 사용되기도 한다.</li>
+<li class="">우선순위 큐는 일반적인 큐와 동일한 방식으로 요소를 제거한다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 2, 3, 4</p><p><strong>해설</strong>:</p><ul>
+<li class="">큐는 선입선출(FIFO) 구조</li>
+<li class="">삽입(O(1)),삭제(O(1))가 가능하다.</li>
+<li class="">큐는 배열 또는 연결 리스트로 구현되며 상황에 따라 원형 큐 방식도 사용</li>
+<li class="">우선순위 큐는 FIFO가 아니라, 우선순위에 따라 요소를 제거하는 방식</li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-5">문제 5<a href="#문제-5" class="hash-link" aria-label="Direct link to 문제 5" title="Direct link to 문제 5" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 중 이진 탐색 트리(BST)의 특징으로 옳은 것은?</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">부모 노드의 왼쪽 자식은 부모보다 크고, 오른쪽 자식은 부모보다 작다.</li>
+<li class="">모든 서브트리도 이진 탐색 트리의 성질을 만족해야 한다.</li>
+<li class="">중위 순회를 하면 항상 오름차순으로 정렬된 값을 얻을 수 있다.</li>
+<li class="">이진 탐색 트리는 항상 균형 잡힌 구조를 가진다.</li>
+<li class="">모든 이진 탐색 트리는 최소 힙의 성질을 만족한다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 2, 3</p><p><strong>해설</strong>:</p><ul>
+<li class="">이진 탐색 트리의 기본 성질을 왼쪽 자식 &lt; 부모 &lt; 오른쪽 자식</li>
+<li class="">모든 서브트리도 이진 탐색 트리의 성질을 가져야함</li>
+<li class="">이진 탐색 트리를 중위 순회 하면 항상 오름차순 정렬된 값이 나옴</li>
+<li class="">이진 탐색 트리는 균형 잡혀 있을 수도 있지만, 불균형할 수도 있음</li>
+<li class="">힙구조와 이진 탐색 트리는 별개</li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-6">문제 6<a href="#문제-6" class="hash-link" aria-label="Direct link to 문제 6" title="Direct link to 문제 6" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 중 해시 테이블(Hash Table)의 특징으로 옳은 것을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">키(Key)와 값(Value) 쌍을 저장하는 자료구조이다.</li>
+<li class="">평균적으로 O(n)의 탐색 속도를 가진다.</li>
+<li class="">해시 충돌은 방지할 수 있다.</li>
+<li class="">체이닝 기법은 충돌 해결 방법 중 하나이다.</li>
+<li class="">해시 테이블은 항상 오름차순으로 정렬된 데이터를 반환한다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1,4</p><p><strong>해설</strong>:</p><ul>
+<li class="">해시 테이블은 (Key, Value) 쌍을 저장</li>
+<li class="">평균적으로 O(1)의 탐색 속도를 가지며, 최악의 경우 O(n)</li>
+<li class="">해시 충돌은 완전히 방지할 수 없으며 체이닝 기법이나 개방 주소법을 사용해 확률을 낮춤</li>
+<li class="">해시 테이블은 정렬되지 않은 상태에서 저장됨, 항상 정렬된 데이터를 반환하지 않음</li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-7">문제 7<a href="#문제-7" class="hash-link" aria-label="Direct link to 문제 7" title="Direct link to 문제 7" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 중 그래프(Graph)의 특징으로 옳은 것을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">그래프는 정점(Vertex)과 간선(Edge)으로 구성된다.</li>
+<li class="">그래프는 항상 방향성이 존재한다.</li>
+<li class="">인접 리스트와 인접 행렬 방식으로 구현할 수 있다.</li>
+<li class="">DFS(깊이 우선 탐색)와 BFS(너비 우선 탐색) 알고리즘이 사용된다.</li>
+<li class="">무방향 그래프에서는 모든 간선이 양방향이다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1,3,4,5</p><p><strong>해설</strong>:</p><ul>
+<li class="">그래프는 방향 그래프와 무방향 그래프로 나뉨, 항상 방향성을 갖는다는 것은 틀림</li>
+<li class="">그래프의 구성 요소는 정점(Vertex)과 간선(Edge)</li>
+<li class="">그래프는 인접 리스트 또는 인접 행렬로 구현할 수 있음</li>
+<li class="">그래프 탐색을 위해 DFS와 BFS 알고리즘이 활용됨</li>
+<li class="">무방향 그래프에서는 모든 간선이 양방향으로 연결됨</li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-8">문제 8<a href="#문제-8" class="hash-link" aria-label="Direct link to 문제 8" title="Direct link to 문제 8" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 연결 리스트에서 단일 연결 리스트와 이중 연결 리스트의 차이점을 설명하시오.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 키워드 : 방향, 메모리
+단일 연결 리스트와 이중 연결 리스트는 모두 노드를 연결하여 데이터를 저장하는 선형 자료구조이지만, 각 노드의 링크 구조에서 차이가 있습니다.</p><p>단일 연결 리스트</p><ul>
+<li class="">단일 연결 리스트에서는 각 노드가 데이터와 하나의 포인터(또는 링크)를 가지고 있습니다. 이 포인터는 다음 노드를 가리키며, 리스트를 한 방향으로만 순차적으로 탐색할 수 있습니다. 즉, 한 번 리스트를 탐색하면 다시 처음으로 돌아가는 것이 불가능합니다. 이 구조는 추가적인 메모리 공간을 절약할 수 있지만, 양방향 탐색이 불가능하다는 단점이 있습니다.</li>
+</ul><p>이중 연결 리스트</p><ul>
+<li class="">이중 연결 리스트에서는 각 노드가 데이터와 두 개의 포인터를 가지고 있습니다. 하나는 다음 노드를 가리키고, 다른 하나는 이전 노드를 가리킵니다. 이를 통해 리스트를 양방향으로 탐색할 수 있는 장점이 있습니다. 즉, 앞에서부터 뒤로, 뒤에서부터 앞으로 모두 탐색할 수 있습니다. 이 구조는 단일 연결 리스트보다 메모리를 더 많이 사용하지만, 양방향 탐색이 가능해 더 유연한 데이터 처리와 더 빠른 삽입/삭제가 가능해집니다.</li>
+</ul><p><strong>해설</strong>:</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-9">문제 9<a href="#문제-9" class="hash-link" aria-label="Direct link to 문제 9" title="Direct link to 문제 9" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 트리 구조에서 이진 탐색 트리와 균형 이진 탐색 트리의 차이점을 설명하시오.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 키워드 : 성능, 동작
+이진 탐색 트리와 균형 이진 탐색 트리는 모두 이진 트리의 일종으로, 트리 구조에서 효율적인 탐색을 목적으로 사용됩니다. 그러나 두 가지는 성능과 동작에서 중요한 차이점을 가집니다.</p><p>이진 탐색 트리</p><ul>
+<li class="">이진 탐색 트리는 각 노드가 최대 두 개의 자식 노드를 가지며, 트리의 왼쪽 자식은 항상 부모보다 작은 값을, 오른쪽 자식은 부모보다 큰 값을 가집니다. 이 규칙을 따르면 트리에서 원하는 값을 효율적으로 찾을 수 있습니다. 하지만, 이진 탐색 트리는 데이터를 삽입할 때 정렬된 순서대로 삽입하면 트리가 편향될 수 있습니다. 예를 들어, 이미 정렬된 데이터를 순차적으로 삽입하면 트리가 한쪽으로 치우친 편향 트리가 되며, 이 경우 트리의 높이가 O(n)으로 증가하고, 탐색, 삽입, 삭제의 시간 복잡도가 최악의 경우 O(n)에 이를 수 있습니다. 이런 상황에서는 트리의 효율성이 크게 떨어집니다.</li>
+</ul><p>균형 이진 탐색 트리</p><ul>
+<li class="">균형 이진 탐색 트리는 트리의 높이를 자동으로 조절하여 항상 트리의 높이가 O(log n) 수준을 유지하도록 하는 트리입니다. 트리의 균형을 유지하는 알고리즘을 통해 삽입과 삭제가 이루어지며, 예를 들어 AVL 트리나 레드-블랙 트리 등이 이에 해당합니다. 이러한 균형을 유지함으로써 트리의 깊이가 항상 최소화되고, 트리의 탐색, 삽입, 삭제 시간이 모두 O(log n)으로 일정하게 유지됩니다. 균형 이진 탐색 트리는 트리의 성능을 보장할 수 있기 때문에 이진 탐색 트리보다 안정적인 탐색 성능을 제공합니다.</li>
+</ul><p><strong>해설</strong>:</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-10">문제 10<a href="#문제-10" class="hash-link" aria-label="Direct link to 문제 10" title="Direct link to 문제 10" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 해시 테이블의 충돌 처리 방법 중 체이닝 방법에 대해 설명하고, 이 방법이 어떤 상황에서 유리한지 서술하시오.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 키워드 : 어떤 방식으로 저장하는 방식인지, 어떤 상황에서 쓰이는지</p><p>체이닝 기법은 해시 테이블에서 충돌을 처리하는 방법 중 하나로, 해시 값이 동일한 요소들을 하나의 링크드 리스트로 묶어서 저장하는 방식입니다. 각 버킷은 여러 요소를 저장할 수 있는 연결 리스트를 가집니다. 새로운 값이 동일한 해시 값을 가지면 해당 버킷에 연결 리스트의 형태로 추가됩니다.
+체이닝 방식은 버킷 크기가 충분히 크고, 충돌이 많은 경우에 유리합니다. 예를 들어, 해시 함수가 잘 작동하지 않거나 데이터 분포가 고르게 이루어지지 않은 경우, 충돌이 많이 발생할 수 있는데, 이때 체이닝은 여러 값을 한 버킷에 저장할 수 있어 유용하게 작동합니다. 반면, 버킷 수가 너무 적거나 연결 리스트가 커지면 검색 시간이 길어질 수 있습니다.</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-11">문제 11<a href="#문제-11" class="hash-link" aria-label="Direct link to 문제 11" title="Direct link to 문제 11" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 스택(Stack)에 관한 설명으로 옳은 것을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">스택은 선입선출(FIFO) 구조를 가진다.</li>
+<li class="">스택의 기본 연산에는 push, pop, peek(top) 등이 있다.</li>
+<li class="">스택에서 데이터 삽입 및 삭제는 모두 O(1)의 시간 복잡도를 가진다.</li>
+<li class="">스택의 중간에 있는 요소에 직접 접근하는 것이 가능하다.</li>
+<li class="">스택은 함수 호출 관리, 괄호 검사, 웹 브라우저의 뒤로가기 기능에 활용된다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 2, 3, 5</p><p><strong>해설</strong>:</p><p>1: 스택은 후입선출(LIFO) 구조로, 가장 최근에 들어온 데이터가 가장 먼저 나가는 특성을 갖는다.
+4: 스택은 맨 위의 요소에만 접근 가능하다.</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-12">문제 12<a href="#문제-12" class="hash-link" aria-label="Direct link to 문제 12" title="Direct link to 문제 12" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 트리와 그래프의 공통점과 차이점에 대해 설명해주세요.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 공통점으로는 둘 다 정점과 간선으로 이루어진 비선형 자료구조인 점이고, 차이점으로는 트리는 그래프의 일부로 사이클이 허용되지 않는 그래프이고, 그래프는 사이클이 허용됩니다.</p><p><strong>참고자료</strong>: 책 <code>면접을 위한 CS 전공지식 노트</code></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-13">문제 13<a href="#문제-13" class="hash-link" aria-label="Direct link to 문제 13" title="Direct link to 문제 13" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: Array를 적용시키면 좋을 데이터의 예를 구체적으로 들어주세요. 구체적 예시와 함께 Array를 적용하면 좋은 이유, 그리고 Array를 사용하지 않으면 어떻게 되는지 함께 설명해주세요.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>:</p><blockquote>
+<p>순서가 중요하다는 것과 그에 상응하는 예시를 들 수 있음이 중요</p>
+</blockquote><ul>
+<li class="">Array를 적용시키면 좋은 예로 주식 차트가 있습니다.</li>
+<li class="">주식 차트에 대한 데이터는 요소가 중간에 새롭게 추가되거나 삭제되는 정보가 아니며, 날짜별로 주식 가격이 차례대로 저장되어야 하는 데이터입니다.</li>
+<li class="">즉, 순서가 굉장히 중요한 데이터이므로 Array 같이 순서를 보장해주는 자료구조를 사용하는 것이 좋습니다.
+Array를 사용하지 않고 순서가 없는 자료 구조를 사용하는 경우에는 날짜별 주식 가격을 확인하기 어려우며 매번 전체 자료를 읽어 들이고 비교해야 하는 번거로움이 발생합니다.</li>
+</ul><p><strong>참고 자료</strong>: <a href="https://dev-coco.tistory.com/159#head2" target="_blank" rel="noopener noreferrer" class="">신입 개발자 기술면접 질문 정리 - 자료구조</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-14">문제 14<a href="#문제-14" class="hash-link" aria-label="Direct link to 문제 14" title="Direct link to 문제 14" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 이진 탐색 트리에서 최악의 경우 트리의 구조와 이때 시간 복잡도를 설명해주세요. 그리고 이 문제를 해결하기 위한 트리 구조를 설명해주세요.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 루트 노드부터 시작해서, 노드가 한쪽으로만 계속 추가되어 선형 트리가 생성된다면 O(n)의 시간복잡도를 가지게 됩니다. 예를 들어 계속 더 작은 값만 추가하거나, 더 큰 값만 추가하는 경우 입니다. 이를 방지하기 위해 트리의 균형을 유지하여 시간 복잡도를 O(log N)으로 보장하는 AVL 트리와 레드-블랙 트리가 있습니다.</p><p><strong>참고자료</strong>: 책 <code>면접을 위한 CS 전공지식 노트</code></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-15-트리순회">문제 15 트리순회<a href="#문제-15-트리순회" class="hash-link" aria-label="Direct link to 문제 15 트리순회" title="Direct link to 문제 15 트리순회" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 다음 트리를 중위순회(Inorder Traversal)의 결과를 쓰시오.</p>
+<p><img decoding="async" loading="lazy" src="https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6cfeb1fa-ddf4-4eaa-83b6-a507640db634%2FUntitled.png&amp;blockId=773aeaa8-39d6-4757-9602-c6423997fadf" alt="트리 이미지" class="img_ev3q"></p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: DBAECFG</p><p><strong>해설</strong>: 중위순회는 왼쪽 자식 노드, 루트 노드, 오른쪽 자식 노드 순으로 순회하는 방식이다.</p><p>참고 : 전위순회(Preorder)는 루트노드, 왼쪽 자식 노드, 오른쪽 자식 노드순으로 순회한다.</p><p>후위순회(Postorder) 는 왼쪽 자식 노드, 오른쪽 자식 노드, 루트 노드 순으로 순회한다.</p><p><strong>참고문제</strong> : <a href="https://www.acmicpc.net/problem/1991" target="_blank" rel="noopener noreferrer" class="">https://www.acmicpc.net/problem/1991</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-16">문제 16<a href="#문제-16" class="hash-link" aria-label="Direct link to 문제 16" title="Direct link to 문제 16" translate="no">​</a></h2>
+<p><strong>유형</strong>: OX문제</p>
+<p><strong>문제</strong>: 힙(Heap) 자료구조는 최솟값 또는 최댓값을 O(log n) 시간 복잡도로 찾을 수 있다. (O/X)</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: X</p><p><strong>해설</strong>: 힙(Heap)에서는 최솟값 또는 최댓값을 O(1) 시간에 찾을 수 있다.(루트 노드에 위치). 삽입과 삭제는 O(log n) 시간이 걸린다.</p></div></div></details>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/CS-Interview-Study/docs/tags/datastructure">datastructure</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/CS-Interview-Study/docs/tags/cs">cs</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/boospeak-study/CS-Interview-Study/tree/main/docs/cs-test/datastructure/자료구조.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/CS-Interview-Study/docs/cs-test/database/데이터베이스"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">데이터베이스</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CS-Interview-Study/docs/category/네트워크"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">네트워크</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#문제-1" class="table-of-contents__link toc-highlight">문제 1</a></li><li><a href="#문제-2" class="table-of-contents__link toc-highlight">문제 2</a></li><li><a href="#문제-3" class="table-of-contents__link toc-highlight">문제 3</a></li><li><a href="#문제-4" class="table-of-contents__link toc-highlight">문제 4</a></li><li><a href="#문제-5" class="table-of-contents__link toc-highlight">문제 5</a></li><li><a href="#문제-6" class="table-of-contents__link toc-highlight">문제 6</a></li><li><a href="#문제-7" class="table-of-contents__link toc-highlight">문제 7</a></li><li><a href="#문제-8" class="table-of-contents__link toc-highlight">문제 8</a></li><li><a href="#문제-9" class="table-of-contents__link toc-highlight">문제 9</a></li><li><a href="#문제-10" class="table-of-contents__link toc-highlight">문제 10</a></li><li><a href="#문제-11" class="table-of-contents__link toc-highlight">문제 11</a></li><li><a href="#문제-12" class="table-of-contents__link toc-highlight">문제 12</a></li><li><a href="#문제-13" class="table-of-contents__link toc-highlight">문제 13</a></li><li><a href="#문제-14" class="table-of-contents__link toc-highlight">문제 14</a></li><li><a href="#문제-15-트리순회" class="table-of-contents__link toc-highlight">문제 15 트리순회</a></li><li><a href="#문제-16" class="table-of-contents__link toc-highlight">문제 16</a></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>

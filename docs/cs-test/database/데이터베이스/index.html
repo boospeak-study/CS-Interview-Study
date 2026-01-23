@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-cs-test/database/데이터베이스" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">데이터베이스 | Boospeak</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://boospeak-study.github.io/CS-Interview-Study/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://boospeak-study.github.io/CS-Interview-Study/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/database/데이터베이스"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="데이터베이스 | Boospeak"><meta data-rh="true" name="description" content="문제 1"><meta data-rh="true" property="og:description" content="문제 1"><link data-rh="true" rel="icon" href="/CS-Interview-Study/img/logo.png"><link data-rh="true" rel="canonical" href="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/database/데이터베이스"><link data-rh="true" rel="alternate" href="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/database/데이터베이스" hreflang="en"><link data-rh="true" rel="alternate" href="https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/database/데이터베이스" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"데이터베이스","item":"https://boospeak-study.github.io/CS-Interview-Study/docs/cs-test/database/데이터베이스"}]}</script><link rel="stylesheet" href="/CS-Interview-Study/assets/css/styles.7d8e12d0.css">
+<script src="/CS-Interview-Study/assets/js/runtime~main.fff0f10c.js" defer="defer"></script>
+<script src="/CS-Interview-Study/assets/js/main.afbf1646.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/CS-Interview-Study/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/CS-Interview-Study/"><div class="navbar__logo"><img src="/CS-Interview-Study/img/logo.png" alt="Boospeak Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/CS-Interview-Study/img/logo.png" alt="Boospeak Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Boospeak</b></a><a class="navbar__item navbar__link" href="/CS-Interview-Study/docs/interview-questions/computer-science">면접 질문</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/CS-Interview-Study/docs/cs-test/algorithm/알고리즘">CS 테스트</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/boospeak-study/CS-Interview-Study" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/cs-test/algorithm/알고리즘"><span title="알고리즘" class="linkLabel_WmDU">알고리즘</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/CS-Interview-Study/docs/cs-test/database/데이터베이스"><span title="데이터베이스" class="linkLabel_WmDU">데이터베이스</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/cs-test/datastructure/자료구조"><span title="자료구조" class="linkLabel_WmDU">자료구조</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/CS-Interview-Study/docs/category/네트워크"><span title="네트워크" class="categoryLinkLabel_W154">네트워크</span></a><button aria-label="Expand sidebar category &#x27;네트워크&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/CS-Interview-Study/docs/cs-test/os/운영체제"><span title="운영체제" class="linkLabel_WmDU">운영체제</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/CS-Interview-Study/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">데이터베이스</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>데이터베이스</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-1">문제 1<a href="#문제-1" class="hash-link" aria-label="Direct link to 문제 1" title="Direct link to 문제 1" translate="no">​</a></h2>
+<p><strong>유형</strong>: OX형</p>
+<p><strong>문제</strong>: DB는 데이터 내용이 아닌 데이터 레코드의 주소나 위치를 이용하여 데이터를 참조한다.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: X</p><p><strong>해설</strong>: 데이터베이스에 있는 데이터를 참조할 때, 데이터 레코드의 주소나 위치가 아닌 사용자가 요구하는 데이터의 내용으로 데이터를 찾는다. 이러한 데이터베이스의 특징을 &#x27;내용에 의한 참조(Content Reference)&#x27;라고 한다.</p><p><strong>참고 자료</strong>: <a href="http://terms.tta.or.kr/mobile/dictionaryView.do?subject=%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4" target="_blank" rel="noopener noreferrer" class="">TTA정보통신용어사전</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-2">문제 2<a href="#문제-2" class="hash-link" aria-label="Direct link to 문제 2" title="Direct link to 문제 2" translate="no">​</a></h2>
+<p><strong>유형</strong>: OX형</p>
+<p><strong>문제</strong>: SQL Injection 공격은 주로 DB의 읽기 작업에만 영향을 미치며, DB의 내용을 변경하는 것은 불가능하다.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: X</p><p><strong>해설</strong>: SQL Injection 공격의 본질은 웹 앱의 입력값 검증이 제대로 이루어지지 않아서, 악의적인 SQL 쿼리를 삽입하여 DB를 조작하는 것이다. 따라서 SELECT 뿐만 아니라 INERT, UPDATE, DELETE 등에 대해서도 Injection이 가능하다.</p><p><strong>참고 자료</strong>: <a href="https://umbum.dev/352/" target="_blank" rel="noopener noreferrer" class="">Basic SQL injection | 엄범</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-3">문제 3<a href="#문제-3" class="hash-link" aria-label="Direct link to 문제 3" title="Direct link to 문제 3" translate="no">​</a></h2>
+<p><strong>유형</strong>: OX형</p>
+<p><strong>문제</strong>: DB 정규화란 하나의 릴레이션에 하나의 의미만 존재하도록 릴레이션을 분해하는 과정이다.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: O</p><p><strong>해설</strong>: 정규화를 통해 하나의 릴레이션에 하나의 의미만 존재하도록 릴레이션을 분해해간다. 이는 데이터의 일관성, 최소한의 데이터 중복, 최대한의 데이터 유연성을 위함이다.</p><p>또한 정규화는 불필요한 데이터를 제거해서 불필요한 중복을 최소화하고, 삽입/갱신/삭제 시 발생하는 <a href="https://dev-coco.tistory.com/63" target="_blank" rel="noopener noreferrer" class="">이상 현상(Anomaly)</a>를 방지한다.</p><p><strong>참고 자료</strong>: <a href="https://umbum.dev/352/" target="_blank" rel="noopener noreferrer" class="">Basic SQL injection | 엄범</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-4">문제 4<a href="#문제-4" class="hash-link" aria-label="Direct link to 문제 4" title="Direct link to 문제 4" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>:</p>
+<table><thead><tr><th>학번</th><th>이름</th><th>학과</th><th>이메일</th><th>전화번호</th></tr></thead><tbody><tr><td>2023001</td><td>김철수</td><td>컴퓨터공학과</td><td><a href="https://www.google.com/url?sa=E&amp;q=mailto%3Achulsoo%40example.com" target="_blank" rel="noopener noreferrer" class="">chulsoo@example.com</a></td><td>010-1234-5678</td></tr><tr><td>2023002</td><td>이영희</td><td>전자공학과</td><td><a href="https://www.google.com/url?sa=E&amp;q=mailto%3Ayounghee%40example.com" target="_blank" rel="noopener noreferrer" class="">younghee@example.com</a></td><td>010-9876-5432</td></tr><tr><td>2024001</td><td>박민수</td><td>컴퓨터공학과</td><td><a href="https://www.google.com/url?sa=E&amp;q=mailto%3Aminsoo%40example.com" target="_blank" rel="noopener noreferrer" class="">minsoo@example.com</a></td><td>010-1111-2222</td></tr><tr><td>2024002</td><td>김철수</td><td>산업공학과</td><td><a href="https://www.google.com/url?sa=E&amp;q=mailto%3Achulsoo2%40example.com" target="_blank" rel="noopener noreferrer" class="">chulsoo2@example.com</a></td><td>010-3333-4444</td></tr><tr><td>2025001</td><td>최지혜</td><td>화학공학과</td><td><a href="https://www.google.com/url?sa=E&amp;q=mailto%3Ajihye%40example.com" target="_blank" rel="noopener noreferrer" class="">jihye@example.com</a></td><td>010-5555-6666</td></tr></tbody></table>
+<p>위의 테이블에서 후보키(Candidate Key)가 될 수 있는 속성 또는 속성 집합을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">학번</li>
+<li class="">이메일</li>
+<li class=""><code>{학과, 이메일}</code></li>
+<li class="">전화번호</li>
+<li class=""><code>{학번, 이름}</code></li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1</p><p><strong>해설</strong>: 후보키(Candidate Key)는 기본키(Primary Key)가 될 수 있는 후보를 말한다. 후보키는 &#x27;유일성&#x27;과 &#x27;최소성&#x27;의 조건을 만족해야 한다.
+유일성: Key로 하나의 Tuple을 유일하게 식별할 수 있어야한다.
+최소성: 꼭 필요한 속성으로만 구성되어야 한다.
+속성 중 학생을 유일하게 식별할 수 있는 것은 학번이다. 따라서 1번이 해당되고 5번의 경우 학번 이외에 이름이 포함된 집합으로 꼭 필요한 속성이 아니기 때문에 최소성에 어긋난다.</p><p><strong>참고 자료</strong>: <a href="https://gyoogle.dev/blog/computer-science/data-base/Key.html" target="_blank" rel="noopener noreferrer" class="">Key | 👨🏻‍💻 Tech Interview</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-5">문제 5<a href="#문제-5" class="hash-link" aria-label="Direct link to 문제 5" title="Direct link to 문제 5" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 테이블을 사용할 경우 발생하는 이상 현상(anomaly)으로 올바른 것을 모두 고르시오.</p>
+<table><thead><tr><th>학번</th><th>이름</th><th>학과</th><th>학과전화번호</th><th>수강과목</th><th>성적</th></tr></thead><tbody><tr><td>1001</td><td>김철수</td><td>컴퓨터공학</td><td>02-1234-5678</td><td>데이터베이스</td><td>A</td></tr><tr><td>1001</td><td>김철수</td><td>컴퓨터공학</td><td>02-1234-5678</td><td>자료구조</td><td>B</td></tr><tr><td>1002</td><td>이영희</td><td>경영학</td><td>02-9876-5432</td><td>회계원리</td><td>A</td></tr></tbody></table>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">김철수의 학과 정보가 변경될 경우 여러 레코드를 수정해야 한다.</li>
+<li class="">학생마다 고유한 학번이 부여되어 있어 중복 데이터가 발생하지 않는다.</li>
+<li class="">아직 수강 과목이 없는 신입생 정보는 저장할 수 없다.</li>
+<li class="">이영희가 유일하게 수강한 과목을 취소하면 이영희의 모든 정보가 삭제된다.</li>
+<li class="">학과 정보를 변경할 시 수강 과목과 성적도 변경이 일어난다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1, 3, 4</p><p><strong>해설</strong>: 1번은 갱신 이상, 3번은 삽입 이상, 4번은 삭제 이상과 연관되어 있는 보기이다.
+2번: 학생마다 고유한 학번을 가지고 있는 것과는 별개로, 학번은 중복되어 나타나고 있다.
+5번: 학과 정보의 수정과 수강 과목, 성적은 연관성이 없다.</p><p><strong>참고 자료</strong>: <a href="https://gyoogle.dev/blog/computer-science/data-base/Anomaly.html" target="_blank" rel="noopener noreferrer" class="">Anomaly | 👨🏻‍💻 Tech Interview</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-6">문제 6<a href="#문제-6" class="hash-link" aria-label="Direct link to 문제 6" title="Direct link to 문제 6" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 트랜잭션의 특성에 대한 설명으로 올바른 것을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">작업이 모두 반영되던지 아니면 전혀 반영되지 않아야 한다.</li>
+<li class="">실행이 완료되면 언제나 일관성 있는 상태를 유지해야 한다.</li>
+<li class="">둘 이상 트랜잭션이 동시에 실행될 경우 서로의 연산에 끼어들 수 없다.</li>
+<li class="">완료된 결과는 영구적으로 반영되어야 한다.</li>
+<li class="">한 트랜잭션 내 연산들은 부분적으로 실행될 수 있다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1,2,3,4</p><p><strong>해설</strong>: 1,2,3,4는 각각 원자성, 일관성, 격리성, 지속성을 뜻한다. 5번은 원자성 속성에 위배된다.</p><p><strong>참고 자료</strong>: <a href="https://hanamon.kr/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98-acid-%EC%84%B1%EC%A7%88/" target="_blank" rel="noopener noreferrer" class="">[데이터베이스] 트랜잭션의 ACID 성질 - 하나몬</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-7">문제 7<a href="#문제-7" class="hash-link" aria-label="Direct link to 문제 7" title="Direct link to 문제 7" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 중, NoSQL 데이터베이스가 적합한 상황을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">대규모 온라인 쇼핑몰에서 수백만 명의 사용자가 동시에 제품을 조회하고 검색하는 상황</li>
+<li class="">은행의 계좌 이체 시스템</li>
+<li class="">SNS 플랫폼에서의 프로필, 게시물, 친구 관계 등의 데이터 관리</li>
+<li class="">사물인터넷 센서 데이터 수집 시스템</li>
+<li class="">기업 내 회계 시스템</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1, 3, 4</p><p><strong>해설</strong>:
+NoSQL이 빠른 조회에 유리하고, 데이터 구조의 변경과 확장 대처에 유리한 상황에 적합하다. SQL를 사용하는 RDBMS의 경우는 트랜잭션과 같은 기능을 통해 일관성, 무결성이 중요한 시스템에 적합하다.</p><p>1: 빠른 조회 속도를 위해서 적합하다.
+2: 강력한 트랜잭션이 필요하므로 적합하지 않다.
+3: 비정형 데이터를 유연하게 저장하고, 요구사항에 따라 수직/수평 확장에 유연한 대처가 가능하여 적합하다.
+4: 대용량 시계열 데이터를 바르게 쓰고 처리해야 하므로 적합하다.
+5: 재무 데이터는 정확하고 일관성이 엄격히 지켜져야 하므로 적합하지 않다.</p><p><strong>참고 자료</strong>: <a href="https://gyoogle.dev/blog/computer-science/data-base/SQL%20&amp;%20NOSQL.html" target="_blank" rel="noopener noreferrer" class="">SQL과 NOSQL의 차이 | 👨🏻‍💻 Tech Interview</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-8">문제 8<a href="#문제-8" class="hash-link" aria-label="Direct link to 문제 8" title="Direct link to 문제 8" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 데이터베이스에서 인덱스(Index)에 대해 서술하세요.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>:</p><blockquote>
+<p>인덱스의 개념, 왜 사용하는지, 단점은 무엇인지 포함되어있으면 베스트</p>
+</blockquote><p>Index란 테이블을 처음부터 끝까지 검색하는 방법인 FTS(Full Table Scan)과는 달리 인덱스를 검색하여 해당 자료의 테이블을 엑세스 하는 방법입니다.</p><p>인덱스는 항상 정렬된 상태를 유지하기 때문에 원하는 값을 검색하는데 빠르지만, 새로운 값을 추가하거나 삭제, 수정하는 경우에는 쿼리문 실행 속도가 느려집니다.</p><p>즉, 인덱스는 데이터의 저장 성능을 희생하고 그대신 데이터의 검색 속도를 높이는 기능이라 할 수 있습니다.</p><p><strong>참고 자료</strong>: <a href="https://dev-coco.tistory.com/158" target="_blank" rel="noopener noreferrer" class="">신입 개발자 기술면접 질문 정리 - 데이터베이스</a> <a href="https://velog.io/@zioo/DB-Index-%EA%B0%9C%EB%85%90-%EC%9E%A5%EB%8B%A8%EC%A0%90-B-Tree" target="_blank" rel="noopener noreferrer" class="">[DB] Index - 개념, 장단점, B+ Tree</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-9">문제 9<a href="#문제-9" class="hash-link" aria-label="Direct link to 문제 9" title="Direct link to 문제 9" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: DBMS가 Index를 어떤 자료구조로 관리하고 있는지 서술하세요.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>:</p><blockquote>
+<p>B+Tree에 대해서 설명할 수 있는지 묻고 있음, 다른 자료구조와 비교해서 왜 B+Tree가 사용되는지 까지 설명하면 베스트</p>
+</blockquote><p>Index는 주로 B+Tree 인덱스 자료구조를 사용합니다. 자식 노드가 2개 이상인 B-Tree를 개선시킨 자료구조이며, BTree 리프노드들을 LinkedList로 연결하여 순차 검색을 용이하게 합니다. 해시 테이블보다 나쁜 O(log2N)의 시간복잡도를 갖지만 일반적으로 사용되는 자료구조입니다.</p><p>해시 테이블은 컬럼의 값으로 생성된 해시를 기반으로 인덱스를 구현합니다. 시간복잡도가 O(1)이라 검색이 매우 빠르지만, 부등호(<code>(&lt;, &gt;)</code>)와 같은 연속적인 데이터를 위한 순차 검색이 불가능하기 때문에 사용에 적합하지 않습니다.</p><p><strong>참고 자료</strong>: <a href="https://dev-coco.tistory.com/158" target="_blank" rel="noopener noreferrer" class="">신입 개발자 기술면접 질문 정리 - 데이터베이스</a> <a href="https://velog.io/@zioo/DB-Index-%EA%B0%9C%EB%85%90-%EC%9E%A5%EB%8B%A8%EC%A0%90-B-Tree" target="_blank" rel="noopener noreferrer" class="">[DB] Index - 개념, 장단점, B+ Tree</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-10">문제 10<a href="#문제-10" class="hash-link" aria-label="Direct link to 문제 10" title="Direct link to 문제 10" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 트랜잭션 고립 수준(Isolation Level)에 대해서 간략하게 서술하세요.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>:</p><blockquote>
+<p>트랜잭션의 개념과 필요성에 대해 설명할 수 있음을 확인. 인덱스를 포함해서 고립 수준을 묻는 문제도 네부캠 cs 문제에 포함되어 있었음.</p>
+</blockquote><p>트랜잭션 고립 수준은 트랜잭션에서 일관성 없는 데이터를 허용하도록 하는 수준입니다.</p><p>DB는 ACID 특징과 같이 트랜잭션이 독립적인 수행을 하도록 해야하기 때문에, Lockin을 통해 트랜잭션이 DB를 다루는 동안에는 다른 트랜잭션이 관여하지 못하도록 해야합니다.</p><p>하지만 무조건적인 Locking으로 수많은 트랜잭션들을 순서대로 처리하게 된다면 DB의 성능은 떨어지게 될 것입니다. 따라서 효율적인 Locking 방법인 고립 수준을 나누어 처리하게 하는 방식이 필요합니다.</p><p><strong>참고 자료</strong>: <a href="https://gyoogle.dev/blog/computer-science/data-base/Transaction%20Isolation%20Level.html" target="_blank" rel="noopener noreferrer" class="">트랜잭션 격리 수준(Transaction Isolation Level) | 👨🏻‍💻 Tech Interview</a></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-11">문제 11<a href="#문제-11" class="hash-link" aria-label="Direct link to 문제 11" title="Direct link to 문제 11" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 중 비관계형 데이터베이스(NoSQL)의 특징으로 옳은 것을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">스키마가 유연하며, 데이터 구조를 사전에 엄격하게 정의할 필요가 없다.</li>
+<li class="">일반적으로 수직적 확장(Scale-up)보다 수평적 확장(Scale-out)에 최적화되어 있다.</li>
+<li class="">모든 NoSQL 데이터베이스가 ACID 특성을 완벽하게 보장한다.</li>
+<li class="">문서(Document), 키-값(Key-Value), 그래프(Graph), 컬럼(Column) 기반 등 다양한 형태로 데이터를 저장할 수 있다.</li>
+<li class="">관계형 데이터베이스보다 복잡한 JOIN 연산을 지원하여 성능이 우수하다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1, 2, 4</p><p><strong>해설</strong>:</p><ul>
+<li class="">NoSQL은 유연한 스키마를 제공하여 데이터 구조 변경이 쉽다.</li>
+<li class="">NoSQL은 여러 대의 서버를 활용하는 수평적 확장에 강하다.</li>
+<li class="">일부 NoSQL은 ACID를 지원하지만, 일반적으로 CAP 이론에 따라 일관성을 일부 회생하고 가용성을 높이는 경우가 많음.</li>
+<li class="">NoSQL은 문서형(DB), 키-값 저장소, 컬럼형(DB), 그래프형(DB) 등 다양한 방식으로 데이터를 저장할 수 있다.</li>
+<li class="">NoSQL은 관계형 DB처럼 복잡한 JOIN을 지원하지 않으며, JOIN 없이 데이터를 설계하는 것이 일반적이다.</li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-12">문제 12<a href="#문제-12" class="hash-link" aria-label="Direct link to 문제 12" title="Direct link to 문제 12" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 중 정규화(Normalization)에 대한 설명으로 옳은 것을 모두 고르시오.</p>
+<p><strong>보기</strong>:</p>
+<ol>
+<li class="">정규화는 데이터의 중복을 최소화하고 데이터 무결성을 유지하기 위한 과정이다.</li>
+<li class="">정규화는 항상 5NF(제5정규형)까지 진행해야만 데이터베이스의 성능이 최적화된다.</li>
+<li class="">정규화를 하면 항상 성능이 향상되며, 조인 연산이 줄어들어 속도가 빨라진다.</li>
+<li class="">정규화를 적용하면 데이터 삽입, 수정, 삭제 시 이상(Anomaly)을 줄일 수 있다.</li>
+<li class="">정규화된 데이터베이스는 경우에 따라 성능을 위해 역정규화(Denormalization)를 진행할 수도 있다.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 1, 4, 5</p><p><strong>해설</strong>:</p><ul>
+<li class="">정규화는 데이터 중복을 줄이고 무결성을 유지하는 것이 주요 목적이다.</li>
+<li class="">5NF까지 꼭 진행해야 하는 것은 아님. 실무에서는 3NF(제3정규형)나 BCNF(보이스-코드 정규형)까지만 진행하는 경우가 많다.</li>
+<li class="">정규화를 하면 조인이 많아질 수 있어, 성능이 항상 향상되는 것은 아님. 경우에 따라 조인이 많아져 성능이 저하될 수도 있음.</li>
+<li class="">정규화를 하면 삽입 이상, 갱신 이상, 삭제 이상과 같은 문제를 줄일 수 있음.</li>
+<li class="">실무에서는 성능을 위해 정규화를 일부 해제하는 역정규화(Denormalization)를 적용하기도 함.</li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-13">문제 13<a href="#문제-13" class="hash-link" aria-label="Direct link to 문제 13" title="Direct link to 문제 13" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 기본키, 후보키, 외래키, 슈퍼키에 대해 설명하시오.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>해설</strong>:</p><h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="기본키">기본키<a href="#기본키" class="hash-link" aria-label="Direct link to 기본키" title="Direct link to 기본키" translate="no">​</a></h4><p>테이블에서 각 행을 유일하게 식별할 수 있는 키</p><ul>
+<li class="">유일성 : 한 테이블 내에서 같은 기본키 값을 가지는 행이 존재할 수 없음</li>
+<li class="">최소성 : 꼭 필요한 속성만으로 구성됨 (불필요한 속성은 포함하지 않음)</li>
+<li class="">NULL값 불가능</li>
+<li class="">테이블당 1개만 존재 가능</li>
+<li class="">자동 인덱싱</li>
+</ul><h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="후보키">후보키<a href="#후보키" class="hash-link" aria-label="Direct link to 후보키" title="Direct link to 후보키" translate="no">​</a></h4><p>기본키가 될 수 있는 후보군 (여러 개 중에서 하나를 기본키로 선택)</p><ul>
+<li class="">유일성 : 후보키의 값은 테이블 내에서 중복될 수 없음</li>
+<li class="">최소성 : 꼭 필요한 속성만으로 구성됨 (불필요한 속성은 포함하지 않음)</li>
+<li class="">하나 이상의 후보키가 존재할 수 있음</li>
+<li class="">기본키로 선택되지 않은 후보키도 존재 가능</li>
+</ul><h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="외래키">외래키<a href="#외래키" class="hash-link" aria-label="Direct link to 외래키" title="Direct link to 외래키" translate="no">​</a></h4><p>다른 테이블의 기본키를 참조하는 속성</p><ul>
+<li class="">참조 무결성 유지 : 외래키가 참조하는 기본키 값은 항상 유효해야 함</li>
+<li class="">NULL 허용 가능</li>
+<li class="">기본키가 아닌 속성도 외래키가 될 수 있음 (단, unique해야 함)</li>
+</ul><h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="슈퍼키">슈퍼키<a href="#슈퍼키" class="hash-link" aria-label="Direct link to 슈퍼키" title="Direct link to 슈퍼키" translate="no">​</a></h4><p>테이블의 특정 행을 유일하게 식별할 수 있는 속성들의 집합</p><ul>
+<li class="">유일성 : 테이블에서 특정 행을 식별할 수 있음</li>
+<li class="">최소성 만족 X : 필요 없는 속성이 포함될 수도 있음</li>
+<li class="">후보키와 기본키도 슈퍼키의 일종</li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-14">문제 14<a href="#문제-14" class="hash-link" aria-label="Direct link to 문제 14" title="Direct link to 문제 14" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: cascading에 대해 설명하시오.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>해설</strong>:</p><p>외래키(Foreign Key) 관계에서 부모 테이블의 데이터 변경이 자식 테이블에 자동으로 전파되도록 설정하는 기능</p><ul>
+<li class="">부모 삭제 시, 자식도 같이 삭제하는 경우 : <code>ON DELETE CASCADE</code></li>
+<li class="">부모 삭제 시, 자식의 외래키 값을 NULL로 설정하는 경우 : <code>ON DELETE SET NULL</code></li>
+<li class="">부모의 키 값 변경 시, 자식의 외래키 값도 같이 변경하는 경우 : <code>ON UPDATE CASCADE</code></li>
+<li class="">부모가 삭제될 때 자식이 존재하면 삭제를 막고 싶은 경우 : <code>ON DELETE RESTRICT</code></li>
+</ul></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-15">문제 15<a href="#문제-15" class="hash-link" aria-label="Direct link to 문제 15" title="Direct link to 문제 15" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: inner join과 left outer join의 차이점에 대해 설명해 주세요.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: inner join은 왼쪽 테이블과 오른쪽 테이블의 두 행이 모두 일치하는 행이 있는 부분만 표시하는 것이고, left join은 왼쪽 테이블의 모든 행이 결과 테이블에 표기되는 것 입니다.</p><p><strong>해설</strong>:</p><p>조인(join)이란 하나의 테이블이 아닌 두 개 이상의 테이블을 묶어서 하나의 결과물을 만드는 것을 말합니다. MySQL에서는 JOIN이라는 쿼리로, MongoDB에서는 lookup이라는 쿼리로 이를 처리할 수 있습니다.</p><p><img decoding="async" loading="lazy" alt="alt text" src="/CS-Interview-Study/assets/images/image-1-89b569624f86cb7aef7a359801ccb988.png" width="720" height="405" class="img_ev3q"></p><ul>
+<li class="">내부 조인(inner join): 왼쪽 테이블과 오른쪽 테이블의 두 행이 모두 일치하는 행이 있는 부분만 표기합니다.</li>
+<li class="">왼쪽 조인(left join): 왼쪽 테이블의 모든 행이 결과 테이블에 표기됩니다.</li>
+<li class="">오른쪽 조인(right join): 오른쪽 테이블의 모든 행이 결과 테이블에 표기됩니다.</li>
+<li class="">합집합 조인(full join): 두 개의 테이블을 기반으로 조인 조건에 만족하지 않는 행까지 모두 표기합니다.</li>
+</ul><p><code>참고</code>: 왼쪽 조인, 오른쪽 조인, 합집합 조인은 가운데 outer를 넣어서 left outer join, right outer join, full outer join으로도 불린다. 의미는 똑같다.</p><p><strong>참고자료</strong>: 책 <code>면접을 위한 CS 전고지식 노트</code></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-16">문제 16<a href="#문제-16" class="hash-link" aria-label="Direct link to 문제 16" title="Direct link to 문제 16" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong> 다음 트랜잭션의 결과로 알맞은것은?</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">트랜잭션 T1:                     트랜잭션 T2:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--------------------------------------</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">READ(A, a)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a = a - 50</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">WRITE(A, a)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                               READ(A, b)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                               b = b * 2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                               WRITE(A, b)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">READ(B, a)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">a = a + 50</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">WRITE(B, a)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">COMMIT</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                               READ(B, b)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                               b = b - 10</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                               WRITE(B, b)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                               COMMIT</span><br></span></code></pre></div></div>
+<p>초기값이 A = 100, B = 100 일 때, 두 트랜잭션이 모두 완료된 후 A와 B의 값은?</p>
+<ol>
+<li class="">A = 50, B = 140</li>
+<li class="">A = 100, B = 140</li>
+<li class="">A = 50, B = 150</li>
+<li class="">A = 100, B = 150</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong> : 2</p><p><strong>해설</strong>
+T1: A를 읽음 (a = 100)</p><p>T1: a = a - 50 (a = 50)</p><p>T1: A에 50을 씀 (A = 50)</p><p>T2: A를 읽음 (b = 50)</p><p>T2: b = b * 2 (b = 100)</p><p>T2: A에 100을 씀 (A = 100)</p><p>T1: B를 읽음 (a = 100)</p><p>T1: a = a + 50 (a = 150)</p><p>T1: B에 150을 씀 (B = 150)</p><p>T1: 커밋 (T1의 변경사항 확정, 하지만 A는 이미 T2에 의해 100으로 변경)</p><p>T2: B를 읽음 (b = 150)</p><p>T2: b = b - 10 (b = 140)</p><p>T2: B에 140을 씀 (B = 140)</p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-17">문제 17<a href="#문제-17" class="hash-link" aria-label="Direct link to 문제 17" title="Direct link to 문제 17" translate="no">​</a></h2>
+<p><strong>유형</strong>: 서술형</p>
+<p><strong>문제</strong>: 데이터 모델링 과정에서 엔터티와 관계를 시각적으로 표현한 다이어그램을 무엇이라고 하나요?</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: ERD (Entity-Relationship Diagram)</p><p><strong>해설</strong>:</p><p><code>ERD 설명</code></p><p>ERD는 데이터베이스를 구축할 때 가장 기초적인 뼈대 역할을 하며, 릴레이션 간의 관계들을 정의한 것입니다. 만약 서비스를 구축한다면 가장 먼저 신경써야 할 부분이며 이 부분을 신경 쓰지 않고 구축한다면 단단하지 않은 골조로 건물을 짓는 것이나 다름없습니다.</p><p><code>ERD의 중요성</code></p><p>ERD는 시스템의 요구 사항을 기반으로 작성되며 이 ERD를 기반으로 데이터베이스를 구축합니다. 데이터베이스를 구축한 이후에도 디버깅 또는 비즈니스 프로세스 재설계가 필요한 경우에 설계도 역할을 담당하기도 합니다.</p><p>하지만 ERD는 관계형 구조로 표현할 수 있는 데이터를 구성하는데 유용할 수 있지만 비정형 데이터를 충분히 표현할 수 없다는 단점이 있습니다.</p><p>(비정형 데이터: 비구조화 데이터를 말하며, 미리 저으이된 데이터 모델이 없거나 미리 정의된 방식으로 정리되지 않은 정보를 말한다.)</p><p><strong>참고자료</strong>: 책 <code>면접을 위한 CS 전고지식 노트</code></p></div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="문제-18">문제 18<a href="#문제-18" class="hash-link" aria-label="Direct link to 문제 18" title="Direct link to 문제 18" translate="no">​</a></h2>
+<p><strong>유형</strong>: 객관식</p>
+<p><strong>문제</strong>: 다음 SQL 쿼리 실행 결과로 반환되는 행의 수는?</p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">SELECT</span><span class="token plain"> department_id</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">COUNT</span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">*</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">as</span><span class="token plain"> emp_count</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">FROM</span><span class="token plain"> employees</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">WHERE</span><span class="token plain"> salary </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">5000</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">GROUP</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">BY</span><span class="token plain"> department_id</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">HAVING</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">COUNT</span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">*</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">3</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">ORDER</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">BY</span><span class="token plain"> emp_count </span><span class="token keyword" style="color:#00009f">DESC</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<ol>
+<li class="">employees 테이블의 모든 행을 department_id별로 그룹화한 결과를 반환한다</li>
+<li class="">급여가 5000을 초과하는 직원이 3명 이상인 부서들을 직원 수 기준 오름차순으로 정렬한다</li>
+<li class="">급여가 5000을 초과하는 직원이 3명 이상인 부서들을 직원 수 기준 내림차순으로 정렬한다</li>
+<li class="">급여가 5000을 초과하는 직원이 가장 많은 부서 하나만 반환한다</li>
+<li class="">department_id가 가장 큰 값을 가진 부서의 직원 수를 반환한다</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>정답 확인하기</summary><div><div class="collapsibleContent_i85q"><p><strong>정답</strong>: 3</p><p><strong>해설</strong>:</p><p>FROM employees: employees 테이블에서 데이터를 가져온다.</p><p>WHERE salary &gt; 5000: 급여가 5000을 초과하는 직원들만 선택한다.</p><p>GROUP BY department_id: 부서 ID별로 데이터를 그룹화한다.</p><p>COUNT(_): 각 부서별로 직원 수를 계산한다.</p><p>HAVING COUNT(_) &gt; 3: 직원 수가 3명을 초과하는 부서만 선택한다.</p><p>ORDER BY emp_count DESC: 결과를 직원 수(emp_count)를 기준으로 내림차순 정렬한다.</p></div></div></details></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/CS-Interview-Study/docs/tags/database">database</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/CS-Interview-Study/docs/tags/cs">cs</a></li></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/boospeak-study/CS-Interview-Study/tree/main/docs/cs-test/database/데이터베이스.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/CS-Interview-Study/docs/cs-test/algorithm/알고리즘"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">알고리즘</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/CS-Interview-Study/docs/cs-test/datastructure/자료구조"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">자료구조</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#문제-1" class="table-of-contents__link toc-highlight">문제 1</a></li><li><a href="#문제-2" class="table-of-contents__link toc-highlight">문제 2</a></li><li><a href="#문제-3" class="table-of-contents__link toc-highlight">문제 3</a></li><li><a href="#문제-4" class="table-of-contents__link toc-highlight">문제 4</a></li><li><a href="#문제-5" class="table-of-contents__link toc-highlight">문제 5</a></li><li><a href="#문제-6" class="table-of-contents__link toc-highlight">문제 6</a></li><li><a href="#문제-7" class="table-of-contents__link toc-highlight">문제 7</a></li><li><a href="#문제-8" class="table-of-contents__link toc-highlight">문제 8</a></li><li><a href="#문제-9" class="table-of-contents__link toc-highlight">문제 9</a></li><li><a href="#문제-10" class="table-of-contents__link toc-highlight">문제 10</a></li><li><a href="#문제-11" class="table-of-contents__link toc-highlight">문제 11</a></li><li><a href="#문제-12" class="table-of-contents__link toc-highlight">문제 12</a></li><li><a href="#문제-13" class="table-of-contents__link toc-highlight">문제 13</a></li><li><a href="#문제-14" class="table-of-contents__link toc-highlight">문제 14</a></li><li><a href="#문제-15" class="table-of-contents__link toc-highlight">문제 15</a></li><li><a href="#문제-16" class="table-of-contents__link toc-highlight">문제 16</a></li><li><a href="#문제-17" class="table-of-contents__link toc-highlight">문제 17</a></li><li><a href="#문제-18" class="table-of-contents__link toc-highlight">문제 18</a></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>
