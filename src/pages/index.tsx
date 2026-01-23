@@ -10,9 +10,9 @@ const interviewCategories = [
     emoji: "💻",
     title: "Computer Science",
     link: "/docs/interview-questions/computer-science",
-    color: "#1d4ed8",
-    background: "linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)",
-    description: "CS 전반에 대한 핵심 질문",
+    color: "#7e22ce",
+    background: "linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%)",
+    description: "CS 5대 과목 핵심 정리",
   },
   {
     emoji: "⚡",
@@ -20,7 +20,7 @@ const interviewCategories = [
     link: "/docs/interview-questions/javascript",
     color: "#a16207",
     background: "linear-gradient(135deg, #fefce8 0%, #fef9c3 100%)",
-    description: "JS 동작 원리와 개념",
+    description: "이벤트 루프, 클로저, 프로토타입 등",
   },
   {
     emoji: "⚛️",
@@ -28,7 +28,7 @@ const interviewCategories = [
     link: "/docs/interview-questions/react",
     color: "#0369a1",
     background: "linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%)",
-    description: "리액트 핵심 개념과 훅",
+    description: "생명 주기, 상태 관리, 최적화 등",
   },
   {
     emoji: "🌐",
@@ -36,7 +36,7 @@ const interviewCategories = [
     link: "/docs/interview-questions/general-FE",
     color: "#0e7490",
     background: "linear-gradient(135deg, #ecfeff 0%, #cffafe 100%)",
-    description: "프론트엔드 일반 지식",
+    description: "렌더링 전략, 인프라, 테스팅 등",
   },
   {
     emoji: "📘",
@@ -44,7 +44,7 @@ const interviewCategories = [
     link: "/docs/interview-questions/typescript",
     color: "#4338ca",
     background: "linear-gradient(135deg, #eef2ff 0%, #c7d2fe 100%)",
-    description: "타입 시스템과 활용",
+    description: "동작 원리, 기초 문법 등",
   },
   {
     emoji: "🎨",
@@ -52,7 +52,7 @@ const interviewCategories = [
     link: "/docs/interview-questions/html-css",
     color: "#c2410c",
     background: "linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%)",
-    description: "마크업과 스타일링",
+    description: "접근성, 반응형, 최적화 등",
   },
   {
     emoji: "🎭",
@@ -60,7 +60,15 @@ const interviewCategories = [
     link: "/docs/interview-questions/culture-fit",
     color: "#be185d",
     background: "linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%)",
-    description: "협업과 커뮤니케이션",
+    description: "회사와 나를 알아보는 질문",
+  },
+  {
+    emoji: "🧠",
+    title: "CS 테스트",
+    link: "/docs/cs-test/algorithm/알고리즘",
+    color: "#10b981",
+    background: "white",
+    description: "문제로 익혀보는 CS 5대 과목",
   },
 ];
 
@@ -71,7 +79,6 @@ function Card({
   color,
   background,
   description,
-  isSpecial = false,
 }: {
   title: string;
   emoji: string;
@@ -79,7 +86,6 @@ function Card({
   color: string;
   background?: string;
   description: string;
-  isSpecial?: boolean;
 }) {
   return (
     <Link
@@ -90,15 +96,11 @@ function Card({
         justifyContent: "center",
         padding: "1.5rem",
         borderRadius: "20px",
-        background: isSpecial
-          ? "linear-gradient(135deg, #10b981 0%, #059669 100%)"
-          : background || "white",
-        color: isSpecial ? "white" : "var(--ifm-color-emphasis-900)",
+        background: background || "white",
+        color: "var(--ifm-color-emphasis-900)",
         textDecoration: "none",
-        border: isSpecial ? "none" : "1px solid rgba(0,0,0,0.05)",
-        boxShadow: isSpecial
-          ? "0 8px 20px rgba(16, 185, 129, 0.4)"
-          : "0 4px 20px rgba(0, 0, 0, 0.03)",
+        border: "1px solid rgba(0,0,0,0.05)",
+        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.03)",
         transition: "transform 0.2s ease, box-shadow 0.2s ease",
         height: "100%",
         position: "relative",
@@ -112,7 +114,7 @@ function Card({
           fontSize: "1.3rem",
           fontWeight: "800",
           marginBottom: "0.5rem",
-          color: isSpecial ? "white" : color,
+          color: color,
         }}
       >
         {title}
@@ -120,11 +122,11 @@ function Card({
       <p
         style={{
           fontSize: "0.95rem",
-          opacity: isSpecial ? 0.9 : 0.75,
+          opacity: 0.75,
           margin: 0,
           lineHeight: "1.5",
           fontWeight: "600",
-          color: isSpecial ? "white" : "#475569",
+          color: "#475569",
         }}
       >
         {description}
@@ -136,8 +138,8 @@ function Card({
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Boospeak Study"
-      description="Boospeak Study - 개발자를 위한 전공 지식 면접 대비"
+      title="Boospeak"
+      description="Boospeak - 개발자를 위한 전공 지식 면접 대비"
     >
       <header className={`hero ${styles.heroBanner} hero-header`}>
         <div className="hero-blobs">
@@ -154,18 +156,46 @@ export default function Home(): ReactNode {
             style={{
               fontSize: "3.5rem",
               fontWeight: "900",
-              marginBottom: "1rem",
-              background: "linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
+              marginBottom: "4rem",
+              color: "transparent",
               letterSpacing: "-0.03em",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "1.5rem",
             }}
           >
-            Boospeak Study
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+              <img
+                src="img/logo.png"
+                alt="Boospeak Logo"
+                className="hero-logo"
+                style={{ width: "60px", height: "60px", borderRadius: "12px" }}
+              />
+              <span
+                style={{
+                  background:
+                    "linear-gradient(135deg, #7e22ce 0%, #a855f7 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Boospeak
+              </span>
+            </div>
+            <span
+              style={{
+                fontSize: "1.2rem",
+                fontWeight: "600",
+                background: "none",
+                WebkitTextFillColor: "var(--ifm-color-emphasis-700)",
+                opacity: 0.8,
+                letterSpacing: "normal",
+              }}
+            >
+              개발자를 위한 전공 지식 & 면접 대비 올인원
+            </span>
           </Heading>
-          <p className="hero-subtitle">
-            개발자를 위한 전공 지식 & 면접 완벽 대비
-          </p>
 
           <div
             style={{
@@ -175,20 +205,10 @@ export default function Home(): ReactNode {
               width: "100%",
             }}
           >
-            {/* 7 Interview Cards */}
+            {/* 8 Cards including CS Test */}
             {interviewCategories.map((cat) => (
               <Card key={cat.title} {...cat} />
             ))}
-
-            {/* 1 Special Test Card */}
-            <Card
-              title="CS 지식 테스트"
-              emoji="🧠"
-              link="/docs/cs-test/algorithm/알고리즘"
-              color="#10b981"
-              description="알고리즘, 자료구조, OS, DB, 네트워크 실전 테스트"
-              isSpecial={true}
-            />
           </div>
         </div>
       </header>
@@ -221,9 +241,9 @@ export default function Home(): ReactNode {
                 lineHeight: "1.6",
               }}
             >
-              Boospeak Study는 오픈소스 프로젝트입니다.
+              여러분의 참여로 더 좋은 내용을 채워갈 수 있어요.
               <br />
-              새로운 질문 추가, 오타 수정, 내용 개선 등 모든 기여를 환영합니다!
+              새로운 질문 추가, 오타 수정, 답변 개선 등 모든 기여 환영합니다!
             </p>
             <Link
               className="button button--primary button--lg"

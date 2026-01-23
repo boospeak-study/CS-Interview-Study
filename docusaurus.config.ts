@@ -5,9 +5,9 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Boospeak Study",
+  title: "Boospeak",
   tagline: "Computer Science Interview Preparation for Developers",
-  favicon: "img/logo.svg",
+  favicon: "img/logo.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -40,27 +40,14 @@ const config: Config = {
       "classic",
       {
         docs: {
+          path: "docs",
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/boospeak-study/CS-Interview-Study/tree/main/website/",
+            "https://github.com/boospeak-study/CS-Interview-Study/tree/main/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/boospeak-study/CS-Interview-Study/tree/main/website/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -75,10 +62,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "Boospeak Study",
+      title: "Boospeak",
       logo: {
-        alt: "CS Interview Study Logo",
-        src: "img/logo.svg",
+        alt: "Boospeak Logo",
+        src: "img/logo.png",
       },
       items: [
         {

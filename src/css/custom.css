@@ -14,26 +14,27 @@
     system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
     "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", sans-serif;
-  --ifm-color-primary: #2563eb;
-  --ifm-color-primary-dark: #1d4ed8;
-  --ifm-color-primary-darker: #1e40af;
-  --ifm-color-primary-darkest: #1e3a8a;
-  --ifm-color-primary-light: #3b82f6;
-  --ifm-color-primary-lighter: #60a5fa;
-  --ifm-color-primary-lightest: #93c5fd;
+  /* Purple Palette */
+  --ifm-color-primary: #a855f7;
+  --ifm-color-primary-dark: #9333ea;
+  --ifm-color-primary-darker: #7e22ce;
+  --ifm-color-primary-darkest: #6b21a8;
+  --ifm-color-primary-light: #c084fc;
+  --ifm-color-primary-lighter: #d8b4fe;
+  --ifm-color-primary-lightest: #f3e8ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #60a5fa;
-  --ifm-color-primary-dark: #3b82f6;
-  --ifm-color-primary-darker: #2563eb;
-  --ifm-color-primary-darkest: #1d4ed8;
-  --ifm-color-primary-light: #93c5fd;
-  --ifm-color-primary-lighter: #bfdbfe;
-  --ifm-color-primary-lightest: #dbeafe;
+  --ifm-color-primary: #c084fc;
+  --ifm-color-primary-dark: #a855f7;
+  --ifm-color-primary-darker: #9333ea;
+  --ifm-color-primary-darkest: #7e22ce;
+  --ifm-color-primary-light: #d8b4fe;
+  --ifm-color-primary-lighter: #e9d5ff;
+  --ifm-color-primary-lightest: #f3e8ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -56,6 +57,16 @@ html[data-theme="dark"] {
   --ifm-color-info-light: #9ba6b0;
   --ifm-color-info-lighter: #a5b0b9;
   --ifm-color-info-lightest: #c5ced4;
+}
+
+/* Admonition/Callout borders */
+.theme-admonition.alert {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Details/Accordion background match with base background */
+details {
+  background-color: var(--ifm-background-color) !important;
 }
 
 /* Animated Hero Background */
@@ -86,7 +97,7 @@ html[data-theme="dark"] {
 .blob-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #dbeafe 0%, #bfdbfe 100%);
+  background: radial-gradient(circle, #f3e8ff 0%, #e9d5ff 100%);
   top: -100px;
   left: -100px;
   animation-duration: 25s;
@@ -95,7 +106,7 @@ html[data-theme="dark"] {
 .blob-2 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, #f0f9ff 0%, #e0f2fe 100%);
+  background: radial-gradient(circle, #fae8ff 0%, #f5d0fe 100%);
   bottom: -150px;
   right: -100px;
   animation-duration: 30s;
@@ -163,13 +174,29 @@ html[data-theme="dark"] {
 }
 
 [data-theme="dark"] .blob-1 {
-  background: radial-gradient(circle, #1e3a8a 0%, #172554 100%);
+  background: radial-gradient(circle, #581c87 0%, #3b0764 100%);
   opacity: 0.3;
 }
 
 [data-theme="dark"] .blob-2 {
-  background: radial-gradient(circle, #312e81 0%, #1e1b4b 100%);
+  background: radial-gradient(circle, #4c1d95 0%, #2e1065 100%);
   opacity: 0.3;
+}
+
+/* Dark Mode Logo Adaptation */
+[data-theme="dark"] .navbar__logo {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 6px;
+  margin-right: 8px; /* Adjust margin to compensate for padding if needed */
+}
+
+[data-theme="dark"] .hero-logo {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+  border-radius: 16px !important; /* Override inline style if necessary, or complement it */
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3); /* Purple glow match */
+  box-sizing: content-box; /* Ensure padding adds to the visual size */
 }
 
 [data-theme="dark"] .blob-3 {
