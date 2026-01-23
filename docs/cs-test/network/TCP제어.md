@@ -6,6 +6,8 @@
 
 <details>
 <summary>정답 보기</summary>
+
+
 O
 </details>
 
@@ -13,6 +15,8 @@ O
 
 <details>
 <summary>정답 보기</summary>
+
+
 X (오류가 발생하면 이후 모든 패킷을 폐기하고 재전송함)
 </details>
 
@@ -20,6 +24,8 @@ X (오류가 발생하면 이후 모든 패킷을 폐기하고 재전송함)
 
 <details>
 <summary>정답 보기</summary>
+
+
 O
 </details>
 
@@ -35,6 +41,8 @@ O
 4. Adaptive ARQ
 <details>
 <summary>정답 보기</summary>
+
+
 5. Adaptive ARQ (내가 지어냄)
 </details>
 
@@ -45,6 +53,8 @@ O
 3. 혼잡 제어
 <details>
 <summary>정답 보기</summary>
+
+
 4. 흐름 제어 (슬라이딩 윈도우는 송신자와 수신자의 속도를 맞추는 흐름 제어 기법)
 </details>
 
@@ -56,6 +66,8 @@ O
 4. Fast Retransmit
 <details>
 <summary>정답 보기</summary>
+
+
 5. Sliding Window (슬라이딩 윈도우는 흐름 제어 기법임)
 </details>
 
@@ -67,6 +79,8 @@ O
 4. 혼잡 윈도우가 Slow Start Threshold에 도달할 때
 <details>
 <summary>정답 보기</summary>
+
+
 5. 중복된 ACK를 3번 받을 때
 </details>
 
@@ -78,6 +92,8 @@ O
 4. 빠른 회복 (Fast Recovery)
 <details>
 <summary>정답 보기</summary>
+
+
 5. 빠른 회복 (Reno 방식이 Tahoe+빠른 회복을 혼합한 방식임)
 </details>
 
@@ -89,6 +105,8 @@ O
 
 <details>
 <summary>정답 보기</summary>
+
+
 Go-Back-N ARQ : 오류가 발생하면 이후 모든 패킷을 폐기하고 재전송, Selective Repeat ARQ : 오류가 발생한 패킷만 선택적으로 재전송하여 효율적
 </details>
 
@@ -96,6 +114,8 @@ Go-Back-N ARQ : 오류가 발생하면 이후 모든 패킷을 폐기하고 재�
 
 <details>
 <summary>정답 보기</summary>
+
+
 흐름 제어 : 송신자가 수신자의 처리 속도를 고려하여 데이터를 조절 (ex. 슬라이딩 윈도우), 혼잡 제어: 송신자가 네트워크의 혼잡 상태를 고려하여 전송량을 조절 (ex. Slow Start)
 </details>
 
@@ -103,6 +123,8 @@ Go-Back-N ARQ : 오류가 발생하면 이후 모든 패킷을 폐기하고 재�
 
 <details>
 <summary>정답 보기</summary>
+
+
 AIMD(Additive Increase, Multiplicative Decrease)는 TCP의 혼잡 제어 방식 중 하나로 혼잡이 감지되지 않으면 혼잡 윈도우를 RTT마다 1씩 증가하고, 혼잡이 감지되면 혼잡 윈도우를 절반으로 감소시킨다. 네트워크 상태에 따라 유동적으로 전송 속도를 조절하는 방식이다.
 </details>
 

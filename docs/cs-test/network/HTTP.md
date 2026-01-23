@@ -11,6 +11,8 @@ tags: [network, http, cs]
 
 <details>
 <summary>정답 보기</summary>
+
+
 O
 </details>
 
@@ -18,6 +20,8 @@ O
 
 <details>
 <summary>정답 보기</summary>
+
+
 X (HTTP 1.1에서는 **keep-alive** 헤더를 사용하여 지속적인 연결이 가능함)
 </details>
 
@@ -25,6 +29,8 @@ X (HTTP 1.1에서는 **keep-alive** 헤더를 사용하여 지속적인 연결�
 
 <details>
 <summary>정답 보기</summary>
+
+
 O
 </details>
 
@@ -40,6 +46,8 @@ O
 4. UDP 기반 전송
 <details>
 <summary>정답 보기</summary>
+
+
 4. UDP 기반 전송 (HTTP 3.0에서 도입됨)
 </details>
 
@@ -51,6 +59,8 @@ O
 4. TCP 대신 UDP를 사용하여 신뢰성이 부족함
 <details>
 <summary>정답 보기</summary>
+
+
 2. 한 번의 요청-응답마다 연결을 새로 맺어야 함
 </details>
 
@@ -63,6 +73,8 @@ O
 
 <details>
 <summary>정답 보기</summary>
+
+
 3. UDP 기반 QUIC 프로토콜
 </details>
 
@@ -74,6 +86,8 @@ O
 
 <details>
 <summary>정답 보기</summary>
+
+
 HTTP 1.1: Keep-Alive를 통해 지속적인 연결 가능하지만, 하나의 요청이 끝나야 다음 요청을 처리할 수 있음 (HOL Blocking 문제 발생) HTTP 2.0: 멀티플렉싱을 지원하여 단일 TCP 연결에서 여러 요청을 동시에 처리 가능, 헤더 압축 도입으로 성능 향상
 </details>
 
@@ -81,6 +95,8 @@ HTTP 1.1: Keep-Alive를 통해 지속적인 연결 가능하지만, 하나의 �
 
 <details>
 <summary>정답 보기</summary>
+
+
 HTTP 2.0에서는 단일 TCP 연결을 사용하지만, 네트워크 환경이 불안정할 경우 HOL Blocking(Head-of-Line Blocking) 문제가 발생함. 이를 해결하기 위해 HTTP 3.0에서는 UDP 기반의 QUIC 프로토콜을 사용하여 연결 속도를 높이고 지연 시간을 줄였음. QUIC은 1-RTT 핸드셰이크를 통해 연결을 빠르게 설정하고, 패킷 손실이 있어도 전체 연결이 지연되지 않도록 설계됨.
 </details>
 
