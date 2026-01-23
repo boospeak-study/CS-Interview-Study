@@ -38,7 +38,6 @@ If you move the repository or use a custom domain, update these values according
 To run the site locally for testing:
 
 ```bash
-cd website
 npm install
 npm start
 ```
