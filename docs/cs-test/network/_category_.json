@@ -1,6 +1,7 @@
 {
   "label": "네트워크",
   "link": {
-    "type": "generated-index"
+    "type": "doc",
+    "id": "cs-test/network/네트워크"
   }
 }
