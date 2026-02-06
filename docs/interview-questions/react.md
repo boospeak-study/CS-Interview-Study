@@ -6,6 +6,8 @@ tags: [react, interview]
 
 # React
 
+## 기본 개념
+
 <details>
 <summary><strong>Q. JSX와 내부 동작원리에 대해 설명해주세요.</strong></summary>
 

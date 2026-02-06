@@ -6,105 +6,26 @@ tags: [frontend, interview]
 
 # General FE
 
+## 기본 개념
+
 <details>
 <summary><strong>Q. CSR / SSR / SSG 에 대해 설명해주세요.</strong></summary>
 
-답변
-
-## CSR
-
-초기 로딩 시 최소한의 HTML만 전달하고, JavaScript가 실행된 후 브라우저에서 모든 UI를 구성함
-
-### 장점
-
-SPA에 적합하고 사용자와의 인터랙션이 빠릅니다.
-
-### 단점
-
-초기 로딩 속도 느리고 SEO에 불리함
-
-## SSR
-
-요청 시 서버가 HTML을 완전히 구성한 후 브라우저에 전달해 바로 렌더링하는 방식
-
-### 장점
-
-초기 로딩 속도가 빠르고 SEO에 유리, 보안에 유리함
-
-### 단점
-
-서버의 부담이 증가하고 페이지 전환 시 전체 HTML을 다시 요청해야 합니다.
-
-## SSG
-
-빌드 시 미리 HTML을 생성해서 저장해두고, 사용자가 요청할 때 해당 HTML을 그대로 전달하는 방식
-
-### 장점
-
-매우 빠르고 SEO에 매우 유리함
-
-### 단점
-
-실시간 데이터 반영이 어렵고 페이지 수가 많으면 빌드 시간이 길어짐
-
-질문 제작: 강민주
-
-출처: (optional)
+- 작성 예정...
 
 </details>
 
 <details>
 <summary><strong>Q. CSR과 SSR의 단점을 극복하는 방법에 대해 설명해주세요.</strong></summary>
 
-답변
-
-## CSR 단점 극복 방법
-
-### 초기 로딩이 느림
-
-해결 방법
-
-- code splitting(코드 분할) 필요한 페이지/ 컴포넌트 단위로 JS 번들을 나누어 초기에 최소한의 코드로만 로딩
-- Lazy Loading : 사용자가 실제로 접근할 때 필요한 리소스만 불러옴
-- Preloading/Prefetching : 예상되는 사용자 이동 경로에 있는 리소스를 미리 불러와 준비
-
-### SEO에 불리함
-
-해결 방법
-
-- 사전 렌더링 : 정적 HTML을 미리 생성해 검색 엔진에 제공
-- 동적 렌더링 : 일반 사용자는 CSR로 처리하고, 크롤러에게만 SSR 결과를 전달(Google 추천 방식)
-
-## SSR 단점 극복 방법
-
-### 서버 부하가 큼
-
-해결 방법
-
-- 캐싱 : 페이지 결과나 API 응답을 CDN 또는 서버 메모리에 저장하여 재사용
-- ISR : 정적 페이지를 일정 주기로 백그라운드에서 다시 생성하는 방식
-
-### 페이지 전환 시 깜빡임/느림
-
-해결 방법
-
-- Hydaration 최적화 : 클라이언트 측에서 부드럽게 React가 takeover 하도록 조정
-- client-side routing 병행 : 페이 이동은 CSR 방식으로, 초기 로딩만 SSR로 처리
-
-질문 제작: 강민주
-
-출처: (optional)
+- 작성 예정...
 
 </details>
 
 <details>
 <summary><strong>Q. PNG, JPG, WEBP, AVIF와 같은 이미지 포맷의 차이점에 대해서 설명해주세요.!</strong></summary>
 
-답변
-
-질문 제작: OOO
-
-출처: (optional)
+- 작성 예정...
 
 </details>
 
