@@ -6,7 +6,7 @@ tags: [html, css, interview]
 
 # HTML/CSS
 
-## HTML
+## HTML 기본 개념
 
 <details>
 <summary><strong>⭐ Q. script 태그에서 사용하는 async와 defer의 차이에 대해 설명해주세요.</strong></summary>
@@ -101,7 +101,7 @@ tags: [html, css, interview]
 
 </details>
 
-## CSS
+## CSS 기본 개념
 
 <details>
 <summary><strong>⭐ Q. Cascading에 대해 설명해주세요.</strong></summary>
@@ -261,7 +261,7 @@ tags: [html, css, interview]
 
 </details>
 
-### 반응형
+## 반응형
 
 <details>
 <summary><strong>⭐ Q. Flexbox와 Grid의 차이점에 대해 설명해주세요.</strong></summary>
@@ -320,7 +320,7 @@ tags: [html, css, interview]
 
 </details>
 
-### 접근성
+## 접근성
 
 <details>
 <summary><strong>⭐ Q. 웹 접근성을 위해 고려해야 할 HTML/CSS 측면은 무엇이 있나요?</strong></summary>
@@ -345,7 +345,7 @@ tags: [html, css, interview]
 
 </details>
 
-### 성능 최적화
+## 성능 최적화
 
 <details>
 <summary><strong>Q. CSS에서 will-change 속성의 역할은?</strong></summary>

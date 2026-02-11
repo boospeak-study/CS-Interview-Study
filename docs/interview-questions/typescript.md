@@ -6,7 +6,7 @@ tags: [typescript, interview]
 
 # TypeScript
 
-## 기본
+## 기본 개념
 
 <details>
 <summary><strong>Q. 타입스크립트를 사용하는 이유에 대해서 설명해주세요.</strong></summary>

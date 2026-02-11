@@ -6,7 +6,7 @@ tags: [javascript, interview]
 
 # JavaScript
 
-## JS 핵심 개념
+## 기본 개념
 
 <details>
 <summary><strong>Q. 자바스크립트는 무슨 언어인가요?</strong></summary>
